@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deckel Transporte y Turismo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            background-image: 
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(74, 144, 226, 0.05) 2px, rgba(74, 144, 226, 0.05) 4px),
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(74, 144, 226, 0.05) 2px, rgba(74, 144, 226, 0.05) 4px);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            background: white;
+            border-radius: 20px;
+            padding: 35px 30px;
+            box-shadow: 0 20px 60px rgba(0, 51, 102, 0.15);
+        }
+
+        .logo-container {
+            margin-bottom: 15px;
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+            width: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .content {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        h1 {
+            color: #003366;
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: #003366;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .message {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .message strong {
+            color: #003366;
+            display: inline;
+            font-weight: 700;
+        }
+
+        .message .highlight-blue {
+            color: #4A90E2;
+            font-weight: 600;
+        }
+
+        .message .highlight-orange {
+            color: #FF9900;
+            font-weight: 600;
+        }
+
+        /* Botón flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 65px;
+            height: 65px;
+            background: linear-gradient(135deg, #FF9900 0%, #FF7700 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(255, 153, 0, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+            color: white;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 8px 30px rgba(255, 153, 0, 0.6);
+        }
+
+        .whatsapp-float i {
+            font-size: 2.2rem;
+            color: white;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive - Tablets */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .logo-container img {
+                width: 450px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Responsive - Tablets pequeños */
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px 18px;
+                border-radius: 15px;
+            }
+
+            .logo-container {
+                margin-bottom: 12px;
+            }
+
+            .logo-container img {
+                width: 350px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 6px;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+                margin-bottom: 15px;
+            }
+
+            .message {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+            }
+
+            .whatsapp-float i {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Responsive - Móviles */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                padding: 22px 15px;
+            }
+
+            .logo-container {
+                margin-bottom: 10px;
+            }
+
+            .logo-container img {
+                width: 280px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+                margin-bottom: 5px;
+            }
+
+            .subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 12px;
+            }
+
+            .message {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+
+            .whatsapp-float {
+                bottom: 18px;
+                right: 18px;
+                width: 58px;
+                height: 58px;
+            }
+
+            .whatsapp-float i {
+                font-size: 1.7rem;
+            }
+        }
+
+        /* Responsive - Móviles pequeños */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 18px 12px;
+                border-radius: 12px;
+            }
+
+            .logo-container {
+                margin-bottom: 8px;
+            }
+
+            .logo-container img {
+                width: 240px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 4px;
+            }
+
+            .subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 10px;
+            }
+
+            .message {
+                font-size: 0.85rem;
+                line-height: 1.55;
+                margin-bottom: 10px;
+            }
+
+            .whatsapp-float {
+                bottom: 15px;
+                right: 15px;
+                width: 55px;
+                height: 55px;
+            }
+
+            .whatsapp-float i {
+                font-size: 1.6rem;
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 20px rgba(255, 153, 0, 0.4);
+            }
+            50% {
+                box-shadow: 0 4px 30px rgba(255, 153, 0, 0.7);
+            }
+            100% {
+                box-shadow: 0 4px 20px rgba(255, 153, 0, 0.4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Deckel Transporte y Turismo">
+        </div>
+
+        <div class="content">
+            <h1>Estamos Construyendo</h1>
+            <p class="subtitle">Tu Experiencia Digital</p>
+            
+            <p class="message">
+                <strong>Muy pronto</strong> podrás ver todos nuestros <span class="highlight-blue">servicios, tarifas y disponibilidad</span>. Mientras tanto, <span class="highlight-orange">contáctanos por WhatsApp</span> para conocer más detalles y hacer tus reservas.
+            </p>
+        </div>
+    </div>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/56932455532?text=Hola%20Deckel%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios" 
+       class="whatsapp-float pulse" 
+       target="_blank" 
+       title="Contactarnos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Opcional: agregar sonido de notificación al hacer hover
+        document.querySelector('.whatsapp-float').addEventListener('click', function() {
+            console.log('Abriendo WhatsApp...');
+        });
+    </script>
+</body>
+</html>
