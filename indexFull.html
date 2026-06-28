@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Deckel Transporte y Turismo | Transfers y Tours en Chile</title>
+  <meta name="description"  content="Empresa de transporte privado y turismo en Chile. Traslados aeropuerto, centros de esquí y turismo costero. Servicio profesional 7 días." />
+  <meta name="keywords"     content="transporte privado Chile, turismo Chile, transfer aeropuerto, minibus, centros de esquí, tours costa, Deckel" />
+  <meta name="author"       content="Deckel Transporte y Turismo" />
+  <meta name="robots"       content="index, follow" />
+  <meta name="theme-color"  content="#0C1A2E" />
+  <link rel="canonical"     href="https://deckelturismo.cl/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"          content="website" />
+  <meta property="og:locale"        content="es_CL" />
+  <meta property="og:site_name"     content="Deckel Transporte y Turismo" />
+  <meta property="og:title"         content="Deckel Transporte y Turismo | Transfers y Tours en Chile" />
+  <meta property="og:description"   content="Transporte privado y turismo en Chile. Traslados aeropuerto, centros de esquí y turismo costero." />
+  <meta property="og:url"           content="https://deckelturismo.cl/" />
+  <meta property="og:image"         content="https://deckelturismo.cl/logo.png" />
+  <meta property="og:image:width"   content="1380" />
+  <meta property="og:image:height"  content="752" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Deckel Transporte y Turismo" />
+  <meta name="twitter:description" content="Transporte privado y turismo en Chile." />
+  <meta name="twitter:image"       content="https://deckelturismo.cl/logo.png" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Deckel Transporte y Turismo",
+    "description": "Empresa de transporte privado y turismo en Chile.",
+    "url": "https://deckelturismo.cl",
+    "logo": "https://deckelturismo.cl/logo.png",
+    "telephone": "+56932455532",
+    "email": "contacto@deckelturismo.cl",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Américo Vespucio Norte 2880",
+      "addressLocality": "Vitacura",
+      "addressRegion": "Región Metropolitana",
+      "addressCountry": "CL"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+56932455532",
+      "contactType": "customer service",
+      "availableLanguage": "Spanish"
+    }
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="256x256" href="favicon-256.png" />
+  <link rel="apple-touch-icon" href="favicon-256.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBJ3FGCLCZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FBJ3FGCLCZ');
+  </script>
+
+  <style>
+    /* ─── Design tokens ─────────────────────────────────────────────── */
+    :root {
+      --bg:         #F7F5F0;
+      --dark:       #0C1A2E;
+      --navy:       #152B4A;
+      --blue:       #1B52CC;
+      --blue-mid:   #2D6DD4;
+      --blue-lt:    #EBF2FF;
+      --gold:       #C07C18;
+      --gold-mid:   #E09830;
+      --gold-lt:    #FEF3DC;
+      --white:      #FFFFFF;
+      --off-white:  #FAFAF8;
+      --gray-50:    #F5F3EE;
+      --gray-100:   #EAE7E0;
+      --gray-200:   #D4CFC6;
+      --gray-400:   #9B9488;
+      --gray-600:   #5C5650;
+      --gray-800:   #28241E;
+
+      --font-h:  'Montserrat', 'Segoe UI', sans-serif;
+      --font-b:  'Work Sans', 'Segoe UI', sans-serif;
+
+      --r-sm:   8px;
+      --r:      14px;
+      --r-lg:   24px;
+      --r-xl:   40px;
+
+      --ease:   0.28s cubic-bezier(.4,0,.2,1);
+
+      --sh-xs:  0 1px 4px rgba(12,26,46,.06);
+      --sh-sm:  0 2px 12px rgba(12,26,46,.08);
+      --sh-md:  0 6px 28px rgba(12,26,46,.12);
+      --sh-lg:  0 16px 56px rgba(12,26,46,.18);
+      --sh-xl:  0 28px 80px rgba(12,26,46,.22);
+    }
+
+    /* ─── Reset ─────────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html  { scroll-behavior: smooth; font-size: 16px; }
+    body  {
+      font-family: var(--font-b);
+      color: var(--gray-800);
+      background: var(--white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img   { max-width: 100%; display: block; }
+    a     { text-decoration: none; color: inherit; }
+    ul    { list-style: none; }
+    h1, h2, h3, h4, h5 { font-family: var(--font-h); }
+
+    /* ─── Layout ─────────────────────────────────────────────────────── */
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    section    { padding: 7rem 0; }
+
+    /* ─── Typography helpers ─────────────────────────────────────────── */
+    .label {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-family: var(--font-h); font-size: .7rem; font-weight: 700;
+      letter-spacing: .16em; text-transform: uppercase; color: var(--gold);
+    }
+    .label::before {
+      content: '';
+      display: block; width: 20px; height: 2px; border-radius: 1px;
+      background: currentColor;
+    }
+
+    .section-title {
+      font-family: var(--font-h);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800; line-height: 1.12;
+      color: var(--dark); letter-spacing: -.025em;
+      margin-top: .5rem;
+    }
+    .section-title.on-dark { color: var(--white); }
+
+    .section-desc {
+      font-size: 1rem; line-height: 1.75;
+      color: var(--gray-600); max-width: 520px;
+      margin-top: .9rem; font-weight: 400;
+    }
+    .section-desc.on-dark { color: rgba(255,255,255,.62); }
+
+    .section-head { margin-bottom: 3.5rem; }
+
+    /* ─── Buttons ────────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .85rem 2rem; border-radius: var(--r);
+      font-family: var(--font-h); font-size: .875rem; font-weight: 700;
+      cursor: pointer; transition: all var(--ease); border: 2px solid transparent;
+      letter-spacing: .01em; white-space: nowrap;
+    }
+    .btn-gold {
+      background: var(--gold); color: var(--white);
+      box-shadow: 0 4px 20px rgba(192,124,24,.30);
+    }
+    .btn-gold:hover {
+      background: var(--gold-mid); transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(192,124,24,.40);
+    }
+    .btn-white {
+      background: var(--white); color: var(--dark);
+    }
+    .btn-white:hover { background: var(--off-white); transform: translateY(-2px); }
+    .btn-outline-white {
+      background: transparent; color: var(--white);
+      border-color: rgba(255,255,255,.40);
+    }
+    .btn-outline-white:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,.10);
+    }
+    .btn-outline-dark {
+      background: transparent; color: var(--dark);
+      border-color: var(--gray-200);
+    }
+    .btn-outline-dark:hover { border-color: var(--dark); }
+
+    /* ─── Header ─────────────────────────────────────────────────────── */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      transition: background var(--ease), box-shadow var(--ease);
+    }
+    .header.scrolled {
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 1px 0 rgba(12,26,46,.08), var(--sh-sm);
+    }
+    .nav {
+      display: flex; align-items: center;
+      justify-content: space-between; height: 72px;
+    }
+
+    .nav-brand {
+      display: flex; align-items: center; gap: .6rem;
+      font-family: var(--font-h); font-weight: 800;
+      font-size: 1.05rem; letter-spacing: .04em; color: var(--white);
+      transition: color var(--ease);
+    }
+    .header.scrolled .nav-brand { color: var(--dark); }
+    .nav-brand img { width: 36px; height: 36px; object-fit: contain; }
+    .nav-brand .brand-sub {
+      color: var(--gold-mid); font-size: .62em;
+      font-weight: 600; letter-spacing: .06em;
+      display: block; line-height: 1;
+    }
+    .brand-text { display: flex; flex-direction: column; }
+
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-links a {
+      font-family: var(--font-h); font-size: .82rem; font-weight: 600;
+      color: rgba(255,255,255,.8); transition: color var(--ease); letter-spacing: .01em;
+    }
+    .header.scrolled .nav-links a { color: var(--gray-600); }
+    .nav-links a:hover,
+    .header.scrolled .nav-links a:hover { color: var(--blue); }
+
+    .nav-cta-wrap { margin-left: .5rem; }
+
+    .nav-toggle {
+      display: none; background: none; border: none; cursor: pointer;
+      color: var(--white); font-size: 1.3rem; padding: .4rem;
+      transition: color var(--ease);
+    }
+    .header.scrolled .nav-toggle { color: var(--dark); }
+
+    .nav-mobile {
+      display: none; flex-direction: column;
+      padding: 1.2rem 2rem 1.75rem; gap: .8rem;
+      background: var(--white);
+      border-top: 1px solid var(--gray-100);
+    }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a {
+      font-size: .95rem; font-weight: 500;
+      color: var(--gray-800); padding: .35rem 0;
+    }
+
+    @media (max-width: 820px) {
+      .nav-links, .nav-cta-wrap { display: none; }
+      .nav-toggle { display: block; }
+    }
+
+    /* ─── Hero ───────────────────────────────────────────────────────── */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: center;
+      padding-top: 72px; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background:
+        linear-gradient(160deg, rgba(12,26,46,.94) 0%, rgba(21,43,74,.85) 50%, rgba(27,82,204,.50) 100%),
+        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85') center/cover no-repeat;
+    }
+    .hero-noise {
+      position: absolute; inset: 0; z-index: 1; opacity: .025;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .hero-inner {
+      position: relative; z-index: 2;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center;
+      padding: 4rem 0 6rem;
+    }
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+    }
+
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-family: var(--font-h); font-size: .7rem; font-weight: 700;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--gold-mid); margin-bottom: 1.2rem;
+      animation: slideUp .7s .1s ease both;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: block;
+      width: 24px; height: 2px;
+      background: var(--gold-mid); border-radius: 1px;
+    }
+
+    .hero-title {
+      font-family: var(--font-h);
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      font-weight: 900; color: var(--white);
+      line-height: 1.04; letter-spacing: -.03em;
+      margin-bottom: 1.4rem;
+      animation: slideUp .7s .18s ease both;
+    }
+    .hero-title em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--gold-mid), #F5C96E);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: 1.05rem; color: rgba(255,255,255,.68);
+      line-height: 1.72; max-width: 460px; font-weight: 400;
+      margin-bottom: 2.4rem;
+      animation: slideUp .7s .26s ease both;
+    }
+    @media (max-width: 900px) { .hero-sub { margin-left: auto; margin-right: auto; } }
+
+    .hero-actions {
+      display: flex; gap: .9rem; flex-wrap: wrap;
+      animation: slideUp .7s .34s ease both;
+    }
+    @media (max-width: 900px) { .hero-actions { justify-content: center; } }
+
+    /* Hero right panel */
+    .hero-panel {
+      display: flex; flex-direction: column; gap: 1.2rem;
+      animation: slideUp .8s .2s ease both;
+    }
+    @media (max-width: 900px) { .hero-panel { display: none; } }
+
+    .hero-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-radius: var(--r-lg); padding: 1.4rem 1.6rem;
+      display: flex; align-items: center; gap: 1.1rem;
+      transition: background var(--ease), border-color var(--ease);
+    }
+    .hero-card:hover {
+      background: rgba(255,255,255,.11);
+      border-color: rgba(255,255,255,.22);
+    }
+    .hero-card-icon {
+      width: 48px; height: 48px; border-radius: var(--r);
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-mid) 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; color: var(--white); flex-shrink: 0;
+    }
+    .hero-card-text strong {
+      display: block; font-family: var(--font-h);
+      font-size: .9rem; font-weight: 700; color: var(--white); margin-bottom: .15rem;
+    }
+    .hero-card-text span {
+      font-size: .78rem; color: rgba(255,255,255,.55);
+    }
+
+    /* Hero scroll hint */
+    .hero-scroll {
+      position: absolute; bottom: 2.4rem; left: 50%;
+      transform: translateX(-50%);
+      z-index: 2; display: flex; flex-direction: column; align-items: center; gap: .5rem;
+      color: rgba(255,255,255,.4); font-size: .72rem; letter-spacing: .08em;
+      text-transform: uppercase; font-family: var(--font-h); font-weight: 600;
+      animation: bounce 2.4s 1s ease-in-out infinite;
+    }
+    .hero-scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,.35), transparent);
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateX(-50%) translateY(0); }
+      50%      { transform: translateX(-50%) translateY(8px); }
+    }
+
+    /* ─── Stats strip ────────────────────────────────────────────────── */
+    .stats-strip {
+      background: var(--dark); padding: 0;
+    }
+    .stats-row {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      border-left: 1px solid rgba(255,255,255,.07);
+    }
+    @media (max-width: 720px) { .stats-row { grid-template-columns: repeat(2,1fr); } }
+
+    .stat-cell {
+      padding: 2.2rem 2rem; border-right: 1px solid rgba(255,255,255,.07);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .stat-num {
+      font-family: var(--font-h); font-size: 2.4rem; font-weight: 900;
+      color: var(--white); letter-spacing: -.03em; line-height: 1;
+    }
+    .stat-num span { color: var(--gold-mid); }
+    .stat-label {
+      font-size: .82rem; color: rgba(255,255,255,.45);
+      margin-top: .35rem; font-weight: 500;
+    }
+
+    /* ─── Servicios ──────────────────────────────────────────────────── */
+    .servicios { background: var(--bg); }
+
+    .services-grid {
+      display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem;
+    }
+    @media (max-width: 720px) { .services-grid { grid-template-columns: 1fr; } }
+
+    .service-card {
+      position: relative; border-radius: var(--r-lg); overflow: hidden;
+      aspect-ratio: 4/3; cursor: pointer;
+      box-shadow: var(--sh-sm);
+      transition: transform var(--ease), box-shadow var(--ease);
+    }
+    .service-card:hover { transform: translateY(-5px); box-shadow: var(--sh-xl); }
+
+    .service-card img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .6s var(--ease);
+    }
+    .service-card:hover img { transform: scale(1.07); }
+
+    .service-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(12,26,46,.92) 0%, rgba(12,26,46,.30) 55%, transparent 100%);
+    }
+    .service-card-body {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 2rem;
+    }
+    .service-num {
+      font-family: var(--font-h); font-size: .68rem; font-weight: 700;
+      letter-spacing: .15em; color: var(--gold-mid); margin-bottom: .5rem;
+    }
+    .service-card h3 {
+      font-family: var(--font-h); font-size: 1.35rem; font-weight: 800;
+      color: var(--white); margin-bottom: .45rem; letter-spacing: -.015em;
+    }
+    .service-card p {
+      font-size: .85rem; color: rgba(255,255,255,.72);
+      line-height: 1.6; max-width: 340px;
+    }
+    .service-link {
+      display: inline-flex; align-items: center; gap: .4rem;
+      margin-top: 1rem; font-family: var(--font-h); font-size: .78rem;
+      font-weight: 700; color: var(--gold-mid); letter-spacing: .02em;
+      transition: gap var(--ease);
+    }
+    .service-card:hover .service-link { gap: .7rem; }
+    .service-card.wide {
+      grid-column: 1 / -1;
+      aspect-ratio: unset;
+      height: 320px;
+    }
+    .service-card.wide .service-card-body { max-width: 600px; }
+    .service-icon-badge {
+      position: absolute; top: 1.4rem; right: 1.4rem;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(255,255,255,.12);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; color: var(--white);
+    }
+
+    /* ─── Cómo funciona ──────────────────────────────────────────────── */
+    .proceso { background: var(--white); }
+
+    .steps-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 0; position: relative;
+    }
+    @media (max-width: 720px) { .steps-grid { grid-template-columns: 1fr; } }
+
+    .steps-connector {
+      position: absolute; top: 28px; left: calc(16.66% + 28px); right: calc(16.66% + 28px);
+      height: 1px; background: linear-gradient(to right, var(--gold-mid), var(--blue));
+      z-index: 0;
+    }
+    @media (max-width: 720px) { .steps-connector { display: none; } }
+
+    .step-card {
+      position: relative; z-index: 1;
+      padding: 0 2.5rem 0 0;
+    }
+    .step-card:last-child { padding-right: 0; }
+    @media (max-width: 720px) { .step-card { padding: 0 0 2.5rem; } }
+
+    .step-bubble {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--dark); color: var(--white);
+      font-family: var(--font-h); font-size: .85rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.6rem; position: relative;
+      box-shadow: 0 0 0 6px var(--white), 0 0 0 7px var(--gray-100);
+    }
+    .step-card:first-child .step-bubble { background: linear-gradient(135deg, var(--gold), var(--gold-mid)); }
+    .step-card:nth-child(2) .step-bubble { background: linear-gradient(135deg, var(--blue), var(--blue-mid)); }
+    .step-card:last-child .step-bubble { background: linear-gradient(135deg, var(--navy), var(--dark)); }
+
+    .step-card h3 {
+      font-family: var(--font-h); font-size: 1.05rem; font-weight: 700;
+      color: var(--dark); margin-bottom: .6rem; letter-spacing: -.01em;
+    }
+    .step-card p {
+      font-size: .88rem; color: var(--gray-600); line-height: 1.68; max-width: 260px;
+    }
+
+    /* ─── Vehículos ──────────────────────────────────────────────────── */
+    .vehiculos { background: var(--bg); }
+
+    .vehicles-grid {
+      display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem;
+    }
+    @media (max-width: 900px) { .vehicles-grid { grid-template-columns: 1fr; } }
+
+    .vehicle-card {
+      background: var(--white); border-radius: var(--r-lg);
+      overflow: hidden; box-shadow: var(--sh-xs);
+      border: 1px solid var(--gray-100);
+      display: flex; transition: box-shadow var(--ease), transform var(--ease);
+    }
+    .vehicle-card:hover { box-shadow: var(--sh-lg); transform: translateY(-3px); }
+
+    .vehicle-photo {
+      width: 180px; flex-shrink: 0; position: relative; overflow: hidden;
+    }
+    @media (max-width: 500px) { .vehicle-photo { width: 120px; } }
+    .vehicle-photo img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .5s var(--ease);
+    }
+    .vehicle-card:hover .vehicle-photo img { transform: scale(1.06); }
+    .vehicle-photo::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to right, transparent 60%, rgba(12,26,46,.15));
+    }
+
+    .vehicle-body { padding: 1.6rem 1.8rem; flex: 1; }
+    .vehicle-pax {
+      display: inline-block; padding: .2rem .75rem;
+      background: var(--gold-lt); color: var(--gold);
+      border-radius: 99px; font-family: var(--font-h);
+      font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; margin-bottom: .75rem;
+    }
+    .vehicle-body h3 {
+      font-family: var(--font-h); font-size: 1.05rem; font-weight: 800;
+      color: var(--dark); letter-spacing: -.015em; margin-bottom: .15rem;
+    }
+    .vehicle-model {
+      font-size: .78rem; color: var(--gray-400); margin-bottom: 1rem;
+    }
+    .vehicle-features {
+      display: flex; flex-direction: column; gap: .32rem;
+    }
+    .vehicle-feature {
+      display: flex; align-items: center; gap: .5rem;
+      font-size: .82rem; color: var(--gray-600);
+    }
+    .vehicle-feature i { color: var(--blue); font-size: .72rem; }
+
+    /* ─── Destinos ───────────────────────────────────────────────────── */
+    .destinos { background: var(--white); }
+
+    .destinations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 1.2rem;
+    }
+    @media (max-width: 900px) { .destinations-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 580px)  { .destinations-grid { grid-template-columns: 1fr; } }
+
+    .dest-card {
+      border-radius: var(--r-lg); overflow: hidden; position: relative;
+      aspect-ratio: 4/3; cursor: default;
+      box-shadow: var(--sh-xs);
+      transition: transform var(--ease), box-shadow var(--ease);
+    }
+    .dest-card:hover { transform: translateY(-4px); box-shadow: var(--sh-lg); }
+    .dest-card img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .5s var(--ease);
+    }
+    .dest-card:hover img { transform: scale(1.06); }
+    .dest-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(12,26,46,.85) 0%, rgba(12,26,46,.1) 60%, transparent 100%);
+    }
+    .dest-card-body {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 1.4rem 1.4rem 1.3rem;
+    }
+    .dest-dist {
+      font-size: .68rem; color: var(--gold-mid); font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      margin-bottom: .3rem; font-family: var(--font-h);
+    }
+    .dest-card h3 {
+      font-family: var(--font-h); font-size: 1.05rem; font-weight: 800;
+      color: var(--white); letter-spacing: -.015em; margin-bottom: .2rem;
+    }
+    .dest-card p {
+      font-size: .78rem; color: rgba(255,255,255,.62); line-height: 1.5;
+    }
+
+    /* ─── CTA Band ───────────────────────────────────────────────────── */
+    .cta-band {
+      background: var(--dark); padding: 5rem 0;
+      position: relative; overflow: hidden;
+    }
+    .cta-band::before {
+      content: ''; position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(27,82,204,.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-band::after {
+      content: ''; position: absolute;
+      bottom: -80px; left: -60px;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(192,124,24,.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-inner {
+      position: relative; z-index: 1;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 3rem; flex-wrap: wrap;
+    }
+    .cta-text h2 {
+      font-family: var(--font-h); font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 800; color: var(--white); letter-spacing: -.025em; line-height: 1.2;
+    }
+    .cta-text p {
+      font-size: .95rem; color: rgba(255,255,255,.55);
+      margin-top: .6rem; max-width: 420px;
+    }
+    .cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; flex-shrink: 0; }
+
+    /* ─── Contacto ───────────────────────────────────────────────────── */
+    .contacto { background: var(--bg); }
+
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;
+    }
+    @media (max-width: 820px) { .contact-grid { grid-template-columns: 1fr; gap: 3rem; } }
+
+    .form { display: flex; flex-direction: column; gap: 1.1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
+
+    .form-group { display: flex; flex-direction: column; gap: .4rem; }
+    .form-group label {
+      font-family: var(--font-h); font-size: .76rem; font-weight: 700;
+      color: var(--gray-800); letter-spacing: .01em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: .75rem 1rem;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--r-sm); font-size: .9rem;
+      font-family: var(--font-b); color: var(--gray-800);
+      background: var(--white); transition: border-color var(--ease), box-shadow var(--ease);
+      outline: none; appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(27,82,204,.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    .contact-side { display: flex; flex-direction: column; gap: .8rem; }
+
+    .wa-block {
+      background: linear-gradient(135deg, #1fbe5a, #17a34a);
+      border-radius: var(--r-lg); padding: 1.6rem 1.8rem;
+      display: flex; align-items: center; gap: 1.2rem;
+      box-shadow: 0 6px 28px rgba(20,163,74,.25);
+      transition: transform var(--ease), box-shadow var(--ease);
+      margin-bottom: .8rem;
+    }
+    .wa-block:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(20,163,74,.34); }
+    .wa-block i { font-size: 2rem; color: var(--white); flex-shrink: 0; }
+    .wa-block strong { display: block; color: var(--white); font-size: .97rem; margin-bottom: .1rem; }
+    .wa-block span   { color: rgba(255,255,255,.75); font-size: .8rem; }
+
+    .contact-item {
+      background: var(--white); border: 1px solid var(--gray-100);
+      border-radius: var(--r); padding: 1.2rem 1.4rem;
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .contact-icon {
+      width: 40px; height: 40px; flex-shrink: 0; border-radius: var(--r-sm);
+      background: var(--blue-lt); display: flex; align-items: center;
+      justify-content: center; color: var(--blue); font-size: .95rem;
+    }
+    .contact-item h4 {
+      font-family: var(--font-h); font-size: .72rem; font-weight: 700;
+      color: var(--gray-400); text-transform: uppercase; letter-spacing: .07em;
+      margin-bottom: .2rem;
+    }
+    .contact-item p,
+    .contact-item a {
+      font-size: .87rem; color: var(--gray-800); font-weight: 500;
+      transition: color var(--ease);
+    }
+    .contact-item a:hover { color: var(--blue); }
+
+    /* ─── Footer ─────────────────────────────────────────────────────── */
+    .footer {
+      background: #080F1A; color: rgba(255,255,255,.5);
+      padding: 5rem 0 2.5rem;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 3rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+    @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+
+    .f-brand-row { display: flex; align-items: center; gap: .7rem; margin-bottom: 1rem; }
+    .f-brand-row img { width: 40px; height: 40px; object-fit: contain; filter: brightness(0) invert(1); opacity: .85; }
+    .f-brand-row span { font-family: var(--font-h); font-size: 1rem; font-weight: 800; color: var(--white); letter-spacing: .06em; }
+    .f-brand-desc { font-size: .84rem; line-height: 1.7; max-width: 260px; }
+
+    .f-social { display: flex; gap: .5rem; margin-top: 1.2rem; }
+    .f-social a {
+      width: 36px; height: 36px; border-radius: var(--r-sm);
+      border: 1px solid rgba(255,255,255,.1);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.5); font-size: .88rem;
+      transition: all var(--ease);
+    }
+    .f-social a:hover { background: var(--blue); border-color: var(--blue); color: var(--white); transform: translateY(-2px); }
+
+    .f-col h5 {
+      font-family: var(--font-h); font-size: .7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .12em;
+      color: rgba(255,255,255,.8); margin-bottom: 1.2rem;
+    }
+    .f-col ul { display: flex; flex-direction: column; gap: .55rem; }
+    .f-col a { font-size: .84rem; color: rgba(255,255,255,.45); transition: color var(--ease); }
+    .f-col a:hover { color: rgba(255,255,255,.9); }
+
+    .footer-bottom {
+      display: flex; justify-content: space-between;
+      flex-wrap: wrap; gap: .6rem; font-size: .78rem;
+    }
+    .footer-bottom a { color: var(--gold-mid); }
+
+    /* ─── WhatsApp flotante ──────────────────────────────────────────── */
+    .wa-float {
+      position: fixed; bottom: 1.8rem; right: 1.8rem;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,.40), 0 0 0 0 rgba(37,211,102,.4);
+      z-index: 999; transition: transform .2s ease, box-shadow .2s ease;
+      animation: waPulse 2.8s ease-in-out infinite;
+    }
+    .wa-float:hover {
+      transform: scale(1.12); animation: none;
+      box-shadow: 0 10px 36px rgba(37,211,102,.55);
+    }
+    .wa-float svg { width: 26px; height: 26px; fill: #fff; }
+    @keyframes waPulse {
+      0%   { box-shadow: 0 6px 24px rgba(37,211,102,.40), 0 0 0 0 rgba(37,211,102,.4); }
+      70%  { box-shadow: 0 6px 24px rgba(37,211,102,.40), 0 0 0 14px rgba(37,211,102,.0); }
+      100% { box-shadow: 0 6px 24px rgba(37,211,102,.40), 0 0 0 0 rgba(37,211,102,.0); }
+    }
+    @media (max-width: 480px) {
+      .wa-float { width: 48px; height: 48px; bottom: 1rem; right: 1rem; }
+    }
+
+    /* ─── Scroll reveal ──────────────────────────────────────────────── */
+    .reveal {
+      opacity: 0; transform: translateY(20px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: .08s; }
+    .reveal-d2 { transition-delay: .16s; }
+    .reveal-d3 { transition-delay: .24s; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#inicio" class="nav-brand">
+          <img src="logo-icon.png" alt="Deckel" />
+          <span class="brand-text">
+            DECKEL
+            <span class="brand-sub">Transporte &amp; Turismo</span>
+          </span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Cómo funciona</a></li>
+          <li><a href="#vehiculos">Vehículos</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="nav-cta-wrap">
+          <a href="https://wa.me/56932455532?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio."
+             target="_blank" rel="noopener" class="btn btn-gold"
+             onclick="gtag('event','whatsapp_click',{button:'nav'})">
+            <i class="fab fa-whatsapp"></i> Cotizar
+          </a>
+        </div>
+
+        <button class="nav-toggle" id="menuBtn" aria-label="Menú">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#servicios"  onclick="closeMenu()">Servicios</a>
+      <a href="#proceso"    onclick="closeMenu()">Cómo funciona</a>
+      <a href="#vehiculos"  onclick="closeMenu()">Vehículos</a>
+      <a href="#destinos"   onclick="closeMenu()">Destinos</a>
+      <a href="#contacto"   onclick="closeMenu()">Contacto</a>
+      <a href="https://wa.me/56932455532?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio."
+         target="_blank" rel="noopener" class="btn btn-gold" style="justify-content:center"
+         onclick="gtag('event','whatsapp_click',{button:'nav_mobile'})">
+        <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+      </a>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-noise"></div>
+
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Transporte Privado · Chile</p>
+        <h1 class="hero-title">
+          Viaja con<br><em>comodidad</em><br>y confianza
+        </h1>
+        <p class="hero-sub">
+          Traslados privados al aeropuerto, centros de esquí, rutas del vino y turismo costero.
+          Servicio profesional disponible los 7 días de la semana.
+        </p>
+        <div class="hero-actions">
+          <a href="#servicios" class="btn btn-gold">
+            <i class="fas fa-compass"></i> Ver servicios
+          </a>
+          <a href="https://wa.me/56932455532?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio."
+             target="_blank" rel="noopener" class="btn btn-outline-white"
+             onclick="gtag('event','whatsapp_click',{button:'hero'})">
+            <i class="fab fa-whatsapp"></i> Escribir ahora
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-plane-arrival"></i></div>
+          <div class="hero-card-text">
+            <strong>Aeropuerto SCL</strong>
+            <span>Seguimiento de vuelo en vivo · 24/7</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-mountain"></i></div>
+          <div class="hero-card-text">
+            <strong>Centros de Esquí</strong>
+            <span>Valle Nevado, La Parva, El Colorado</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="hero-card-text">
+            <strong>Conductores Verificados</strong>
+            <span>Profesionales con experiencia</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="hero-card-text">
+            <strong>Servicios Corporativos</strong>
+            <span>Facturación a empresa disponible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Explorar</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       STATS
+  ═══════════════════════════════════════════ -->
+  <div class="stats-strip">
+    <div class="stats-row">
+      <div class="stat-cell">
+        <div class="stat-num">400<span>+</span></div>
+        <div class="stat-label">Traslados realizados</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Días disponibles</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Tipos de vehículo</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-label">Satisfacción garantizada</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICIOS
+  ═══════════════════════════════════════════ -->
+  <section class="servicios" id="servicios">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="label">Lo que ofrecemos</p>
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-desc">
+          Traslados privados y tours personalizados para particulares,
+          familias y empresas en todo Chile.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <a href="servicio-aeropuerto.html" class="service-card reveal">
+          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80" alt="Aeropuerto Internacional SCL" loading="lazy" />
+          <div class="service-card-overlay"></div>
+          <div class="service-icon-badge"><i class="fas fa-plane-arrival"></i></div>
+          <div class="service-card-body">
+            <p class="service-num">01 — Traslado</p>
+            <h3>Aeropuerto SCL</h3>
+            <p>Recepción y traslado 24/7 desde y hacia el Aeropuerto Internacional Arturo Merino Benítez. Seguimiento de vuelo en tiempo real.</p>
+            <span class="service-link">Ver tarifas <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="servicio-esqui.html" class="service-card reveal reveal-d1">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Centros de esquí en la cordillera" loading="lazy" />
+          <div class="service-card-overlay"></div>
+          <div class="service-icon-badge"><i class="fas fa-mountain"></i></div>
+          <div class="service-card-body">
+            <p class="service-num">02 — Montaña</p>
+            <h3>Centros de Esquí</h3>
+            <p>Traslados diarios a Valle Nevado, La Parva, El Colorado y Portillo. Partidas desde Santiago con horario flexible.</p>
+            <span class="service-link">Ver tarifas <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="servicio-costa.html" class="service-card reveal reveal-d2">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Costa chilena y Viña del Mar" loading="lazy" />
+          <div class="service-card-overlay"></div>
+          <div class="service-icon-badge"><i class="fas fa-water"></i></div>
+          <div class="service-card-body">
+            <p class="service-num">03 — Costa</p>
+            <h3>Turismo Costero</h3>
+            <p>Excursiones a Viña del Mar, Valparaíso, Casablanca e Isla Negra. Tours con guía o traslados privados a medida.</p>
+            <span class="service-link">Ver tarifas <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="servicio-corporativo.html" class="service-card reveal reveal-d3">
+          <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=900&q=80" alt="Servicios corporativos y ejecutivos" loading="lazy" />
+          <div class="service-card-overlay"></div>
+          <div class="service-icon-badge"><i class="fas fa-briefcase"></i></div>
+          <div class="service-card-body">
+            <p class="service-num">04 — Corporativo</p>
+            <h3>Servicios Corporativos</h3>
+            <p>Traslados ejecutivos, movilización de equipos y eventos empresariales. Facturación a empresa y contratos mensuales.</p>
+            <span class="service-link">Ver tarifas <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="servicio-vinas.html" class="service-card wide reveal">
+          <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1400&q=80" alt="Turismo en viñas y rutas del vino Chile" loading="lazy" />
+          <div class="service-card-overlay"></div>
+          <div class="service-icon-badge"><i class="fas fa-wine-glass-alt"></i></div>
+          <div class="service-card-body">
+            <p class="service-num">05 — Enoturismo</p>
+            <h3>Turismo en Viñas</h3>
+            <p>Rutas del vino por los valles de Maipo, Casablanca y Colchagua. Visitas a bodegas, degustaciones y paisajes de viñedo. Transporte privado con conductor guía desde Santiago.</p>
+            <span class="service-link">Ver el servicio <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CÓMO FUNCIONA
+  ═══════════════════════════════════════════ -->
+  <section class="proceso" id="proceso">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="label">Tan simple como esto</p>
+        <h2 class="section-title">Cómo funciona</h2>
+        <p class="section-desc">De la cotización al traslado, sin complicaciones.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="steps-connector"></div>
+        <div class="step-card reveal">
+          <div class="step-bubble">01</div>
+          <h3>Cuéntanos tu viaje</h3>
+          <p>Escríbenos por WhatsApp o completa el formulario con fecha, destino y número de pasajeros.</p>
+        </div>
+        <div class="step-card reveal reveal-d1">
+          <div class="step-bubble">02</div>
+          <h3>Confirmamos los detalles</h3>
+          <p>Te enviamos una cotización clara y coordinamos el vehículo, horario y punto de encuentro.</p>
+        </div>
+        <div class="step-card reveal reveal-d2">
+          <div class="step-bubble">03</div>
+          <h3>Disfruta el trayecto</h3>
+          <p>Un conductor profesional te espera puntual, con seguimiento del servicio de inicio a fin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       VEHÍCULOS
+  ═══════════════════════════════════════════ -->
+  <section class="vehiculos" id="vehiculos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="label">Nuestra flota</p>
+        <h2 class="section-title">Vehículos y Capacidades</h2>
+        <p class="section-desc">Flota moderna y equipada para garantizar el mayor confort en cada trayecto.</p>
+      </div>
+
+      <div class="vehicles-grid">
+
+        <div class="vehicle-card reveal">
+          <div class="vehicle-photo">
+            <img src="https://images.unsplash.com/photo-1535655685871-dc8158ff167e?auto=format&fit=crop&w=400&q=80" alt="Mercedes-Benz Sprinter" loading="lazy" />
+          </div>
+          <div class="vehicle-body">
+            <span class="vehicle-pax">Hasta 16 pax</span>
+            <h3>Mercedes-Benz Sprinter</h3>
+            <p class="vehicle-model">516 CDI — Minibús Premium</p>
+            <ul class="vehicle-features">
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Aire acondicionado dual</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Asientos reclinables</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Portaequipajes amplio</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Cargadores USB</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="vehicle-card reveal reveal-d1">
+          <div class="vehicle-photo">
+            <img src="https://images.unsplash.com/photo-1650807486050-a142ea418b19?auto=format&fit=crop&w=400&q=80" alt="Toyota Hiace" loading="lazy" />
+          </div>
+          <div class="vehicle-body">
+            <span class="vehicle-pax">Hasta 12 pax</span>
+            <h3>Toyota Hiace</h3>
+            <p class="vehicle-model">Commuter GL — Van de Pasajeros</p>
+            <ul class="vehicle-features">
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Aire acondicionado</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Amplio espacio interior</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Bodega trasera</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Acceso cómodo</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="vehicle-card reveal reveal-d2">
+          <div class="vehicle-photo">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=400&q=80" alt="Hyundai Staria" loading="lazy" />
+          </div>
+          <div class="vehicle-body">
+            <span class="vehicle-pax">Hasta 9 pax</span>
+            <h3>Hyundai Staria</h3>
+            <p class="vehicle-model">Premium — Monovolumen de Lujo</p>
+            <ul class="vehicle-features">
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Asientos premium</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Techo panorámico</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> WiFi a bordo</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Pantallas de entretenimiento</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="vehicle-card reveal reveal-d3">
+          <div class="vehicle-photo">
+            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=400&q=80" alt="Toyota Land Cruiser" loading="lazy" />
+          </div>
+          <div class="vehicle-body">
+            <span class="vehicle-pax">Hasta 5 pax</span>
+            <h3>Toyota Land Cruiser</h3>
+            <p class="vehicle-model">300 GR Sport — SUV Premium</p>
+            <ul class="vehicle-features">
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Todo terreno 4×4</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Interior de lujo</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Apto cordillera y nieve</li>
+              <li class="vehicle-feature"><i class="fas fa-check"></i> Climatización dual</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DESTINOS
+  ═══════════════════════════════════════════ -->
+  <section class="destinos" id="destinos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="label">A dónde llegamos</p>
+        <h2 class="section-title">Destinos</h2>
+        <p class="section-desc">Cubrimos los principales destinos turísticos y de negocios desde la Región Metropolitana.</p>
+      </div>
+
+      <div class="destinations-grid">
+        <div class="dest-card reveal">
+          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80" alt="Aeropuerto SCL" loading="lazy" />
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-body">
+            <p class="dest-dist"><i class="fas fa-location-dot"></i> ~30 min desde Santiago</p>
+            <h3>Aeropuerto SCL</h3>
+            <p>Internacional Arturo Merino Benítez. Servicio 24/7.</p>
+          </div>
+        </div>
+
+        <div class="dest-card reveal reveal-d1">
+          <img src="https://images.unsplash.com/photo-1605540436563-5bca919ae766?auto=format&fit=crop&w=600&q=80" alt="Valle Nevado" loading="lazy" />
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-body">
+            <p class="dest-dist"><i class="fas fa-location-dot"></i> 46 km de Santiago</p>
+            <h3>Valle Nevado</h3>
+            <p>Centro de esquí internacional. Temporada jun–oct.</p>
+          </div>
+        </div>
+
+        <div class="dest-card reveal reveal-d2">
+          <img src="https://images.unsplash.com/photo-1461988625982-7e46a099bf4f?auto=format&fit=crop&w=600&q=80" alt="La Parva y El Colorado" loading="lazy" />
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-body">
+            <p class="dest-dist"><i class="fas fa-location-dot"></i> 50 km de Santiago</p>
+            <h3>La Parva &amp; El Colorado</h3>
+            <p>Centros de esquí familiares en Los Andes.</p>
+          </div>
+        </div>
+
+        <div class="dest-card reveal">
+          <img src="https://images.unsplash.com/photo-1524398970396-ac06c83afc97?auto=format&fit=crop&w=600&q=80" alt="Viña del Mar" loading="lazy" />
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-body">
+            <p class="dest-dist"><i class="fas fa-location-dot"></i> 120 km de Santiago</p>
+            <h3>Viña del Mar</h3>
+            <p>Playas, casino y gastronomía. La Ciudad Jardín.</p>
+          </div>
+        </div>
+
+        <div class="dest-card reveal reveal-d1">
+          <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=600&q=80" alt="Valparaíso" loading="lazy" />
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-body">
+            <p class="dest-dist"><i class="fas fa-location-dot"></i> 120 km de Santiago</p>
+            <h3>Valparaíso</h3>
+            <p>Patrimonio UNESCO. Cerros, ascensores y murales.</p>
+          </div>
+        </div>
+
+        <div class="dest-card reveal reveal-d2">
+          <img src="https://images.unsplash.com/photo-1533242765296-f5e85eeb4148?auto=format&fit=crop&w=600&q=80" alt="Isla Negra" loading="lazy" />
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-body">
+            <p class="dest-dist"><i class="fas fa-location-dot"></i> 115 km de Santiago</p>
+            <h3>Isla Negra</h3>
+            <p>Casa museo de Pablo Neruda frente al Pacífico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA BAND
+  ═══════════════════════════════════════════ -->
+  <div class="cta-band">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-text">
+          <h2>¿Listo para tu próximo viaje?</h2>
+          <p>Cotiza sin compromiso. Respondemos en minutos por WhatsApp.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://wa.me/56932455532?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio."
+             target="_blank" rel="noopener" class="btn btn-gold"
+             onclick="gtag('event','whatsapp_click',{button:'cta_band'})">
+            <i class="fab fa-whatsapp"></i> Cotizar ahora
+          </a>
+          <a href="#contacto" class="btn btn-outline-white">
+            <i class="fas fa-envelope"></i> Enviar formulario
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACTO
+  ═══════════════════════════════════════════ -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="label">Hablemos</p>
+        <h2 class="section-title">Contáctanos</h2>
+        <p class="section-desc">Cuéntanos qué necesitas y te enviamos una cotización sin compromiso a la brevedad.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <form class="form reveal" onsubmit="handleForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" />
+          </div>
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio">
+              <option value="">Selecciona un servicio…</option>
+              <option>Traslado Aeropuerto</option>
+              <option>Centro de Esquí</option>
+              <option>Turismo Costa</option>
+              <option>Servicio Corporativo</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos fecha, número de pasajeros y destino…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="align-self:flex-start">
+            <i class="fas fa-paper-plane"></i> Enviar consulta
+          </button>
+        </form>
+
+        <div class="contact-side reveal reveal-d1">
+          <a href="https://wa.me/56932455532?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio."
+             target="_blank" rel="noopener" class="wa-block"
+             onclick="gtag('event','whatsapp_click',{button:'contacto'})">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>Escríbenos por WhatsApp</strong>
+              <span>Respuesta inmediata · +56 9 3245 5532</span>
+            </div>
+          </a>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Teléfono</h4>
+              <a href="tel:+56932455532">+56 9 3245 5532</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Correo</h4>
+              <a href="mailto:contacto@deckelturismo.cl">contacto@deckelturismo.cl</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Dirección</h4>
+              <p>Av. Américo Vespucio Norte 2880<br>Vitacura, Santiago</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Horario de atención</h4>
+              <p>Lun–Vie: 08:00 – 20:00<br>Sábado: 08:00 – 16:00</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="f-brand-row">
+            <img src="logo-icon.png" alt="Deckel" />
+            <span>DECKEL</span>
+          </div>
+          <p class="f-brand-desc">Empresa de transporte privado y turismo en Chile. Comprometidos con la puntualidad, seguridad y confort de cada pasajero.</p>
+          <div class="f-social">
+            <a href="https://instagram.com/deckelturismo"        target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/deckelturismo"         target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com/company/deckelturismo" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/56932455532"                  target="_blank" rel="noopener" aria-label="WhatsApp"
+               onclick="gtag('event','whatsapp_click',{button:'footer'})"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="f-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#vehiculos">Vehículos</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="servicio-aeropuerto.html">Traslado Aeropuerto</a></li>
+            <li><a href="servicio-esqui.html">Centros de Esquí</a></li>
+            <li><a href="servicio-costa.html">Turismo Costa</a></li>
+            <li><a href="servicio-vinas.html">Turismo en Viñas</a></li>
+            <li><a href="servicio-corporativo.html">Corporativo</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a href="tel:+56932455532">+56 9 3245 5532</a></li>
+            <li><a href="mailto:contacto@deckelturismo.cl">contacto@deckelturismo.cl</a></li>
+            <li><a href="#contacto">Vitacura, Santiago</a></li>
+            <li><a href="#contacto">Lun–Vie 08:00–20:00</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Deckel Transporte y Turismo. Todos los derechos reservados.</p>
+        <p>Hecho con ♥ en Chile · <a href="#inicio">deckelturismo.cl</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/56932455532?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio."
+     target="_blank" rel="noopener" class="wa-float" aria-label="Contactar por WhatsApp"
+     onclick="gtag('event','whatsapp_click',{button:'flotante'})">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script>
+    // Header scroll state
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 30);
+    }, { passive: true });
+
+    // Mobile menu
+    const menuBtn   = document.getElementById('menuBtn');
+    const navMobile = document.getElementById('navMobile');
+    menuBtn.addEventListener('click', () => {
+      const open = navMobile.classList.toggle('open');
+      menuBtn.querySelector('i').className = open ? 'fas fa-times' : 'fas fa-bars';
+    });
+    function closeMenu() {
+      navMobile.classList.remove('open');
+      menuBtn.querySelector('i').className = 'fas fa-bars';
+    }
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const ro = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
+    revealEls.forEach(el => ro.observe(el));
+
+    // Form → WhatsApp
+    function handleForm(e) {
+      e.preventDefault();
+      const nombre   = document.getElementById('nombre').value;
+      const telefono = document.getElementById('telefono').value;
+      const servicio = document.getElementById('servicio').value;
+      const mensaje  = document.getElementById('mensaje').value;
+      const text = encodeURIComponent(
+        `Hola, soy ${nombre}.\n` +
+        `Teléfono: ${telefono}\n` +
+        (servicio ? `Servicio: ${servicio}\n` : '') +
+        (mensaje  ? `Mensaje: ${mensaje}` : '')
+      );
+      gtag('event', 'whatsapp_click', { button: 'form' });
+      window.open(`https://wa.me/56932455532?text=${text}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
