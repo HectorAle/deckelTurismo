@@ -70,7 +70,7 @@
     .hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;padding-top:112px;overflow:hidden}
     .hero-bg{position:absolute;inset:0;
       background:linear-gradient(to top,rgba(8,15,26,.92) 0%,rgba(15,35,65,.55) 55%,rgba(15,35,65,.18) 100%),
-      url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat}
+      url('images/esqui/ski-hero.jpg') center/cover no-repeat}
     .hero-content{position:relative;z-index:2;padding:3.5rem 2rem 4rem;width:100%;max-width:1200px;margin:0 auto}
     .breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:rgba(255,255,255,.55);margin-bottom:1.2rem;font-family:var(--font-h);font-weight:600}
     .breadcrumb a{color:rgba(255,255,255,.55);transition:color var(--ease)}.breadcrumb a:hover{color:var(--white)}.breadcrumb i{font-size:.55rem}
@@ -101,25 +101,27 @@
     .feat-text p{font-size:.84rem;color:var(--gray-600);line-height:1.55}
 
     .included{background:var(--bg)}
-    .inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+    .inc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;align-items:stretch}
+    @media(max-width:700px){.inc-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:420px){.inc-grid{grid-template-columns:1fr}}
     .inc-card{background:var(--white);border-radius:var(--r);padding:1.4rem;display:flex;align-items:flex-start;gap:.85rem;border:1px solid var(--gray-100);transition:box-shadow var(--ease),transform var(--ease)}
     .inc-card:hover{box-shadow:var(--sh-md);transform:translateY(-2px)}
     .inc-icon{width:38px;height:38px;flex-shrink:0;border-radius:var(--r-sm);background:var(--blue-lt);display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:.9rem}
     .inc-text h4{font-family:var(--font-h);font-size:.82rem;font-weight:700;color:var(--dark)}
-    .inc-text p{font-size:.78rem;color:var(--gray-600);margin-top:.15rem}
+    .inc-text p{font-size:.78rem;color:var(--gray-600);margin-top:.15rem;line-height:1.5}
 
     .pricing{background:var(--white)}
-    .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem}
-    .price-card{border:1.5px solid var(--gray-100);border-radius:var(--r-lg);padding:2rem 1.6rem;text-align:center;transition:all var(--ease);position:relative;background:var(--white)}
+    .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+    .price-card{border:1.5px solid var(--gray-100);border-radius:var(--r-lg);padding:1.4rem 1.2rem;text-align:center;transition:all var(--ease);position:relative;background:var(--white);display:flex;flex-direction:column;justify-content:center;min-height:240px}
     .price-card.featured{border-color:var(--gold);box-shadow:0 0 0 3px rgba(192,124,24,.10)}
     .price-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);border-color:var(--gold)}
     .price-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--white);font-family:var(--font-h);font-size:.68rem;font-weight:700;padding:.3rem .9rem;border-radius:99px;white-space:nowrap;letter-spacing:.04em}
-    .price-type{font-family:var(--font-h);font-size:.72rem;font-weight:700;color:var(--gray-400);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem}
-    .price-card h3{font-family:var(--font-h);font-size:1.05rem;font-weight:800;color:var(--dark);margin-bottom:.3rem}
-    .price-pax{font-size:.82rem;color:var(--gray-600);margin-bottom:1.2rem}
-    .price-amount{font-family:var(--font-h);font-size:2.2rem;font-weight:900;color:var(--blue);line-height:1;letter-spacing:-.02em}
-    .price-currency{font-size:.82rem;color:var(--gray-400);margin-top:.25rem}
-    .price-note{font-size:.76rem;color:var(--gray-400);margin-top:.45rem}
+    .price-type{font-family:var(--font-h);font-size:.68rem;font-weight:700;color:var(--gray-400);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.35rem}
+    .price-card h3{font-family:var(--font-h);font-size:1rem;font-weight:800;color:var(--dark);margin-bottom:.2rem}
+    .price-pax{font-size:.78rem;color:var(--gray-600);margin-bottom:.8rem}
+    .price-amount{font-family:var(--font-h);font-size:1.35rem;font-weight:800;color:var(--blue);line-height:1.2;letter-spacing:-.02em;margin-top:.2rem}
+    .price-currency{font-size:.78rem;color:var(--gray-400);margin-top:.2rem}
+    .price-note{font-size:.72rem;color:var(--gray-400);margin-top:.4rem}
     .price-feats{margin-top:1.3rem;display:flex;flex-direction:column;gap:.42rem;text-align:left}
     .pf{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--gray-600)}
     .pf i{color:var(--blue);font-size:.72rem}
@@ -213,7 +215,7 @@
     }
     @media(max-width:640px){
       .pricing-grid{grid-template-columns:1fr 1fr}
-      .price-amount{font-size:1.4rem}
+      .price-amount{font-size:1.2rem}
       .inc-grid{grid-template-columns:1fr 1fr}
     }
     @media(max-width:480px){
@@ -321,7 +323,7 @@
           </div>
         </div>
         <div class="overview-img reveal reveal-d1">
-          <img src="https://images.unsplash.com/photo-1605540436563-5bca919ae766?auto=format&fit=crop&w=800&q=80" alt="Centro de esquí cordillera" loading="lazy" />
+          <img src="images/esqui/ski-farellones.jpg" alt="Aerosillas que conectan Farellones y El Colorado" loading="lazy" />
         </div>
       </div>
     </div>
@@ -336,11 +338,10 @@
       <div class="inc-grid">
         <div class="inc-card reveal"><div class="inc-icon"><i class="fas fa-user-tie"></i></div><div class="inc-text"><h4>Conductor de montaña</h4><p>Experiencia en conducción cordillerana</p></div></div>
         <div class="inc-card reveal reveal-d1"><div class="inc-icon"><i class="fas fa-link"></i></div><div class="inc-text"><h4>Cadenas a bordo</h4><p>Disponibles cuando las condiciones lo requieran</p></div></div>
-        <div class="inc-card reveal reveal-d2"><div class="inc-icon"><i class="fas fa-temperature-high"></i></div><div class="inc-text"><h4>Calefacción</h4><p>Temperatura regulada para el frío</p></div></div>
+        <div class="inc-card reveal reveal-d2"><div class="inc-icon"><i class="fas fa-temperature-high"></i></div><div class="inc-text"><h4>Calefacción</h4><p>Temperatura regulada para el frío cordillerano</p></div></div>
         <div class="inc-card reveal reveal-d3"><div class="inc-icon"><i class="fas fa-shield-alt"></i></div><div class="inc-text"><h4>Seguro de pasajeros</h4><p>Todos los viajes cubiertos</p></div></div>
-        <div class="inc-card reveal"><div class="inc-icon"><i class="fas fa-clock"></i></div><div class="inc-text"><h4>Horario flexible</h4><p>Subida y bajada según tu programa</p></div></div>
-        <div class="inc-card reveal reveal-d1"><div class="inc-icon"><i class="fas fa-skiing"></i></div><div class="inc-text"><h4>Arriendo de equipos</h4><p>El servicio incluye traslado a ski rental antes de subir al centro. Sujeto a disponibilidad del proveedor.</p></div></div>
-        <div class="inc-card reveal reveal-d2"><div class="inc-icon"><i class="fas fa-map-signs"></i></div><div class="inc-text"><h4>4 centros disponibles</h4><p>Farellones, El Colorado, La Parva, Valle Nevado</p></div></div>
+        <div class="inc-card reveal reveal-d1"><div class="inc-icon"><i class="fas fa-clock"></i></div><div class="inc-text"><h4>Horario flexible</h4><p>Subida y bajada según tu programa</p></div></div>
+        <div class="inc-card reveal reveal-d2"><div class="inc-icon"><i class="fas fa-skiing"></i></div><div class="inc-text"><h4>Traslado a ski rental</h4><p>Pasamos por el arriendo antes de subir al centro</p></div></div>
       </div>
     </div>
   </section>
@@ -350,7 +351,7 @@
       <div class="section-head reveal">
         <p class="label">Tarifas transparentes</p>
         <h2 class="section-title">Precios por centro</h2>
-        <p class="section-desc">Precio por traslado de ida desde Santiago. Precios incluyen IVA. Cotiza ida y vuelta para el mejor valor.</p>
+        <p class="section-desc">Consulta disponibilidad y tarifas.</p>
       </div>
       <div class="pricing-grid">
         <div class="price-card featured reveal">
@@ -358,33 +359,25 @@
           <p class="price-type">Más cercano · 2.340 m</p>
           <h3>Farellones</h3>
           <p class="price-pax"><i class="fas fa-road"></i> 36 km desde Santiago</p>
-          <div class="price-amount">desde $100.000</div>
-          <p class="price-currency">CLP por traslado</p>
-          <p class="price-note">Precio referencial, consultar disponibilidad</p>
+          <div class="price-amount">Consulta disponibilidad y tarifas</div>
         </div>
         <div class="price-card reveal reveal-d1">
           <p class="price-type">· 2.430 m</p>
           <h3>El Colorado</h3>
           <p class="price-pax"><i class="fas fa-road"></i> 46 km desde Santiago</p>
-          <div class="price-amount">desde $110.000</div>
-          <p class="price-currency">CLP por traslado</p>
-          <p class="price-note">Precio referencial, consultar disponibilidad</p>
+          <div class="price-amount">Consulta disponibilidad y tarifas</div>
         </div>
         <div class="price-card reveal reveal-d2">
           <p class="price-type">· 2.662 m</p>
           <h3>La Parva</h3>
           <p class="price-pax"><i class="fas fa-road"></i> 50 km desde Santiago</p>
-          <div class="price-amount">desde $120.000</div>
-          <p class="price-currency">CLP por traslado</p>
-          <p class="price-note">Precio referencial, consultar disponibilidad</p>
+          <div class="price-amount">Consulta disponibilidad y tarifas</div>
         </div>
         <div class="price-card reveal reveal-d3">
           <p class="price-type">El más alto · 3.025 m</p>
           <h3>Valle Nevado</h3>
           <p class="price-pax"><i class="fas fa-road"></i> 60 km desde Santiago</p>
-          <div class="price-amount">desde $130.000</div>
-          <p class="price-currency">CLP por traslado</p>
-          <p class="price-note">Precio referencial, consultar disponibilidad</p>
+          <div class="price-amount">Consulta disponibilidad y tarifas</div>
         </div>
       </div>
     </div>
@@ -397,11 +390,11 @@
         <h2 class="section-title">Galería</h2>
       </div>
       <div class="gallery-grid">
-        <div class="g-img g-main reveal"><img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=900&q=80" alt="Centro de esquí pistas y telesillas" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d1"><img src="https://images.unsplash.com/photo-1548345680-f5475ea5df84?auto=format&fit=crop&w=600&q=80" alt="Esquiadores en pista nevada" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d2"><img src="https://images.unsplash.com/photo-1605540436563-5bca919ae766?auto=format&fit=crop&w=600&q=80" alt="Cordillera nevada panorama" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d1"><img src="https://images.unsplash.com/photo-1485302350113-89b2ba93e5c9?auto=format&fit=crop&w=600&q=80" alt="Pistas de ski con telesilla" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d2"><img src="https://images.unsplash.com/photo-1539375665275-f9de415ef9ac?auto=format&fit=crop&w=600&q=80" alt="Esquiador en acción" loading="lazy" /></div>
+        <div class="g-img g-main reveal"><img src="images/esqui/ski-el-colorado.jpg" alt="El Colorado — edificios del resort con los Andes nevados" loading="lazy" /></div>
+        <div class="g-img reveal reveal-d1"><img src="images/esqui/ski-overview.jpg" alt="Camino que une Farellones, El Colorado y La Parva" loading="lazy" /></div>
+        <div class="g-img reveal reveal-d2"><img src="images/esqui/ski-la-parva.jpg" alt="Atardecer en La Parva a 2.870 msnm" loading="lazy" /></div>
+        <div class="g-img reveal reveal-d1"><img src="images/esqui/ski-valle-nevado.jpg" alt="Valle Nevado — panorama del resort en invierno" loading="lazy" /></div>
+        <div class="g-img reveal reveal-d2"><img src="images/esqui/ski-farellones.jpg" alt="Aerosillas que unen Farellones y El Colorado" loading="lazy" /></div>
       </div>
     </div>
   </section>
@@ -440,7 +433,7 @@
         <h2 class="section-title">Preguntas frecuentes</h2>
       </div>
       <div class="faq-list">
-        <div class="faq-item"><button class="faq-q">¿El vehículo sube con cadenas instaladas? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Sí. El vehículo sube con cadenas reglamentarias instaladas según las exigencias de acceso a cada centro de esquí. Nuestro conductor tiene experiencia en conducción en montaña y conoce los tramos donde son obligatorias.</div></div>
+        <div class="faq-item"><button class="faq-q">¿El vehículo lleva cadenas? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Sí. El vehículo porta cadenas reglamentarias que se instalan cuando las condiciones del camino lo requieren o los controles de acceso lo exigen. No siempre se sube con ellas puestas — nuestro conductor evalúa el estado de la ruta y cumple con la normativa vigente en cada centro.</div></div>
         <div class="faq-item"><button class="faq-q">¿Hay espacio para el equipamiento de esquí? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Sí. El vehículo cuenta con bodega suficiente para alojar esquís, snowboards, bastones y botas. Para grupos con mucho equipamiento, consúltanos la capacidad disponible al momento de reservar.</div></div>
         <div class="faq-item"><button class="faq-q">¿Qué pasa si cierra el camino por mal tiempo? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Monitoreamos el parte de nieve y las condiciones de acceso en tiempo real. Si se cierra la ruta a algún centro, te avisamos de inmediato y coordinamos reprogramación sin costo adicional. Tu seguridad siempre es primero.</div></div>
         <div class="faq-item"><button class="faq-q">¿Con cuánta anticipación debo reservar en temporada? <i class="fas fa-chevron-down"></i></button><div class="faq-a">En temporada alta (julio–agosto) recomendamos reservar con al menos 48 horas de anticipación ya que la demanda es alta. En temporada media, 24 horas suelen ser suficientes.</div></div>

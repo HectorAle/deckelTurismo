@@ -70,7 +70,7 @@
     .hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;padding-top:112px;overflow:hidden}
     .hero-bg{position:absolute;inset:0;
       background:linear-gradient(to top,rgba(8,15,26,.88) 0%,rgba(15,35,65,.50) 55%,rgba(15,35,65,.15) 100%),
-      url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat}
+      url('images/vinas/vina-hero.jpg') center/cover no-repeat}
     .hero-content{position:relative;z-index:2;padding:3.5rem 2rem 4rem;width:100%;max-width:1200px;margin:0 auto}
     .breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:rgba(255,255,255,.55);margin-bottom:1.2rem;font-family:var(--font-h);font-weight:600}
     .breadcrumb a{color:rgba(255,255,255,.55);transition:color var(--ease)}.breadcrumb a:hover{color:var(--white)}.breadcrumb i{font-size:.55rem}
@@ -94,7 +94,7 @@
     .overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
     @media(max-width:800px){.overview-grid{grid-template-columns:1fr;gap:2.5rem}}
     .overview-img{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-lg)}
-    .overview-img img{width:100%;height:400px;object-fit:cover}
+    .overview-img img{width:100%;height:400px;object-fit:cover;object-position:center;filter:saturate(.95) contrast(1.03)}
     .feat-list{display:flex;flex-direction:column;gap:1.2rem;margin-top:1.8rem}
     .feat-item{display:flex;gap:1rem;align-items:flex-start}
     .feat-icon{width:42px;height:42px;flex-shrink:0;border-radius:var(--r-sm);background:var(--gold-lt);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:.95rem}
@@ -107,7 +107,7 @@
     @media(max-width:720px){.valles-grid{grid-template-columns:1fr}}
     .valle-card{border-radius:var(--r-lg);overflow:hidden;position:relative;height:360px;cursor:pointer;transition:transform var(--ease),box-shadow var(--ease)}
     .valle-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg)}
-    .valle-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+    .valle-card img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.95) contrast(1.03);transition:transform .5s ease}
     .valle-card:hover img{transform:scale(1.06)}
     .valle-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,26,.88) 0%,rgba(8,15,26,.1) 65%)}
     .valle-card-content{position:absolute;bottom:0;left:0;right:0;padding:1.8rem}
@@ -116,7 +116,9 @@
     .valle-card-content p{font-size:.82rem;color:rgba(255,255,255,.65);line-height:1.5}
 
     .included{background:var(--white)}
-    .inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+    .inc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;align-items:stretch}
+    @media(max-width:800px){.inc-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:420px){.inc-grid{grid-template-columns:1fr}}
     .inc-card{background:var(--bg);border-radius:var(--r);padding:1.4rem;display:flex;align-items:flex-start;gap:.85rem;border:1px solid var(--gray-100);transition:box-shadow var(--ease),transform var(--ease)}
     .inc-card:hover{box-shadow:var(--sh-md);transform:translateY(-2px)}
     .inc-icon{width:38px;height:38px;flex-shrink:0;border-radius:var(--r-sm);background:var(--gold-lt);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:.9rem}
@@ -144,7 +146,7 @@
     .gallery-grid .g-main{grid-row:1/3}
     @media(max-width:680px){.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}.gallery-grid .g-main{grid-row:auto;grid-column:1/3}}
     .g-img{border-radius:var(--r-lg);overflow:hidden}
-    .g-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s var(--ease)}
+    .g-img img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.95) contrast(1.03);transition:transform .45s var(--ease)}
     .g-img:hover img{transform:scale(1.05)}
 
     .how{background:var(--dark);padding:6rem 0}
@@ -230,7 +232,6 @@
     @media(max-width:640px){
       .pricing-grid{grid-template-columns:1fr}
       .price-amount{font-size:1.8rem}
-      .inc-grid{grid-template-columns:1fr 1fr}
     }
     @media(max-width:480px){
       .container{padding:0 1.2rem}
@@ -238,7 +239,6 @@
       .hero-badges{gap:.4rem}
       .hero-actions{flex-direction:column}
       .hero-actions .btn{justify-content:center}
-      .inc-grid{grid-template-columns:1fr}
       .footer-grid{grid-template-columns:1fr 1fr}
       .footer-grid>div:first-child{grid-column:1/-1}
       .footer-bottom{flex-direction:column;text-align:center;gap:.3rem}
@@ -284,15 +284,15 @@
         <span>Turismo en Viñas</span>
       </div>
       <h1>Rutas del <em>Vino Chileno</em><br>en Privado</h1>
-      <p class="hero-lead">Valle del Maipo, Casablanca y Colchagua. Visitas a bodegas boutique y grandes viñedos con transporte privado y conductor guía desde Santiago.</p>
+      <p class="hero-lead">Explora seis valles vitivinícolas de las regiones 4.ª, 5.ª y 6.ª con transporte privado, bodegas boutique y una ruta adaptada a tus gustos.</p>
       <div class="hero-badges">
         <span class="badge"><i class="fas fa-wine-glass-alt"></i> Enoturismo privado</span>
-        <span class="badge"><i class="fas fa-map-marker-alt"></i> 3 valles vitivinícolas</span>
+        <span class="badge"><i class="fas fa-map-marker-alt"></i> 6 valles destacados</span>
         <span class="badge"><i class="fas fa-user-tie"></i> Conductor guía</span>
-        <span class="badge"><i class="fas fa-glass-cheers"></i> Degustaciones incluidas</span>
+        <span class="badge"><i class="fas fa-glass-cheers"></i> Rutas a medida</span>
       </div>
       <div class="hero-actions">
-        <a href="#precios" class="btn btn-gold"><i class="fas fa-tags"></i> Ver tarifas</a>
+        <a href="#valles" class="btn btn-gold"><i class="fas fa-map-marked-alt"></i> Explorar valles</a>
         <a href="https://wa.me/56932455532?text=Hola%2C%20quiero%20reservar%20excursi%C3%B3n%20a%20vi%C3%B1as." target="_blank" rel="noopener" class="btn btn-outline-white" onclick="gtag('event','whatsapp_click',{button:'hero'})"><i class="fab fa-whatsapp"></i> Reservar ahora</a>
       </div>
     </div>
@@ -303,9 +303,12 @@
       <div class="valles-strip-inner">
         <span class="valles-strip-label">Valles disponibles</span>
         <div class="valles-pills">
-          <span class="valle-pill"><i class="fas fa-map-marker-alt"></i> Valle del Maipo — 35 km</span>
-          <span class="valle-pill"><i class="fas fa-map-marker-alt"></i> Valle de Casablanca — 90 km</span>
-          <span class="valle-pill"><i class="fas fa-map-marker-alt"></i> Valle de Colchagua — 160 km</span>
+          <span class="valle-pill"><i class="fas fa-map-marker-alt"></i> Limarí · 4.ª Región</span>
+          <span class="valle-pill"><i class="fas fa-map-marker-alt"></i> Choapa · 4.ª Región</span>
+          <span class="valle-pill"><i class="fas fa-map-marker-alt"></i> Casablanca · 5.ª Región</span>
+          <span class="valle-pill"><i class="fas fa-map-marker-alt"></i> San Antonio · 5.ª Región</span>
+          <span class="valle-pill"><i class="fas fa-map-marker-alt"></i> Colchagua · 6.ª Región</span>
+          <span class="valle-pill"><i class="fas fa-map-marker-alt"></i> Cachapoal · 6.ª Región</span>
         </div>
       </div>
     </div>
@@ -334,46 +337,73 @@
           </div>
         </div>
         <div class="overview-img reveal reveal-d1">
-          <img src="https://images.unsplash.com/photo-1474722883778-792e7fb1f4b3?auto=format&fit=crop&w=800&q=80" alt="Viñedo Chile atardecer" loading="lazy" />
+          <img src="images/vinas/vina-choapa.jpg" alt="Viñedo en hora dorada" loading="lazy" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- Valles -->
-  <section class="valles-section">
+  <section class="valles-section" id="valles">
     <div class="container">
       <div class="section-head reveal">
         <p class="label">Valles vitivinícolas</p>
-        <h2 class="section-title">¿A qué valle quieres ir?</h2>
-        <p class="section-desc">Tres valles únicos, cada uno con su propio carácter y estilo de vino.</p>
+        <h2 class="section-title">Descubre los mejores valles del vino</h2>
+        <p class="section-desc">Seleccionamos seis destinos enoturísticos para crear rutas únicas, desde paisajes de montaña hasta viñedos de altura y bodegas emblemáticas.</p>
       </div>
       <div class="valles-grid">
         <div class="valle-card reveal">
-          <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?auto=format&fit=crop&w=700&q=80" alt="Valle del Maipo" loading="lazy" />
+          <img src="images/vinas/vina-limari.jpg" alt="Viñedos del Valle del Limarí al atardecer" loading="lazy" />
           <div class="valle-card-overlay"></div>
           <div class="valle-card-content">
-            <span class="valle-tag">35 km de Santiago</span>
-            <h3>Valle del Maipo</h3>
-            <p>Cuna del Cabernet Sauvignon chileno. Concha y Toro, Santa Rita, Cousiño-Macul y más.</p>
+            <span class="valle-tag">4.ª Región · Coquimbo</span>
+            <h3>Valle del Limarí</h3>
+            <p>Ideal para vinos blancos de gran frescura y una experiencia de viñas modernas en un paisaje seco y luminoso.</p>
           </div>
         </div>
         <div class="valle-card reveal reveal-d1">
-          <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=700&q=80" alt="Valle de Casablanca" loading="lazy" />
+          <img src="images/vinas/vina-choapa.jpg" alt="Viñedos del Valle de Choapa en hora dorada" loading="lazy" />
           <div class="valle-card-overlay"></div>
           <div class="valle-card-content">
-            <span class="valle-tag">90 km · Ruta a Valparaíso</span>
-            <h3>Valle de Casablanca</h3>
-            <p>Especialista en blancos y Pinot Noir. Viña William Cole, Veramonte, House of Morandé.</p>
+            <span class="valle-tag">4.ª Región · Coquimbo</span>
+            <h3>Valle de Choapa</h3>
+            <p>Un destino más íntimo y auténtico, perfecto para descubrir bodegas pequeñas y paisajes de montaña.</p>
           </div>
         </div>
         <div class="valle-card reveal reveal-d2">
-          <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=700&q=80" alt="Valle de Colchagua" loading="lazy" />
+          <img src="images/vinas/vina-casablanca.jpg" alt="Viñedos del Valle de Casablanca con sol de tarde" loading="lazy" />
           <div class="valle-card-overlay"></div>
           <div class="valle-card-content">
-            <span class="valle-tag">160 km · Sur de Santiago</span>
+            <span class="valle-tag">5.ª Región · Valparaíso</span>
+            <h3>Valle de Casablanca</h3>
+            <p>Famoso por sus Sauvignon Blanc y Pinot Noir, con una ruta cercana a la costa y a Viña del Mar.</p>
+          </div>
+        </div>
+        <div class="valle-card reveal reveal-d3">
+          <img src="images/vinas/vina-san-antonio.jpg" alt="Hileras de viñedos del Valle de San Antonio" loading="lazy" />
+          <div class="valle-card-overlay"></div>
+          <div class="valle-card-content">
+            <span class="valle-tag">5.ª Región · Valparaíso</span>
+            <h3>Valle de San Antonio</h3>
+            <p>Una opción relajada para disfrutar de vinos frescos, bodegas cercanas al mar y un ambiente más tranquilo.</p>
+          </div>
+        </div>
+        <div class="valle-card reveal reveal-d4">
+          <img src="images/vinas/vina-colchagua.jpg" alt="Viñedos en ladera del Valle de Colchagua" loading="lazy" />
+          <div class="valle-card-overlay"></div>
+          <div class="valle-card-content">
+            <span class="valle-tag">6.ª Región · O’Higgins</span>
             <h3>Valle de Colchagua</h3>
-            <p>Famoso por sus tintos de altura. Montes, Casa Lapostolle, Viu Manent y Clos Apalta.</p>
+            <p>El referente del vino rojo chileno, con grandes tintos, bodegas de lujo y paisajes de viñedos amplios.</p>
+          </div>
+        </div>
+        <div class="valle-card reveal reveal-d5">
+          <img src="images/vinas/vina-cachapoal.jpg" alt="Viñedos del Valle de Cachapoal al amanecer" loading="lazy" />
+          <div class="valle-card-overlay"></div>
+          <div class="valle-card-content">
+            <span class="valle-tag">6.ª Región · O’Higgins</span>
+            <h3>Valle de Cachapoal</h3>
+            <p>Perfecto para combinar viñas históricas, degustaciones y una experiencia más cercana a la tradición.</p>
           </div>
         </div>
       </div>
@@ -399,71 +429,6 @@
     </div>
   </section>
 
-  <section class="pricing" id="precios">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="label">Tarifas transparentes</p>
-        <h2 class="section-title">Precios por vehículo</h2>
-        <p class="section-desc">Precio por excursión de día completo (ida y vuelta) desde Santiago. Tarifas incluyen IVA. Entradas a bodegas no incluidas.</p>
-      </div>
-      <div class="pricing-grid">
-        <div class="price-card reveal">
-          <p class="price-type">SUV Premium</p>
-          <h3>Toyota Land Cruiser</h3>
-          <p class="price-pax"><i class="fas fa-users"></i> Hasta 5 pasajeros</p>
-          <div class="price-amount">$90.000</div>
-          <p class="price-currency">CLP día completo</p>
-          <p class="price-note">Valle del Maipo o Casablanca</p>
-          <ul class="price-feats">
-            <li class="pf"><i class="fas fa-check"></i> Conductor guía</li>
-            <li class="pf"><i class="fas fa-check"></i> Itinerario a medida</li>
-            <li class="pf"><i class="fas fa-check"></i> WiFi a bordo</li>
-          </ul>
-        </div>
-        <div class="price-card featured reveal reveal-d1">
-          <span class="price-badge">Más solicitado</span>
-          <p class="price-type">Monovolumen</p>
-          <h3>Hyundai Staria</h3>
-          <p class="price-pax"><i class="fas fa-users"></i> Hasta 9 pasajeros</p>
-          <div class="price-amount">$120.000</div>
-          <p class="price-currency">CLP día completo</p>
-          <p class="price-note">Ideal para grupos y familias</p>
-          <ul class="price-feats">
-            <li class="pf"><i class="fas fa-check"></i> Conductor guía</li>
-            <li class="pf"><i class="fas fa-check"></i> Itinerario a medida</li>
-            <li class="pf"><i class="fas fa-check"></i> WiFi y cargadores</li>
-          </ul>
-        </div>
-        <div class="price-card reveal reveal-d2">
-          <p class="price-type">Van de Pasajeros</p>
-          <h3>Toyota Hiace</h3>
-          <p class="price-pax"><i class="fas fa-users"></i> Hasta 12 pasajeros</p>
-          <div class="price-amount">$150.000</div>
-          <p class="price-currency">CLP día completo</p>
-          <p class="price-note">Grupos medianos</p>
-          <ul class="price-feats">
-            <li class="pf"><i class="fas fa-check"></i> Conductor guía</li>
-            <li class="pf"><i class="fas fa-check"></i> Bodega amplia</li>
-            <li class="pf"><i class="fas fa-check"></i> WiFi incluido</li>
-          </ul>
-        </div>
-        <div class="price-card reveal reveal-d3">
-          <p class="price-type">Valle de Colchagua</p>
-          <h3>Ruta Premium Sur</h3>
-          <p class="price-pax"><i class="fas fa-users"></i> Hasta 9 pasajeros</p>
-          <div class="price-amount">$175.000</div>
-          <p class="price-currency">CLP día completo</p>
-          <p class="price-note">Incluye mayor distancia</p>
-          <ul class="price-feats">
-            <li class="pf"><i class="fas fa-check"></i> Conductor guía</li>
-            <li class="pf"><i class="fas fa-check"></i> Ruta extendida</li>
-            <li class="pf"><i class="fas fa-check"></i> Almuerzo a convenir</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="gallery">
     <div class="container">
       <div class="section-head reveal">
@@ -471,11 +436,11 @@
         <h2 class="section-title">Galería</h2>
       </div>
       <div class="gallery-grid">
-        <div class="g-img g-main reveal"><img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=900&q=80" alt="Viñedo Chile" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d1"><img src="https://images.unsplash.com/photo-1474722883778-792e7fb1f4b3?auto=format&fit=crop&w=600&q=80" alt="Viñas atardecer" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d2"><img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?auto=format&fit=crop&w=600&q=80" alt="Bodega vino" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d1"><img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=600&q=80" alt="Degustación vino" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d2"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Copa de vino viñedo" loading="lazy" /></div>
+        <div class="g-img g-main reveal"><img src="images/vinas/vina-galeria-valley.jpg" alt="Paisaje de viñedos en valle" loading="lazy" /></div>
+        <div class="g-img reveal reveal-d1"><img src="images/vinas/vina-galeria-harvest.jpg" alt="Cosecha de uvas en viñedo" loading="lazy" /></div>
+        <div class="g-img reveal reveal-d2"><img src="images/vinas/vina-galeria-rows.jpg" alt="Hileras de viñas en paisaje abierto" loading="lazy" /></div>
+        <div class="g-img reveal reveal-d1"><img src="images/vinas/vina-galeria-bodega.jpg" alt="Bodega y viñedo tradicional" loading="lazy" /></div>
+        <div class="g-img reveal reveal-d2"><img src="images/vinas/vina-galeria-sunset.jpg" alt="Viñedo al atardecer" loading="lazy" /></div>
       </div>
     </div>
   </section>
