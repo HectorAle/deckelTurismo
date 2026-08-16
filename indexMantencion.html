@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Vercel Web Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBJ3FGCLCZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FBJ3FGCLCZ');
+  </script>
+  <title>Deckel Transporte y Turismo | Transfers y Tours en Chile</title>
+
+  <!-- ═══ SEO básico ═══════════════════════════════════════════════════ -->
+  <meta name="description"        content="Empresa de transporte privado y turismo en Chile. Ofrecemos transfers, excursiones y servicios personalizados. Contáctanos por WhatsApp para reservar." />
+  <meta name="keywords"           content="transporte privado Chile, turismo Chile, transfer, minibus, excursiones, tours Chile, Deckel, transporte y turismo" />
+  <meta name="author"             content="Deckel Transporte y Turismo" />
+  <meta name="robots"             content="index, follow" />
+  <meta name="theme-color"        content="#1a5fa8" />
+  <link rel="canonical"           href="https://deckelturismo.cl/" />
+
+  <!-- ═══ Open Graph (WhatsApp / Facebook / LinkedIn) ════════════════ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:locale"      content="es_CL" />
+  <meta property="og:site_name"   content="Deckel Transporte y Turismo" />
+  <meta property="og:title"       content="Deckel Transporte y Turismo | Transfers y Tours en Chile" />
+  <meta property="og:description" content="Transporte privado y turismo en Chile. Transfers, excursiones y servicios personalizados. ¡Escríbenos por WhatsApp!" />
+  <meta property="og:url"         content="https://deckelturismo.cl/" />
+  <meta property="og:image"       content="https://deckelturismo.cl/logo.png" />
+  <meta property="og:image:width" content="1380" />
+  <meta property="og:image:height" content="752" />
+  <meta property="og:image:alt"   content="Logo Deckel Transporte y Turismo" />
+
+  <!-- ═══ Twitter Card ════════════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Deckel Transporte y Turismo | Transfers y Tours en Chile" />
+  <meta name="twitter:description" content="Transporte privado y turismo en Chile. Transfers, excursiones y servicios personalizados." />
+  <meta name="twitter:image"       content="https://deckelturismo.cl/logo.png" />
+
+  <!-- ═══ Datos estructurados JSON-LD ════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Deckel Transporte y Turismo",
+    "description": "Empresa de transporte privado y turismo en Chile. Ofrecemos transfers, excursiones y servicios personalizados.",
+    "url": "https://deckelturismo.cl",
+    "logo": "https://deckelturismo.cl/logo.png",
+    "image": "https://deckelturismo.cl/logo.png",
+    "telephone": "+56932455532",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CL"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+56932455532",
+      "contactType": "customer service",
+      "contactOption": "TollFree",
+      "availableLanguage": "Spanish"
+    },
+    "sameAs": [
+      "https://wa.me/56932455532",
+      "https://www.facebook.com/share/1CdwUKDwTH/?mibextid=wwXIfr",
+      "https://www.instagram.com/deckelturismo?igsh=MXFwYnJvcmYyaWVuaA=="
+    ]
+  }
+  </script>
+
+  <!-- ═══ Favicons ════════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="256x256" href="favicon-256.png" />
+  <link rel="apple-touch-icon" href="favicon-256.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(70% 65% at 18% 12%, rgba(255,214,196,.34) 0%, rgba(255,214,196,0) 72%),
+        radial-gradient(55% 55% at 84% 14%, rgba(120,167,199,.24) 0%, rgba(120,167,199,0) 70%),
+        linear-gradient(135deg, rgba(12,26,46,.96) 0%, rgba(21,43,74,.86) 48%, rgba(27,82,204,.40) 100%);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      padding: 2rem 1rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* ── Background decoration layer ── */
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .bg-layer::before {
+      content: "";
+      position: absolute;
+      inset: -8%;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.16) 0%, transparent 24%),
+        radial-gradient(70% 44% at 50% 108%, rgba(245,213,175,.16) 0%, transparent 72%),
+        radial-gradient(60% 46% at 18% 100%, rgba(108,153,103,.16) 0%, transparent 70%),
+        radial-gradient(60% 46% at 82% 100%, rgba(184,216,180,.14) 0%, transparent 70%);
+      opacity: .95;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .bg-layer::after {
+      content: "";
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 480'%3E%3Ccircle cx='240' cy='240' r='178' fill='none' stroke='%23fff' stroke-opacity='.10' stroke-width='1'/%3E%3Ccircle cx='240' cy='240' r='132' fill='none' stroke='%23fff' stroke-opacity='.08' stroke-width='1'/%3E%3Ccircle cx='240' cy='240' r='82' fill='none' stroke='%23fff' stroke-opacity='.08' stroke-width='1'/%3E%3Ccircle cx='240' cy='240' r='36' fill='none' stroke='%23fff' stroke-opacity='.12' stroke-width='1'/%3E%3Cg stroke='%23fff' stroke-opacity='.22' stroke-width='2'%3E%3Cline x1='240' y1='54' x2='240' y2='72'/%3E%3Cline x1='426' y1='240' x2='408' y2='240'/%3E%3Cline x1='240' y1='426' x2='240' y2='408'/%3E%3Cline x1='54' y1='240' x2='72' y2='240'/%3E%3C/g%3E%3Cg stroke='%23fff' stroke-opacity='.15' stroke-width='1.5'%3E%3Cline x1='240' y1='54' x2='240' y2='66' transform='rotate(45 240 240)'/%3E%3Cline x1='240' y1='54' x2='240' y2='66' transform='rotate(135 240 240)'/%3E%3Cline x1='240' y1='54' x2='240' y2='66' transform='rotate(225 240 240)'/%3E%3Cline x1='240' y1='54' x2='240' y2='66' transform='rotate(315 240 240)'/%3E%3C/g%3E%3Cg stroke='%23fff' stroke-opacity='.09' stroke-width='1'%3E%3Cline x1='240' y1='58' x2='240' y2='67' transform='rotate(22.5 240 240)'/%3E%3Cline x1='240' y1='58' x2='240' y2='67' transform='rotate(67.5 240 240)'/%3E%3Cline x1='240' y1='58' x2='240' y2='67' transform='rotate(112.5 240 240)'/%3E%3Cline x1='240' y1='58' x2='240' y2='67' transform='rotate(157.5 240 240)'/%3E%3Cline x1='240' y1='58' x2='240' y2='67' transform='rotate(202.5 240 240)'/%3E%3Cline x1='240' y1='58' x2='240' y2='67' transform='rotate(247.5 240 240)'/%3E%3Cline x1='240' y1='58' x2='240' y2='67' transform='rotate(292.5 240 240)'/%3E%3Cline x1='240' y1='58' x2='240' y2='67' transform='rotate(337.5 240 240)'/%3E%3C/g%3E%3Cpolygon points='240,62 227,168 240,188 253,168' fill='%23f4c16d' fill-opacity='.55'/%3E%3Cpolygon points='227,168 240,188 253,168 240,222' fill='%23f4c16d' fill-opacity='.18'/%3E%3Cpolygon points='240,62 227,168 240,188 253,168' fill='%23fff' fill-opacity='.18' transform='rotate(180 240 240)'/%3E%3Cpolygon points='227,168 240,188 253,168 240,222' fill='%23fff' fill-opacity='.07' transform='rotate(180 240 240)'/%3E%3Cpolygon points='240,62 227,168 240,188 253,168' fill='%23fff' fill-opacity='.18' transform='rotate(90 240 240)'/%3E%3Cpolygon points='227,168 240,188 253,168 240,222' fill='%23fff' fill-opacity='.07' transform='rotate(90 240 240)'/%3E%3Cpolygon points='240,62 227,168 240,188 253,168' fill='%23fff' fill-opacity='.18' transform='rotate(270 240 240)'/%3E%3Cpolygon points='227,168 240,188 253,168 240,222' fill='%23fff' fill-opacity='.07' transform='rotate(270 240 240)'/%3E%3Cpolygon points='240,122 235,192 240,204 245,192' fill='%23fff' fill-opacity='.13' transform='rotate(45 240 240)'/%3E%3Cpolygon points='235,192 240,204 245,192 240,216' fill='%23fff' fill-opacity='.05' transform='rotate(45 240 240)'/%3E%3Cpolygon points='240,122 235,192 240,204 245,192' fill='%23fff' fill-opacity='.13' transform='rotate(135 240 240)'/%3E%3Cpolygon points='235,192 240,204 245,192 240,216' fill='%23fff' fill-opacity='.05' transform='rotate(135 240 240)'/%3E%3Cpolygon points='240,122 235,192 240,204 245,192' fill='%23fff' fill-opacity='.13' transform='rotate(225 240 240)'/%3E%3Cpolygon points='235,192 240,204 245,192 240,216' fill='%23fff' fill-opacity='.05' transform='rotate(225 240 240)'/%3E%3Cpolygon points='240,122 235,192 240,204 245,192' fill='%23fff' fill-opacity='.13' transform='rotate(315 240 240)'/%3E%3Cpolygon points='235,192 240,204 245,192 240,216' fill='%23fff' fill-opacity='.05' transform='rotate(315 240 240)'/%3E%3Ctext x='240' y='44' text-anchor='middle' font-size='14' font-weight='700' font-family='sans-serif' fill='%23f4c16d' fill-opacity='.70'%3EN%3C/text%3E%3Ccircle cx='240' cy='240' r='10' fill='%23f4c16d' fill-opacity='.35'/%3E%3Ccircle cx='240' cy='240' r='5' fill='%23fff' fill-opacity='.28'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 440px 440px;
+      opacity: .72;
+      pointer-events: none;
+    }
+
+    .bg-layer svg {
+      width: 100%;
+      height: 100%;
+      opacity: 0.04;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.84);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      border-radius: 20px;
+      box-shadow: 0 8px 40px rgba(26, 95, 168, 0.12);
+      padding: 3rem 2.5rem 2.5rem;
+      max-width: 580px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+      overflow: hidden;
+    }
+
+    .card-deco,
+    .card-deco-sm {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .card-deco-sm { display: none; }
+
+    .card > *:not(.card-deco):not(.card-deco-sm) {
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 540px) {
+      .card-deco    { display: none; }
+      .card-deco-sm { display: block; }
+    }
+
+    .logo {
+      width: min(280px, 80vw);
+      height: auto;
+    }
+
+    .badge {
+      background: linear-gradient(135deg, #e8f1fb 0%, #fdf3e7 100%);
+      border: 1.5px solid #c9ddf5;
+      color: #1a5fa8;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: 30px;
+    }
+
+    h1 {
+      font-size: clamp(1.3rem, 4vw, 1.7rem);
+      font-weight: 800;
+      color: #1a5fa8;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: clamp(0.95rem, 3vw, 1.05rem);
+      color: #4a5568;
+      line-height: 1.7;
+      max-width: 440px;
+    }
+
+    .cta-static {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: #1ebe5d;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.5rem 1.1rem;
+      border-radius: 50px;
+      border: 1.5px solid #1ebe5d;
+      box-shadow: none;
+      transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .cta-static:hover,
+    .cta-static:focus {
+      background: #1ebe5d;
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(30, 190, 93, 0.28);
+      outline: none;
+    }
+
+    .cta-static svg { flex-shrink: 0; }
+
+    .divider {
+      width: 50px;
+      height: 3px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #1a5fa8, #e8861a);
+    }
+
+    /* ── Social links ── */
+    .social-row {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .social-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #eef4fd;
+      color: #1a5fa8;
+      transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+      animation: socialPulse 2.4s ease-in-out infinite;
+    }
+
+    .social-link::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(26, 95, 168, 0.35);
+      animation: socialRing 2.4s ease-out infinite;
+      pointer-events: none;
+    }
+
+    .social-link.is-instagram { animation-delay: 0.5s; }
+    .social-link.is-instagram::before { animation-delay: 0.5s; }
+
+    .social-link.is-facebook:hover,
+    .social-link.is-facebook:focus {
+      background: #1877f2;
+      color: #fff;
+      transform: translateY(-2px) scale(1.08);
+      outline: none;
+      animation-play-state: paused;
+    }
+
+    .social-link.is-instagram:hover,
+    .social-link.is-instagram:focus {
+      background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%);
+      color: #fff;
+      transform: translateY(-2px) scale(1.08);
+      outline: none;
+      animation-play-state: paused;
+    }
+
+    .social-link svg { width: 20px; height: 20px; }
+
+    @keyframes socialPulse {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50%       { transform: translateY(-3px) scale(1.07); }
+    }
+
+    @keyframes socialRing {
+      0%   { box-shadow: 0 0 0 0 rgba(26, 95, 168, 0.35); }
+      70%  { box-shadow: 0 0 0 10px rgba(26, 95, 168, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(26, 95, 168, 0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .social-link,
+      .social-link::before { animation: none; }
+    }
+
+    /* ── Floating WhatsApp button ── */
+    .wa-float {
+      position: fixed;
+      bottom: 1.6rem;
+      right: 1.6rem;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #5b9fd4 0%, #f4aa55 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(91, 159, 212, 0.45);
+      text-decoration: none;
+      z-index: 999;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      animation: floatPulse 2.5s ease-in-out infinite;
+    }
+
+    .wa-float:hover,
+    .wa-float:focus {
+      transform: scale(1.1);
+      box-shadow: 0 10px 32px rgba(91, 159, 212, 0.55);
+      outline: none;
+      animation: none;
+    }
+
+    .wa-float-label {
+      position: fixed;
+      bottom: 2.55rem;
+      right: 5.2rem;
+      background: #5b9fd4;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 30px;
+      white-space: nowrap;
+      box-shadow: 0 2px 10px rgba(91,159,212,0.2);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      z-index: 999;
+    }
+
+    .wa-float:hover + .wa-float-label,
+    .wa-float:focus + .wa-float-label {
+      opacity: 1;
+    }
+
+    @keyframes floatPulse {
+      0%, 100% { transform: translateY(0); box-shadow: 0 6px 24px rgba(91,159,212,0.45); }
+      50%       { transform: translateY(-6px); box-shadow: 0 14px 32px rgba(91,159,212,0.35); }
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 2rem 1.2rem 2rem; gap: 1.1rem; }
+      .social-link { width: 38px; height: 38px; }
+      .wa-float {
+        width: 52px;
+        height: 52px;
+        bottom: auto;
+        top: 1rem;
+        right: 1rem;
+        animation: none;
+      }
+      .wa-float-label { display: none; }
+    }
+
+    @media (max-height: 700px) {
+      .card { gap: 1rem; padding: 1.6rem 2rem 1.6rem; }
+      .logo { width: min(200px, 70vw); }
+      p { font-size: 0.92rem; line-height: 1.5; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background decoration -->
+  <div class="bg-layer" aria-hidden="true">
+    <svg width="100%" height="100%" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="skyWash" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fef7f3"/>
+          <stop offset="45%" stop-color="#f4f7fb"/>
+          <stop offset="100%" stop-color="#e9f4f4"/>
+        </linearGradient>
+        <linearGradient id="shoreWash" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#f7d3af" stop-opacity="0.7"/>
+          <stop offset="100%" stop-color="#dfeccf" stop-opacity="0.6"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="1440" height="900" fill="url(#skyWash)" opacity="0.6"/>
+
+      <!-- Soft sea and beach sweep -->
+      <path d="M0 760 C180 720 360 710 560 748 C760 786 980 804 1440 748 L1440 900 L0 900 Z"
+            fill="url(#shoreWash)" opacity="0.55"/>
+      <path d="M0 790 C240 740 430 730 660 770 C900 812 1140 822 1440 780"
+            fill="none" stroke="#ffffff" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Gentle vineyard trails -->
+      <g opacity="0.24" stroke="#7da06d" stroke-width="2" stroke-linecap="round">
+        <path d="M220 850 C240 780 250 720 268 650"/>
+        <path d="M260 850 C280 790 292 730 312 660"/>
+        <path d="M1180 850 C1160 785 1152 725 1138 658"/>
+        <path d="M1240 850 C1228 792 1218 735 1206 666"/>
+      </g>
+
+      <!-- Compass rose — top right -->
+      <g transform="translate(1260,120)" opacity="0.06">
+        <circle cx="0" cy="0" r="130" fill="none" stroke="#1a5fa8" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="90" fill="none" stroke="#1a5fa8" stroke-width="1"/>
+        <circle cx="0" cy="0" r="50" fill="none" stroke="#1a5fa8" stroke-width="1"/>
+        <!-- Cardinal spikes -->
+        <polygon points="0,-130 10,-45 0,-20 -10,-45" fill="#1a5fa8"/>
+        <polygon points="0,130 10,45 0,20 -10,45" fill="#1a5fa8"/>
+        <polygon points="-130,0 -45,10 -20,0 -45,-10" fill="#1a5fa8"/>
+        <polygon points="130,0 45,10 20,0 45,-10" fill="#e8861a"/>
+        <!-- Diagonal spikes (shorter) -->
+        <polygon points="0,-130 6,-60 0,-40 -6,-60" fill="#1a5fa8" transform="rotate(45)"/>
+        <polygon points="0,-130 6,-60 0,-40 -6,-60" fill="#1a5fa8" transform="rotate(135)"/>
+        <polygon points="0,-130 6,-60 0,-40 -6,-60" fill="#1a5fa8" transform="rotate(225)"/>
+        <polygon points="0,-130 6,-60 0,-40 -6,-60" fill="#1a5fa8" transform="rotate(315)"/>
+        <!-- Center dot -->
+        <circle cx="0" cy="0" r="8" fill="#1a5fa8"/>
+        <!-- Tick marks -->
+        <line x1="0" y1="-132" x2="0" y2="-140" stroke="#1a5fa8" stroke-width="1.5"/>
+        <line x1="0" y1="132" x2="0" y2="140" stroke="#1a5fa8" stroke-width="1.5"/>
+        <line x1="-132" y1="0" x2="-140" y2="0" stroke="#1a5fa8" stroke-width="1.5"/>
+        <line x1="132" y1="0" x2="140" y2="0" stroke="#e8861a" stroke-width="1.5"/>
+      </g>
+
+      <!-- Small compass — bottom left -->
+      <g transform="translate(130,780)" opacity="0.05">
+        <circle cx="0" cy="0" r="70" fill="none" stroke="#1a5fa8" stroke-width="1.2"/>
+        <circle cx="0" cy="0" r="45" fill="none" stroke="#1a5fa8" stroke-width="0.8"/>
+        <polygon points="0,-70 6,-24 0,-10 -6,-24" fill="#1a5fa8"/>
+        <polygon points="0,70 6,24 0,10 -6,24" fill="#1a5fa8"/>
+        <polygon points="-70,0 -24,6 -10,0 -24,-6" fill="#1a5fa8"/>
+        <polygon points="70,0 24,6 10,0 24,-6" fill="#e8861a"/>
+        <polygon points="0,-70 4,-32 0,-22 -4,-32" fill="#1a5fa8" transform="rotate(45)"/>
+        <polygon points="0,-70 4,-32 0,-22 -4,-32" fill="#1a5fa8" transform="rotate(135)"/>
+        <polygon points="0,-70 4,-32 0,-22 -4,-32" fill="#1a5fa8" transform="rotate(225)"/>
+        <polygon points="0,-70 4,-32 0,-22 -4,-32" fill="#1a5fa8" transform="rotate(315)"/>
+        <circle cx="0" cy="0" r="5" fill="#1a5fa8"/>
+      </g>
+
+      <!-- Mountain silhouette — bottom center -->
+      <g opacity="0.055">
+        <path d="M 400 900 L 560 640 L 650 750 L 760 580 L 880 760 L 980 630 L 1080 900 Z"
+              fill="#1a5fa8"/>
+        <path d="M 600 900 L 760 700 L 840 790 L 960 660 L 1060 780 L 1200 900 Z"
+              fill="#3a8ec7"/>
+      </g>
+
+      <!-- Road curve — bottom -->
+      <g opacity="0.06">
+        <path d="M -60 900 Q 360 820 720 850 Q 1080 880 1500 800"
+              fill="none" stroke="#e8861a" stroke-width="14" stroke-linecap="round"/>
+        <path d="M -60 900 Q 360 820 720 850 Q 1080 880 1500 800"
+              fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-dasharray="30 25"/>
+      </g>
+
+      <!-- Scattered location pins -->
+      <g opacity="0.07" fill="#e8861a">
+        <circle cx="240" cy="200" r="6"/>
+        <path d="M240,175 a18,18 0 0,1 0,36 Q226,194 240,175Z" fill="#e8861a" transform="translate(-6,-18)"/>
+        <circle cx="1100" cy="480" r="5"/>
+        <path d="M1100,458 a15,15 0 0,1 0,30 Q1088,468 1100,458Z" fill="#e8861a" transform="translate(-5,-15)"/>
+      </g>
+
+      <!-- Subtle dot grid -->
+      <defs>
+        <pattern id="dots" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="#1a5fa8"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#dots)" opacity="0.035"/>
+
+      <!-- Decorative arcs — top left -->
+      <g transform="translate(-40, -40)" opacity="0.05">
+        <path d="M0,240 Q80,80 240,0" fill="none" stroke="#1a5fa8" stroke-width="2"/>
+        <path d="M0,300 Q120,100 300,0" fill="none" stroke="#1a5fa8" stroke-width="1.5"/>
+        <path d="M0,360 Q160,130 360,0" fill="none" stroke="#e8861a" stroke-width="1.5"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="card">
+
+    <!-- Card inner decoration -->
+    <div class="card-deco" aria-hidden="true">
+      <svg width="100%" height="100%" viewBox="0 0 580 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="cdots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.2" fill="#1a5fa8"/>
+          </pattern>
+        </defs>
+
+        <!-- Dot grid -->
+        <rect width="100%" height="100%" fill="url(#cdots)" opacity="0.04"/>
+
+        <!-- Compass rose — top right -->
+        <g transform="translate(530,60)" opacity="0.07">
+          <circle cx="0" cy="0" r="70" fill="none" stroke="#1a5fa8" stroke-width="1"/>
+          <circle cx="0" cy="0" r="46" fill="none" stroke="#1a5fa8" stroke-width="0.7"/>
+          <circle cx="0" cy="0" r="24" fill="none" stroke="#1a5fa8" stroke-width="0.7"/>
+          <polygon points="0,-70 5,-24 0,-10 -5,-24" fill="#1a5fa8"/>
+          <polygon points="0,70 5,24 0,10 -5,24" fill="#1a5fa8"/>
+          <polygon points="-70,0 -24,5 -10,0 -24,-5" fill="#1a5fa8"/>
+          <polygon points="70,0 24,5 10,0 24,-5" fill="#e8861a"/>
+          <polygon points="0,-70 3.5,-32 0,-20 -3.5,-32" fill="#1a5fa8" transform="rotate(45)"/>
+          <polygon points="0,-70 3.5,-32 0,-20 -3.5,-32" fill="#1a5fa8" transform="rotate(135)"/>
+          <polygon points="0,-70 3.5,-32 0,-20 -3.5,-32" fill="#1a5fa8" transform="rotate(225)"/>
+          <polygon points="0,-70 3.5,-32 0,-20 -3.5,-32" fill="#1a5fa8" transform="rotate(315)"/>
+          <circle cx="0" cy="0" r="5" fill="#1a5fa8"/>
+        </g>
+
+        <!-- Small compass — bottom left -->
+        <g transform="translate(46,470)" opacity="0.06">
+          <circle cx="0" cy="0" r="44" fill="none" stroke="#1a5fa8" stroke-width="0.8"/>
+          <circle cx="0" cy="0" r="28" fill="none" stroke="#1a5fa8" stroke-width="0.6"/>
+          <polygon points="0,-44 3,-15 0,-6 -3,-15" fill="#1a5fa8"/>
+          <polygon points="0,44 3,15 0,6 -3,15" fill="#1a5fa8"/>
+          <polygon points="-44,0 -15,3 -6,0 -15,-3" fill="#1a5fa8"/>
+          <polygon points="44,0 15,3 6,0 15,-3" fill="#e8861a"/>
+          <polygon points="0,-44 2,-20 0,-13 -2,-20" fill="#1a5fa8" transform="rotate(45)"/>
+          <polygon points="0,-44 2,-20 0,-13 -2,-20" fill="#1a5fa8" transform="rotate(135)"/>
+          <polygon points="0,-44 2,-20 0,-13 -2,-20" fill="#1a5fa8" transform="rotate(225)"/>
+          <polygon points="0,-44 2,-20 0,-13 -2,-20" fill="#1a5fa8" transform="rotate(315)"/>
+          <circle cx="0" cy="0" r="3.5" fill="#1a5fa8"/>
+        </g>
+
+        <!-- Mountain silhouette — bottom -->
+        <g opacity="0.05">
+          <path d="M 0 520 L 110 360 L 180 430 L 260 300 L 340 400 L 420 310 L 500 420 L 580 520 Z" fill="#1a5fa8"/>
+          <path d="M 60 520 L 170 390 L 240 450 L 330 340 L 420 440 L 520 370 L 580 460 L 580 520 Z" fill="#3a8ec7"/>
+        </g>
+
+        <!-- Road curve — bottom -->
+        <g opacity="0.07">
+          <path d="M -20 500 Q 145 460 290 470 Q 435 480 600 450"
+                fill="none" stroke="#e8861a" stroke-width="8" stroke-linecap="round"/>
+          <path d="M -20 500 Q 145 460 290 470 Q 435 480 600 450"
+                fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-dasharray="18 14"/>
+        </g>
+
+        <!-- Decorative arcs — top left -->
+        <g transform="translate(-10,-10)" opacity="0.05">
+          <path d="M0,160 Q55,55 160,0" fill="none" stroke="#1a5fa8" stroke-width="1.5"/>
+          <path d="M0,210 Q82,72 210,0" fill="none" stroke="#1a5fa8" stroke-width="1.2"/>
+          <path d="M0,260 Q108,90 260,0" fill="none" stroke="#e8861a" stroke-width="1.2"/>
+        </g>
+
+        <!-- Location pin — top left area -->
+        <g transform="translate(58,80)" opacity="0.08">
+          <path d="M0,-22 C-12,-22 -22,-12 -22,0 C-22,14 0,30 0,30 C0,30 22,14 22,0 C22,-12 12,-22 0,-22Z" fill="none" stroke="#e8861a" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="6" fill="#e8861a"/>
+        </g>
+
+        <!-- Location pin — right center -->
+        <g transform="translate(548,260)" opacity="0.07">
+          <path d="M0,-18 C-10,-18 -18,-10 -18,0 C-18,11 0,24 0,24 C0,24 18,11 18,0 C18,-10 10,-18 0,-18Z" fill="none" stroke="#1a5fa8" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="5" fill="#1a5fa8"/>
+        </g>
+
+        <!-- Subtle diagonal lines — bottom right -->
+        <g opacity="0.04" stroke="#1a5fa8" stroke-width="1">
+          <line x1="420" y1="520" x2="580" y2="360"/>
+          <line x1="460" y1="520" x2="580" y2="400"/>
+          <line x1="500" y1="520" x2="580" y2="440"/>
+          <line x1="540" y1="520" x2="580" y2="480"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Card inner decoration — mobile -->
+    <div class="card-deco-sm" aria-hidden="true">
+      <svg width="100%" height="100%" viewBox="0 0 340 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="cdots2" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.2" fill="#1a5fa8"/>
+          </pattern>
+        </defs>
+
+        <!-- Dot grid -->
+        <rect width="100%" height="100%" fill="url(#cdots2)" opacity="0.045"/>
+
+        <!-- Compass rose — top right (repositioned to stay inside) -->
+        <g transform="translate(295,62)" opacity="0.08">
+          <circle cx="0" cy="0" r="58" fill="none" stroke="#1a5fa8" stroke-width="1"/>
+          <circle cx="0" cy="0" r="38" fill="none" stroke="#1a5fa8" stroke-width="0.7"/>
+          <circle cx="0" cy="0" r="20" fill="none" stroke="#1a5fa8" stroke-width="0.7"/>
+          <polygon points="0,-58 4,-20 0,-8 -4,-20" fill="#1a5fa8"/>
+          <polygon points="0,58 4,20 0,8 -4,20" fill="#1a5fa8"/>
+          <polygon points="-58,0 -20,4 -8,0 -20,-4" fill="#1a5fa8"/>
+          <polygon points="58,0 20,4 8,0 20,-4" fill="#e8861a"/>
+          <polygon points="0,-58 3,-26 0,-16 -3,-26" fill="#1a5fa8" transform="rotate(45)"/>
+          <polygon points="0,-58 3,-26 0,-16 -3,-26" fill="#1a5fa8" transform="rotate(135)"/>
+          <polygon points="0,-58 3,-26 0,-16 -3,-26" fill="#1a5fa8" transform="rotate(225)"/>
+          <polygon points="0,-58 3,-26 0,-16 -3,-26" fill="#1a5fa8" transform="rotate(315)"/>
+          <circle cx="0" cy="0" r="4" fill="#1a5fa8"/>
+        </g>
+
+        <!-- Small compass — bottom left -->
+        <g transform="translate(42,452)" opacity="0.07">
+          <circle cx="0" cy="0" r="38" fill="none" stroke="#1a5fa8" stroke-width="0.8"/>
+          <circle cx="0" cy="0" r="24" fill="none" stroke="#1a5fa8" stroke-width="0.6"/>
+          <polygon points="0,-38 3,-13 0,-5 -3,-13" fill="#1a5fa8"/>
+          <polygon points="0,38 3,13 0,5 -3,13" fill="#1a5fa8"/>
+          <polygon points="-38,0 -13,3 -5,0 -13,-3" fill="#1a5fa8"/>
+          <polygon points="38,0 13,3 5,0 13,-3" fill="#e8861a"/>
+          <polygon points="0,-38 2,-17 0,-11 -2,-17" fill="#1a5fa8" transform="rotate(45)"/>
+          <polygon points="0,-38 2,-17 0,-11 -2,-17" fill="#1a5fa8" transform="rotate(135)"/>
+          <polygon points="0,-38 2,-17 0,-11 -2,-17" fill="#1a5fa8" transform="rotate(225)"/>
+          <polygon points="0,-38 2,-17 0,-11 -2,-17" fill="#1a5fa8" transform="rotate(315)"/>
+          <circle cx="0" cy="0" r="3" fill="#1a5fa8"/>
+        </g>
+
+        <!-- Mountain silhouette — bottom -->
+        <g opacity="0.06">
+          <path d="M 0 500 L 60 360 L 110 420 L 170 300 L 230 400 L 280 320 L 340 420 L 340 500 Z" fill="#1a5fa8"/>
+          <path d="M 0 500 L 80 390 L 140 450 L 200 350 L 265 430 L 340 370 L 340 500 Z" fill="#3a8ec7"/>
+        </g>
+
+        <!-- Road curve — bottom -->
+        <g opacity="0.08">
+          <path d="M -10 480 Q 85 448 170 455 Q 255 462 350 440"
+                fill="none" stroke="#e8861a" stroke-width="7" stroke-linecap="round"/>
+          <path d="M -10 480 Q 85 448 170 455 Q 255 462 350 440"
+                fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-dasharray="14 11"/>
+        </g>
+
+        <!-- Arcs — top left -->
+        <g transform="translate(-8,-8)" opacity="0.055">
+          <path d="M0,120 Q42,42 120,0" fill="none" stroke="#1a5fa8" stroke-width="1.5"/>
+          <path d="M0,165 Q62,58 165,0" fill="none" stroke="#1a5fa8" stroke-width="1.2"/>
+          <path d="M0,210 Q82,75 210,0" fill="none" stroke="#e8861a" stroke-width="1.2"/>
+        </g>
+
+        <!-- Location pin — top left -->
+        <g transform="translate(44,76)" opacity="0.09">
+          <path d="M0,-18 C-10,-18 -18,-10 -18,0 C-18,11 0,24 0,24 C0,24 18,11 18,0 C18,-10 10,-18 0,-18Z"
+                fill="none" stroke="#e8861a" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="5" fill="#e8861a"/>
+        </g>
+
+        <!-- Location pin — center right -->
+        <g transform="translate(318,240)" opacity="0.08">
+          <path d="M0,-16 C-9,-16 -16,-9 -16,0 C-16,10 0,22 0,22 C0,22 16,10 16,0 C16,-9 9,-16 0,-16Z"
+                fill="none" stroke="#1a5fa8" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="4.5" fill="#1a5fa8"/>
+        </g>
+
+        <!-- Diagonal lines — bottom right -->
+        <g opacity="0.045" stroke="#1a5fa8" stroke-width="1">
+          <line x1="240" y1="500" x2="340" y2="400"/>
+          <line x1="270" y1="500" x2="340" y2="430"/>
+          <line x1="300" y1="500" x2="340" y2="460"/>
+        </g>
+      </svg>
+    </div>
+
+    <img src="logo.png" alt="Deckel Transporte y Turismo" class="logo" />
+
+    <span class="badge">Sitio en construcción</span>
+
+    <div class="divider"></div>
+
+    <h1>¡Estamos preparando algo grandioso para ti!</h1>
+
+    <p>
+      Nuestro nuevo sitio web está en camino, pero eso no detiene nuestros viajes.
+      Si necesitas nuestros servicios de transporte o turismo,
+      <strong>escríbenos directamente por WhatsApp</strong> y te atendemos de inmediato.
+    </p>
+
+    <div class="social-row">
+      <a
+        href="https://www.facebook.com/share/1CdwUKDwTH/?mibextid=wwXIfr"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link is-facebook"
+        aria-label="Síguenos en Facebook"
+        data-social-network="facebook"
+        onclick="gtag('event', 'social_click', { network: 'facebook', location: 'card' })"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.41c0-2.51 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94Z"/>
+        </svg>
+      </a>
+
+      <a
+        href="https://www.instagram.com/deckelturismo?igsh=MXFwYnJvcmYyaWVuaA=="
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link is-instagram"
+        aria-label="Síguenos en Instagram"
+        data-social-network="instagram"
+        onclick="gtag('event', 'social_click', { network: 'instagram', location: 'card' })"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.39-.67.67-1.08 1.34-1.39 2.13-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.13.67.67 1.34 1.08 2.13 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.39.67-.67 1.08-1.34 1.39-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.13-.67-.67-1.34-1.08-2.13-1.39-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84ZM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4Zm6.4-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44Z"/>
+        </svg>
+      </a>
+    </div>
+
+    <a
+      href="https://wa.me/56932455532?text=Hola%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20transporte%20y%20turismo."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="cta-static"
+      aria-label="Contactar por WhatsApp"
+      onclick="gtag('event', 'whatsapp_click', { button: 'card' })"
+    >
+      <!-- WhatsApp icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Escríbenos por WhatsApp
+    </a>
+  </div>
+
+  <!-- Floating button -->
+  <a
+    href="https://wa.me/56932455532?text=Hola%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20transporte%20y%20turismo."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="wa-float"
+    aria-label="Abrir chat de WhatsApp"
+    onclick="gtag('event', 'whatsapp_click', { button: 'flotante' })"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+  <span class="wa-float-label" aria-hidden="true">¡Escríbenos!</span>
+
+</body>
+</html>
