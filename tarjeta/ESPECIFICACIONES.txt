@@ -1,0 +1,55 @@
+TARJETA DE PRESENTACIÓN — DECKEL TRANSPORTE Y TURISMO
+=====================================================
+
+ARCHIVOS
+  deckel-tarjeta.pdf            2 páginas (pág. 1 frente · pág. 2 reverso) — PREFERIDO
+  deckel-tarjeta-frente.png     2268 × 1323 px · 600 dpi
+  deckel-tarjeta-reverso.png    2268 × 1323 px · 600 dpi
+  guias-frente.png              Solo revisión, NO IMPRIMIR
+  guias-reverso.png             Solo revisión, NO IMPRIMIR
+                                (rojo = línea de corte · celeste = margen de seguridad)
+
+FORMATO
+  Tamaño final (corte)   90 × 50 mm  — estándar chileno
+  Con sangre             96 × 56 mm  (3 mm por lado)
+  Margen de seguridad    4 mm hacia dentro del corte
+  Esquinas               rectas (sin troquel)
+
+IMPRESIÓN
+  Tiro y retiro (4/4), ambas caras a sangre completa
+  Papel sugerido: couché mate 350 g
+  Laminado MATE en ambas caras — necesario: el degradado oscuro
+  marca huellas dactilares sin él
+  Opcional: barniz sectorizado (UVI) sobre el emblema del frente
+
+COLOR
+  Convertir a CMYK con perfil Coated FOGRA39
+  Degradado principal: #162336 → #364963 → #A4BAEB
+  Dorado: #E09830 (filetes) · #EFA542 (texto)
+  SOLICITAR PRUEBA DE COLOR IMPRESA: es un degradado largo y de tono
+  frío, donde más se nota una separación deficiente.
+
+CÓDIGO QR
+  Enlaza a https://wa.me/56932455532 (WhatsApp)
+  33 × 33 módulos, corrección de errores nivel H
+  Tamaño impreso 22 mm · módulo 0,54 mm
+  NO REESCALAR POR DEBAJO DE 19 mm — deja de leerse.
+  El fondo celeste (#A4BAEB) es intencional: NO convertir a blanco.
+  Verificar lectura en la prueba impresa antes del tiraje.
+
+EMBLEMA
+  Origen: logo-icon.png 2110 x 2048 px, alfa recta con antialiasing propio.
+  Incrustado a 700 px en RGBA completo (592 dpi al tamaño impreso de 30 mm).
+
+  NO RECOMPRIMIR CON HERRAMIENTAS DE PALETA (TinyPNG, pngquant, "guardar
+  para web" con 256 colores). El circulo celeste del emblema es un degradado
+  suave: una paleta lo reduce a ~37 tonos y aparecen bandas escalonadas muy
+  visibles en impresion. Debe conservarse en color verdadero.
+
+TIPOGRAFÍAS
+  Montserrat (900 / 700 / 600) y Work Sans (400 / 500)
+  Incluidas en el PDF — no se requiere instalarlas.
+
+DATOS VARIABLES
+  Solo el nombre del reverso. El frente es común a todo el equipo.
+  Máximo aproximado: 43 mm de ancho de texto.
