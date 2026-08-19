@@ -3,7 +3,15 @@
       linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
       url('/images/esqui/ski-hero.jpg'); }
 
-    /* Banda de destinos (centros de esquí) */
+    
+    /* WebP cuando el navegador lo soporta; si no, se queda el JPG de arriba */
+    @supports (background-image: image-set(url('/images/esqui/ski-hero.webp') type('image/webp'))) {
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
+      image-set(url('/images/esqui/ski-hero.webp') type('image/webp'),
+                url('/images/esqui/ski-hero.jpg') type('image/jpeg')); }
+    }
+/* Banda de destinos (centros de esquí) */
     .dest-strip { background: var(--dark); padding: 2rem 0; }
     .dest-strip-inner { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
     .dest-strip-label { font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); white-space: nowrap; }

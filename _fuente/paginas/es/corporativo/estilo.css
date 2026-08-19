@@ -3,7 +3,15 @@
       linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
       url('/images/corporativo/hero.jpg'); }
 
-    /* Stats bar */
+    
+    /* WebP cuando el navegador lo soporta; si no, se queda el JPG de arriba */
+    @supports (background-image: image-set(url('/images/corporativo/hero.webp') type('image/webp'))) {
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
+      image-set(url('/images/corporativo/hero.webp') type('image/webp'),
+                url('/images/corporativo/hero.jpg') type('image/jpeg')); }
+    }
+/* Stats bar */
     .stats-bar { background: var(--navy); padding: 2.5rem 0; }
     .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
     .stat-cell { text-align: center; padding: 1rem 1.5rem; border-right: 1px solid rgba(255,255,255,.08); }

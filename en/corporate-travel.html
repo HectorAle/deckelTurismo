@@ -10,7 +10,7 @@
   <meta name="description" content="Executive and corporate transport in Santiago, Chile. Meetings, events, airport runs and monthly contracts with invoicing. 50+ companies rely on Deckel." />
   <meta name="keywords" content="corporate transport Santiago, executive car service Chile, business travel Santiago, corporate shuttle Chile, executive transfer Santiago, company driver service Chile" />
   <meta name="author" content="Deckel Transporte y Turismo" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#0C1A2E" />
   <meta name="geo.region" content="CL-RM" />
   <meta name="geo.placename" content="Santiago, Chile" />
@@ -24,8 +24,8 @@
   <meta property="og:description" content="Executive transport in Santiago for meetings, events and airport runs. Monthly contracts with invoicing." />
   <meta property="og:url" content="https://deckelturismo.cl/en/corporate-travel.html" />
   <meta property="og:image" content="https://deckelturismo.cl/images/corporativo/hero.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1067" />
   <meta property="og:image:alt" content="Executive corporate transport in Santiago - Deckel" />
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -130,6 +130,7 @@
   </script>
   <link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-corporativo.html" />
   <link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/corporate-travel.html" />
+  <link rel="alternate" hreflang="pt" href="https://deckelturismo.cl/pt/transporte-corporativo.html" />
   <link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-corporativo.html" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
@@ -150,7 +151,15 @@
       linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
       url('/images/corporativo/hero.jpg'); }
 
-    /* Stats bar */
+    
+    /* WebP cuando el navegador lo soporta; si no, se queda el JPG de arriba */
+    @supports (background-image: image-set(url('/images/corporativo/hero.webp') type('image/webp'))) {
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
+      image-set(url('/images/corporativo/hero.webp') type('image/webp'),
+                url('/images/corporativo/hero.jpg') type('image/jpeg')); }
+    }
+/* Stats bar */
     .stats-bar { background: var(--navy); padding: 2.5rem 0; }
     .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
     .stat-cell { text-align: center; padding: 1rem 1.5rem; border-right: 1px solid rgba(255,255,255,.08); }
@@ -195,7 +204,7 @@
     <div class="container">
       <nav class="nav">
         <a href="/en/" class="nav-brand">
-          <img src="/logo-icon.png" alt="Deckel" />
+          <picture><source srcset="/logo-icon-216.webp" type="image/webp" /><img src="/logo-icon-216.png" alt="Deckel" width="216" height="216" fetchpriority="high" /></picture>
           <span class="brand-text">DECKEL<span class="brand-sub">Transfers &amp; Tours</span></span>
         </a>
         <ul class="nav-links">
@@ -207,6 +216,8 @@
           <a href="/servicio-corporativo.html" hreflang="es">ES</a>
           <span class="sep" aria-hidden="true">/</span>
           <a href="/en/corporate-travel.html" hreflang="en" aria-current="true">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/pt/transporte-corporativo.html" hreflang="pt">PT</a>
         </div>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/56932455532?text=Hola%2C%20quiero%20cotizar%20transporte%20corporativo." target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'corporativo',idioma:'en',button:'nav'})">
@@ -223,8 +234,10 @@
       <a href="https://wa.me/56932455532?text=Hola%2C%20quiero%20cotizar%20transporte%20corporativo." target="_blank" rel="noopener" class="btn btn-gold" style="justify-content:center" onclick="gtag('event','whatsapp_click',{subsitio:'corporativo',idioma:'en',button:'nav_mobile'})"><i class="fab fa-whatsapp"></i> Get a quote</a>
       <div class="nav-lang" role="group" aria-label="Language">
         <a href="/servicio-corporativo.html" hreflang="es">ES</a>
-        <span class="sep" aria-hidden="true">/</span>
-        <a href="/en/corporate-travel.html" hreflang="en" aria-current="true">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/en/corporate-travel.html" hreflang="en" aria-current="true">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/pt/transporte-corporativo.html" hreflang="pt">PT</a>
       </div>
     </nav>
   </header>
@@ -299,7 +312,7 @@
           </div>
         </div>
         <div class="overview-img reveal reveal-d1">
-          <img src="/images/aeropuerto/galeria-sala.jpg" alt="Reunión ejecutiva corporativa" loading="lazy" />
+          <picture><source srcset="/images/aeropuerto/galeria-sala.webp" type="image/webp" /><img src="/images/aeropuerto/galeria-sala.jpg" alt="Reunión ejecutiva corporativa" loading="lazy" width="1200" height="797" /></picture>
         </div>
       </div>
     </div>
@@ -492,7 +505,7 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <div class="f-brand-row"><img src="/logo-icon.png" alt="Deckel" /></div>
+            <div class="f-brand-row"><picture><source srcset="/logo-icon-104.webp" type="image/webp" /><img src="/logo-icon-104.png" alt="Deckel" width="104" height="104" loading="lazy" /></picture></div>
             <p class="f-brand-desc">Private transfer and tour company based in Santiago, Chile. Committed to punctuality, safety and the comfort of every passenger.</p>
             <div class="f-social">
               <a href="https://www.instagram.com/deckelturismo?igsh=MXFwYnJvcmYyaWVuaA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>

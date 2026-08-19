@@ -12,7 +12,7 @@
   <meta name="description"  content="Private transfer and tour company in Santiago, Chile. Airport transfers, ski resorts, wine valleys and the coast. Professional drivers, seven days a week." />
   <meta name="keywords"     content="private transfer Chile, Santiago airport transfer, Chile tours, ski transfer Santiago, Chile wine tour, Valparaiso day trip, private driver Santiago, corporate transport Chile" />
   <meta name="author"       content="Deckel Transporte y Turismo" />
-  <meta name="robots"       content="index, follow" />
+  <meta name="robots"       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color"  content="#0C1A2E" />
   <meta name="geo.region"   content="CL-RM" />
   <meta name="geo.placename" content="Santiago, Chile" />
@@ -28,7 +28,7 @@
   <meta property="og:title"         content="Deckel | Private Transfers &amp; Tours in Chile" />
   <meta property="og:description"   content="Private transfers and tours in Chile. Airport, ski resorts, wine valleys and the coast. Professional drivers, seven days a week." />
   <meta property="og:url"           content="https://deckelturismo.cl/en/" />
-  <meta property="og:image"         content="https://deckelturismo.cl/images/aeropuerto/hero.jpg" />
+  <meta property="og:image"         content="https://deckelturismo.cl/images/og-home-en.jpg" />
   <meta property="og:image:width"   content="1200" />
   <meta property="og:image:height"  content="630" />
   <meta property="og:image:alt"     content="Deckel - private transfers and tours in Chile" />
@@ -38,7 +38,7 @@
   <meta name="twitter:site"        content="@deckelturismo" />
   <meta name="twitter:title"       content="Deckel | Private Transfers &amp; Tours in Chile" />
   <meta name="twitter:description" content="Private transfers and tours in Chile. Airport, ski, wine and coast." />
-  <meta name="twitter:image"       content="https://deckelturismo.cl/images/aeropuerto/hero.jpg" />
+  <meta name="twitter:image"       content="https://deckelturismo.cl/images/og-home-en.jpg" />
 
   <!-- JSON-LD: LocalBusiness + TravelAgency -->
   <script type="application/ld+json">
@@ -154,6 +154,7 @@
   <!-- Favicons -->
   <link rel="alternate" hreflang="es" href="https://deckelturismo.cl/" />
   <link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/" />
+  <link rel="alternate" hreflang="pt" href="https://deckelturismo.cl/pt/" />
   <link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
@@ -654,7 +655,7 @@
     <div class="container">
       <nav class="nav">
         <a href="/en/" class="nav-brand">
-          <img src="/logo-icon.png" alt="Deckel" />
+          <picture><source srcset="/logo-icon-216.webp" type="image/webp" /><img src="/logo-icon-216.png" alt="Deckel" width="216" height="216" fetchpriority="high" /></picture>
           <span class="brand-text">DECKEL<span class="brand-sub">Transfers &amp; Tours</span></span>
         </a>
         <ul class="nav-links">
@@ -666,6 +667,8 @@
           <a href="/" hreflang="es">ES</a>
           <span class="sep" aria-hidden="true">/</span>
           <a href="/en/" hreflang="en" aria-current="true">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/pt/" hreflang="pt">PT</a>
         </div>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/56932455532?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20transfer." target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'home',idioma:'en',button:'nav'})">
@@ -682,8 +685,10 @@
       <a href="https://wa.me/56932455532?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20transfer." target="_blank" rel="noopener" class="btn btn-gold" style="justify-content:center" onclick="gtag('event','whatsapp_click',{subsitio:'home',idioma:'en',button:'nav_mobile'})"><i class="fab fa-whatsapp"></i> Get a quote</a>
       <div class="nav-lang" role="group" aria-label="Language">
         <a href="/" hreflang="es">ES</a>
-        <span class="sep" aria-hidden="true">/</span>
-        <a href="/en/" hreflang="en" aria-current="true">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/en/" hreflang="en" aria-current="true">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/pt/" hreflang="pt">PT</a>
       </div>
     </nav>
   </header>
@@ -766,7 +771,7 @@
 
       <div class="services-grid">
         <a href="/en/airport-transfer.html" class="service-card reveal">
-          <img src="/images/aeropuerto/hero.jpg" alt="Aeropuerto Internacional SCL" loading="lazy" />
+          <picture><source srcset="/images/aeropuerto/hero.webp" type="image/webp" /><img src="/images/aeropuerto/hero.jpg" alt="Aeropuerto Internacional SCL" loading="lazy" width="1600" height="1063" /></picture>
           <div class="service-card-overlay"></div>
           <div class="service-icon-badge"><i class="fas fa-plane-arrival"></i></div>
           <div class="service-card-body">
@@ -778,7 +783,7 @@
         </a>
 
         <a href="/en/ski-transfers.html" class="service-card reveal reveal-d1">
-          <img src="/images/esqui/hero.jpg" alt="Centros de esquí en la cordillera" loading="lazy" />
+          <picture><source srcset="/images/esqui/hero.webp" type="image/webp" /><img src="/images/esqui/hero.jpg" alt="Centros de esquí en la cordillera" loading="lazy" width="900" height="600" /></picture>
           <div class="service-card-overlay"></div>
           <div class="service-icon-badge"><i class="fas fa-mountain"></i></div>
           <div class="service-card-body">
@@ -791,7 +796,7 @@
 
         <!-- PENDIENTE DE AFINAR — para reactivar: volver a <a href=…>, </a> y descomentar «Ver más» -->
         <div class="service-card reveal reveal-d2">
-          <img src="/images/costa/hero.jpg" alt="Costa chilena y Viña del Mar" loading="lazy" />
+          <picture><source srcset="/images/costa/hero.webp" type="image/webp" /><img src="/images/costa/hero.jpg" alt="Costa chilena y Viña del Mar" loading="lazy" width="1600" height="1002" /></picture>
           <div class="service-card-overlay"></div>
           <div class="service-icon-badge"><i class="fas fa-water"></i></div>
           <div class="service-card-body">
@@ -804,7 +809,7 @@
 
         <!-- PENDIENTE DE AFINAR — para reactivar: volver a <a href=…>, </a> y descomentar «Ver más» -->
         <div class="service-card reveal reveal-d3">
-          <img src="/images/corporativo/hero.jpg" alt="Servicios corporativos y ejecutivos" loading="lazy" />
+          <picture><source srcset="/images/corporativo/hero.webp" type="image/webp" /><img src="/images/corporativo/hero.jpg" alt="Servicios corporativos y ejecutivos" loading="lazy" width="1600" height="1067" /></picture>
           <div class="service-card-overlay"></div>
           <div class="service-icon-badge"><i class="fas fa-briefcase"></i></div>
           <div class="service-card-body">
@@ -816,7 +821,7 @@
         </div>
 
         <a href="/en/wine-tours.html" class="service-card wide reveal">
-          <img src="/images/vinas/hero.jpg" alt="Turismo en viñas y rutas del vino Chile" loading="lazy" />
+          <picture><source srcset="/images/vinas/hero.webp" type="image/webp" /><img src="/images/vinas/hero.jpg" alt="Turismo en viñas y rutas del vino Chile" loading="lazy" width="1400" height="933" /></picture>
           <div class="service-card-overlay"></div>
           <div class="service-icon-badge"><i class="fas fa-wine-glass-alt"></i></div>
           <div class="service-card-body">
@@ -928,7 +933,7 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <div class="f-brand-row"><img src="/logo-icon.png" alt="Deckel" /></div>
+            <div class="f-brand-row"><picture><source srcset="/logo-icon-104.webp" type="image/webp" /><img src="/logo-icon-104.png" alt="Deckel" width="104" height="104" loading="lazy" /></picture></div>
             <p class="f-brand-desc">Private transfer and tour company based in Santiago, Chile. Committed to punctuality, safety and the comfort of every passenger.</p>
             <div class="f-social">
               <a href="https://www.instagram.com/deckelturismo?igsh=MXFwYnJvcmYyaWVuaA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>

@@ -2,7 +2,7 @@
     <div class="container">
       <nav class="nav">
         <a href="{{url_home}}" class="nav-brand">
-          <img src="/logo-icon.png" alt="Deckel" />
+          <picture><source srcset="/logo-icon-216.webp" type="image/webp" /><img src="/logo-icon-216.png" alt="Deckel" width="216" height="216" fetchpriority="high" /></picture>
           <span class="brand-text">DECKEL<span class="brand-sub">{{tagline}}</span></span>
         </a>
         <ul class="nav-links">
@@ -11,9 +11,7 @@
           <li><a href="{{url_home}}#contacto">{{nav_contacto}}</a></li>
         </ul>
         <div class="nav-lang" role="group" aria-label="{{etiqueta_idioma}}">
-          <a href="{{URL_ES}}" hreflang="es"{{ACTIVO_ES}}>ES</a>
-          <span class="sep" aria-hidden="true">/</span>
-          <a href="{{URL_EN}}" hreflang="en"{{ACTIVO_EN}}>EN</a>
+          {{SELECTOR_IDIOMAS}}
         </div>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/56932455532?text={{MENSAJE_WA}}" target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'{{SUBSITIO}}',idioma:'{{lang}}',button:'nav'})">
@@ -29,9 +27,7 @@
       <a href="{{url_home}}#contacto" onclick="closeMenu()">{{nav_contacto}}</a>
       <a href="https://wa.me/56932455532?text={{MENSAJE_WA}}" target="_blank" rel="noopener" class="btn btn-gold" style="justify-content:center" onclick="gtag('event','whatsapp_click',{subsitio:'{{SUBSITIO}}',idioma:'{{lang}}',button:'nav_mobile'})"><i class="fab fa-whatsapp"></i> {{cta}}</a>
       <div class="nav-lang" role="group" aria-label="{{etiqueta_idioma}}">
-        <a href="{{URL_ES}}" hreflang="es"{{ACTIVO_ES}}>ES</a>
-        <span class="sep" aria-hidden="true">/</span>
-        <a href="{{URL_EN}}" hreflang="en"{{ACTIVO_EN}}>EN</a>
+        {{SELECTOR_IDIOMAS}}
       </div>
     </nav>
   </header>

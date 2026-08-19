@@ -10,7 +10,7 @@
   <meta name="description" content="Private airport transfers to and from Santiago Airport (SCL). Real-time flight tracking, meet &amp; greet and professional drivers, 24/7." />
   <meta name="keywords" content="Santiago airport transfer, SCL airport transfer, private transfer Santiago Chile, airport taxi Santiago, Arturo Merino Benitez transfer, airport shuttle Santiago, Santiago airport to hotel, private driver Santiago" />
   <meta name="author" content="Deckel Transporte y Turismo" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#0C1A2E" />
   <meta name="geo.region" content="CL-RM" />
   <meta name="geo.placename" content="Santiago, Chile" />
@@ -24,8 +24,8 @@
   <meta property="og:description" content="Private airport transfers to and from Santiago Airport (SCL). Real-time flight tracking, meet &amp; greet, professional drivers, available 24/7." />
   <meta property="og:url" content="https://deckelturismo.cl/en/airport-transfer.html" />
   <meta property="og:image" content="https://deckelturismo.cl/images/aeropuerto/hero.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1063" />
   <meta property="og:image:alt" content="Private airport transfer in Santiago, Chile - Deckel" />
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -134,6 +134,7 @@
   </script>
   <link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-aeropuerto.html" />
   <link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/airport-transfer.html" />
+  <link rel="alternate" hreflang="pt" href="https://deckelturismo.cl/pt/transfer-aeroporto.html" />
   <link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-aeropuerto.html" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
@@ -154,7 +155,16 @@
       linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
       url('/images/aeropuerto/hero.jpg');
     }
-    /* Grid de 3 columnas para 6 tarjetas */
+    
+    /* WebP cuando el navegador lo soporta; si no, se queda el JPG de arriba */
+    @supports (background-image: image-set(url('/images/aeropuerto/hero.webp') type('image/webp'))) {
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
+      image-set(url('/images/aeropuerto/hero.webp') type('image/webp'),
+                url('/images/aeropuerto/hero.jpg') type('image/jpeg'));
+    }
+    }
+/* Grid de 3 columnas para 6 tarjetas */
     .inc-grid { grid-template-columns: repeat(3, 1fr); }
     @media (max-width: 700px) { .inc-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 420px) { .inc-grid { grid-template-columns: 1fr; } }
@@ -165,7 +175,7 @@
     <div class="container">
       <nav class="nav">
         <a href="/en/" class="nav-brand">
-          <img src="/logo-icon.png" alt="Deckel" />
+          <picture><source srcset="/logo-icon-216.webp" type="image/webp" /><img src="/logo-icon-216.png" alt="Deckel" width="216" height="216" fetchpriority="high" /></picture>
           <span class="brand-text">DECKEL<span class="brand-sub">Transfers &amp; Tours</span></span>
         </a>
         <ul class="nav-links">
@@ -177,6 +187,8 @@
           <a href="/servicio-aeropuerto.html" hreflang="es">ES</a>
           <span class="sep" aria-hidden="true">/</span>
           <a href="/en/airport-transfer.html" hreflang="en" aria-current="true">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/pt/transfer-aeroporto.html" hreflang="pt">PT</a>
         </div>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/56932455532?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20an%20airport%20transfer." target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'aeropuerto',idioma:'en',button:'nav'})">
@@ -193,8 +205,10 @@
       <a href="https://wa.me/56932455532?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20an%20airport%20transfer." target="_blank" rel="noopener" class="btn btn-gold" style="justify-content:center" onclick="gtag('event','whatsapp_click',{subsitio:'aeropuerto',idioma:'en',button:'nav_mobile'})"><i class="fab fa-whatsapp"></i> Get a quote</a>
       <div class="nav-lang" role="group" aria-label="Language">
         <a href="/servicio-aeropuerto.html" hreflang="es">ES</a>
-        <span class="sep" aria-hidden="true">/</span>
-        <a href="/en/airport-transfer.html" hreflang="en" aria-current="true">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/en/airport-transfer.html" hreflang="en" aria-current="true">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/pt/transfer-aeroporto.html" hreflang="pt">PT</a>
       </div>
     </nav>
   </header>
@@ -247,7 +261,7 @@
           </div>
         </div>
         <div class="overview-img decorated reveal reveal-d1">
-          <img src="/images/maxus-g10.jpg" alt="Maxus G10 van used for Santiago airport transfers" loading="lazy" />
+          <picture><source srcset="/images/maxus-g10.webp" type="image/webp" /><img src="/images/maxus-g10.jpg" alt="Maxus G10 van used for Santiago airport transfers" loading="lazy" width="800" height="800" /></picture>
         </div>
       </div>
     </div>
@@ -386,7 +400,7 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <div class="f-brand-row"><img src="/logo-icon.png" alt="Deckel" /></div>
+            <div class="f-brand-row"><picture><source srcset="/logo-icon-104.webp" type="image/webp" /><img src="/logo-icon-104.png" alt="Deckel" width="104" height="104" loading="lazy" /></picture></div>
             <p class="f-brand-desc">Private transfer and tour company based in Santiago, Chile. Committed to punctuality, safety and the comfort of every passenger.</p>
             <div class="f-social">
               <a href="https://www.instagram.com/deckelturismo?igsh=MXFwYnJvcmYyaWVuaA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>

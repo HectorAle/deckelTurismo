@@ -51,7 +51,7 @@ def alternativas(slug, idioma):
     u = urls_idioma(slug)
     filas = [f'  <link rel="alternate" hreflang="{i}" href="{BASE}{u[i]}" />'
              for i in CFG["idiomas"]]
-    filas.append(f'  <link rel="alternate" hreflang="x-default" href="{BASE}{u["es"]}" />')
+    filas.append(f'  <link rel="alternate" hreflang="x-default" href="{BASE}{u[CFG["idiomas"][0]]}" />')
     return "\n".join(filas)
 
 
@@ -93,6 +93,22 @@ def faq_desde_contenido(contenido, seo, idioma):
     return seo[:m.start(2)] + "\n" + nuevo + "\n  " + seo[m.end(2):]
 
 
+def selector_idiomas(slug, actual):
+    """Construye el selector con todos los idiomas configurados, en orden.
+
+    Se genera aquí y no en el parcial para que añadir un idioma sea solo
+    editar sitio.json: el marcado se ajusta solo.
+    """
+    u = urls_idioma(slug)
+    piezas = []
+    for i, idi in enumerate(CFG["idiomas"]):
+        if i:
+            piezas.append('<span class="sep" aria-hidden="true">/</span>')
+        activo = ' aria-current="true"' if idi == actual else ""
+        piezas.append(f'<a href="{u[idi]}" hreflang="{idi}"{activo}>{idi.upper()}</a>')
+    return "\n          ".join(piezas)
+
+
 def armar(idioma, slug, datos):
     d = SRC / "paginas" / idioma / slug
     if not d.is_dir():
@@ -103,9 +119,7 @@ def armar(idioma, slug, datos):
     ctx.update({
         "SUBSITIO": datos["subsitio"],
         "MENSAJE_WA": datos.get(f"mensaje_wa_{idioma}", datos["mensaje_wa"]),
-        "URL_ES": u["es"], "URL_EN": u["en"],
-        "ACTIVO_ES": ' aria-current="true"' if idioma == "es" else "",
-        "ACTIVO_EN": ' aria-current="true"' if idioma == "en" else "",
+        "SELECTOR_IDIOMAS": selector_idiomas(slug, idioma),
     })
 
     estilo = (d / "estilo.css").read_text().rstrip("\n")
@@ -141,9 +155,10 @@ def armar(idioma, slug, datos):
 
 
 def destino(idioma, slug, datos):
-    if idioma == "es":
-        return RAIZ / datos["archivo_es"]
-    return RAIZ / "en" / datos.get("archivo_en", f"{slug}.html")
+    """El idioma base vive en la raíz; los demás, en su propia carpeta."""
+    if idioma == CFG["idiomas"][0]:
+        return RAIZ / datos[f"archivo_{idioma}"]
+    return RAIZ / idioma / datos.get(f"archivo_{idioma}", f"{slug}.html")
 
 
 def main():

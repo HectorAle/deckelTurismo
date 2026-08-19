@@ -10,7 +10,7 @@
   <meta name="description" content="Enoturismo privado desde Santiago: Maipo, Casablanca y Colchagua. Visitas a bodegas, degustaciones y conductor guía incluido." />
   <meta name="keywords" content="enoturismo Chile, tours viñas Chile, ruta del vino Chile, visita bodegas Chile, tour Valle del Maipo, tour Valle de Casablanca, tour Valle de Colchagua, degustación vinos Chile, wine tour Santiago, tours bodegas Santiago, transporte viñas Chile, enoturismo privado Santiago, Deckel viñas" />
   <meta name="author" content="Deckel Transporte y Turismo" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#0C1A2E" />
   <meta name="geo.region" content="CL-RM" />
   <meta name="geo.placename" content="Santiago, Chile" />
@@ -24,8 +24,8 @@
   <meta property="og:description" content="Tours privados de enoturismo desde Santiago: Valle Maipo, Casablanca y Colchagua. Bodegas, degustaciones y conductor guía incluido." />
   <meta property="og:url" content="https://deckelturismo.cl/servicio-vinas.html" />
   <meta property="og:image" content="https://deckelturismo.cl/images/vinas/vina-hero.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1199" />
   <meta property="og:image:alt" content="Enoturismo privado en Chile - Rutas del vino - Deckel" />
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -146,6 +146,7 @@
   </script>
   <link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-vinas.html" />
   <link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/wine-tours.html" />
+  <link rel="alternate" hreflang="pt" href="https://deckelturismo.cl/pt/rotas-do-vinho.html" />
   <link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-vinas.html" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
@@ -166,7 +167,15 @@
       linear-gradient(to top, rgba(8,15,26,.88) 0%, rgba(15,35,65,.50) 55%, rgba(15,35,65,.15) 100%),
       url('/images/vinas/vina-hero.jpg'); }
 
-    /* Banda de valles vitivinícolas */
+    
+    /* WebP cuando el navegador lo soporta; si no, se queda el JPG de arriba */
+    @supports (background-image: image-set(url('/images/vinas/vina-hero.webp') type('image/webp'))) {
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.88) 0%, rgba(15,35,65,.50) 55%, rgba(15,35,65,.15) 100%),
+      image-set(url('/images/vinas/vina-hero.webp') type('image/webp'),
+                url('/images/vinas/vina-hero.jpg') type('image/jpeg')); }
+    }
+/* Banda de valles vitivinícolas */
     .valles-strip { background: var(--dark); padding: 2rem 0; }
     .valles-strip-inner { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
     .valles-strip-label { font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); white-space: nowrap; }
@@ -269,7 +278,7 @@
     <div class="container">
       <nav class="nav">
         <a href="/" class="nav-brand">
-          <img src="/logo-icon.png" alt="Deckel" />
+          <picture><source srcset="/logo-icon-216.webp" type="image/webp" /><img src="/logo-icon-216.png" alt="Deckel" width="216" height="216" fetchpriority="high" /></picture>
           <span class="brand-text">DECKEL<span class="brand-sub">Transporte &amp; Turismo</span></span>
         </a>
         <ul class="nav-links">
@@ -281,6 +290,8 @@
           <a href="/servicio-vinas.html" hreflang="es" aria-current="true">ES</a>
           <span class="sep" aria-hidden="true">/</span>
           <a href="/en/wine-tours.html" hreflang="en">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/pt/rotas-do-vinho.html" hreflang="pt">PT</a>
         </div>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/56932455532?text=Hola%2C%20quiero%20cotizar%20una%20excursi%C3%B3n%20a%20vi%C3%B1as." target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'vinas',idioma:'es',button:'nav'})">
@@ -297,8 +308,10 @@
       <a href="https://wa.me/56932455532?text=Hola%2C%20quiero%20cotizar%20una%20excursi%C3%B3n%20a%20vi%C3%B1as." target="_blank" rel="noopener" class="btn btn-gold" style="justify-content:center" onclick="gtag('event','whatsapp_click',{subsitio:'vinas',idioma:'es',button:'nav_mobile'})"><i class="fab fa-whatsapp"></i> Cotizar</a>
       <div class="nav-lang" role="group" aria-label="Idioma">
         <a href="/servicio-vinas.html" hreflang="es" aria-current="true">ES</a>
-        <span class="sep" aria-hidden="true">/</span>
-        <a href="/en/wine-tours.html" hreflang="en">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/en/wine-tours.html" hreflang="en">EN</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="/pt/rotas-do-vinho.html" hreflang="pt">PT</a>
       </div>
     </nav>
   </header>
@@ -365,7 +378,7 @@
           </div>
         </div>
         <div class="overview-img reveal reveal-d1">
-          <img src="/images/vinas/vina-choapa.jpg" alt="Viñedo en hora dorada" loading="lazy" />
+          <picture><source srcset="/images/vinas/vina-choapa.webp" type="image/webp" /><img src="/images/vinas/vina-choapa.jpg" alt="Viñedo en hora dorada" loading="lazy" width="800" height="533" /></picture>
         </div>
       </div>
     </div>
@@ -381,7 +394,7 @@
       </div>
       <div class="valles-grid">
         <div class="valle-card reveal">
-          <img src="/images/vinas/vina-limari.jpg" alt="Viñedos del Valle del Limarí al atardecer" loading="lazy" />
+          <picture><source srcset="/images/vinas/vina-limari.webp" type="image/webp" /><img src="/images/vinas/vina-limari.jpg" alt="Viñedos del Valle del Limarí al atardecer" loading="lazy" width="800" height="533" /></picture>
           <div class="valle-card-overlay"></div>
           <div class="valle-card-content">
             <span class="valle-tag">4.ª Región · Coquimbo</span>
@@ -390,7 +403,7 @@
           </div>
         </div>
         <div class="valle-card reveal reveal-d1">
-          <img src="/images/vinas/vina-choapa.jpg" alt="Viñedos del Valle de Choapa en hora dorada" loading="lazy" />
+          <picture><source srcset="/images/vinas/vina-choapa.webp" type="image/webp" /><img src="/images/vinas/vina-choapa.jpg" alt="Viñedos del Valle de Choapa en hora dorada" loading="lazy" width="800" height="533" /></picture>
           <div class="valle-card-overlay"></div>
           <div class="valle-card-content">
             <span class="valle-tag">4.ª Región · Coquimbo</span>
@@ -399,7 +412,7 @@
           </div>
         </div>
         <div class="valle-card reveal reveal-d2">
-          <img src="/images/vinas/vina-casablanca.jpg" alt="Viñedos del Valle de Casablanca con sol de tarde" loading="lazy" />
+          <picture><source srcset="/images/vinas/vina-casablanca.webp" type="image/webp" /><img src="/images/vinas/vina-casablanca.jpg" alt="Viñedos del Valle de Casablanca con sol de tarde" loading="lazy" width="800" height="1200" /></picture>
           <div class="valle-card-overlay"></div>
           <div class="valle-card-content">
             <span class="valle-tag">5.ª Región · Valparaíso</span>
@@ -408,7 +421,7 @@
           </div>
         </div>
         <div class="valle-card reveal reveal-d3">
-          <img src="/images/vinas/vina-san-antonio.jpg" alt="Hileras de viñedos del Valle de San Antonio" loading="lazy" />
+          <picture><source srcset="/images/vinas/vina-san-antonio.webp" type="image/webp" /><img src="/images/vinas/vina-san-antonio.jpg" alt="Hileras de viñedos del Valle de San Antonio" loading="lazy" width="800" height="533" /></picture>
           <div class="valle-card-overlay"></div>
           <div class="valle-card-content">
             <span class="valle-tag">5.ª Región · Valparaíso</span>
@@ -417,7 +430,7 @@
           </div>
         </div>
         <div class="valle-card reveal reveal-d4">
-          <img src="/images/vinas/vina-colchagua.jpg" alt="Viñedos en ladera del Valle de Colchagua" loading="lazy" />
+          <picture><source srcset="/images/vinas/vina-colchagua.webp" type="image/webp" /><img src="/images/vinas/vina-colchagua.jpg" alt="Viñedos en ladera del Valle de Colchagua" loading="lazy" width="800" height="533" /></picture>
           <div class="valle-card-overlay"></div>
           <div class="valle-card-content">
             <span class="valle-tag">6.ª Región · O’Higgins</span>
@@ -426,7 +439,7 @@
           </div>
         </div>
         <div class="valle-card reveal reveal-d5">
-          <img src="/images/vinas/vina-cachapoal.jpg" alt="Viñedos del Valle de Cachapoal al amanecer" loading="lazy" />
+          <picture><source srcset="/images/vinas/vina-cachapoal.webp" type="image/webp" /><img src="/images/vinas/vina-cachapoal.jpg" alt="Viñedos del Valle de Cachapoal al amanecer" loading="lazy" width="800" height="533" /></picture>
           <div class="valle-card-overlay"></div>
           <div class="valle-card-content">
             <span class="valle-tag">6.ª Región · O’Higgins</span>
@@ -464,11 +477,11 @@
         <h2 class="section-title">Galería</h2>
       </div>
       <div class="gallery-grid">
-        <div class="g-img g-main reveal"><img src="/images/vinas/vina-galeria-valley.jpg" alt="Paisaje de viñedos en valle" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d1"><img src="/images/vinas/vina-galeria-harvest.jpg" alt="Cosecha de uvas en viñedo" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d2"><img src="/images/vinas/vina-galeria-rows.jpg" alt="Hileras de viñas en paisaje abierto" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d1"><img src="/images/vinas/vina-galeria-bodega.jpg" alt="Bodega y viñedo tradicional" loading="lazy" /></div>
-        <div class="g-img reveal reveal-d2"><img src="/images/vinas/vina-galeria-sunset.jpg" alt="Viñedo al atardecer" loading="lazy" /></div>
+        <div class="g-img g-main reveal"><picture><source srcset="/images/vinas/vina-galeria-valley.webp" type="image/webp" /><img src="/images/vinas/vina-galeria-valley.jpg" alt="Paisaje de viñedos en valle" loading="lazy" width="800" height="685" /></picture></div>
+        <div class="g-img reveal reveal-d1"><picture><source srcset="/images/vinas/vina-galeria-harvest.webp" type="image/webp" /><img src="/images/vinas/vina-galeria-harvest.jpg" alt="Cosecha de uvas en viñedo" loading="lazy" width="800" height="533" /></picture></div>
+        <div class="g-img reveal reveal-d2"><picture><source srcset="/images/vinas/vina-galeria-rows.webp" type="image/webp" /><img src="/images/vinas/vina-galeria-rows.jpg" alt="Hileras de viñas en paisaje abierto" loading="lazy" width="800" height="533" /></picture></div>
+        <div class="g-img reveal reveal-d1"><picture><source srcset="/images/vinas/vina-galeria-bodega.webp" type="image/webp" /><img src="/images/vinas/vina-galeria-bodega.jpg" alt="Bodega y viñedo tradicional" loading="lazy" width="800" height="533" /></picture></div>
+        <div class="g-img reveal reveal-d2"><picture><source srcset="/images/vinas/vina-galeria-sunset.webp" type="image/webp" /><img src="/images/vinas/vina-galeria-sunset.jpg" alt="Viñedo al atardecer" loading="lazy" width="800" height="1200" /></picture></div>
       </div>
     </div>
   </section>
@@ -534,7 +547,7 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <div class="f-brand-row"><img src="/logo-icon.png" alt="Deckel" /></div>
+            <div class="f-brand-row"><picture><source srcset="/logo-icon-104.webp" type="image/webp" /><img src="/logo-icon-104.png" alt="Deckel" width="104" height="104" loading="lazy" /></picture></div>
             <p class="f-brand-desc">Empresa de transporte privado y turismo en Chile. Comprometidos con la puntualidad, seguridad y confort de cada pasajero.</p>
             <div class="f-social">
               <a href="https://www.instagram.com/deckelturismo?igsh=MXFwYnJvcmYyaWVuaA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>

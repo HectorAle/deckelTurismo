@@ -3,7 +3,15 @@
       linear-gradient(to top, rgba(8,15,26,.88) 0%, rgba(15,35,65,.50) 55%, rgba(15,35,65,.15) 100%),
       url('/images/costa/hero.jpg'); }
 
-    /* Destinos strip (balnearios) */
+    
+    /* WebP cuando el navegador lo soporta; si no, se queda el JPG de arriba */
+    @supports (background-image: image-set(url('/images/costa/hero.webp') type('image/webp'))) {
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.88) 0%, rgba(15,35,65,.50) 55%, rgba(15,35,65,.15) 100%),
+      image-set(url('/images/costa/hero.webp') type('image/webp'),
+                url('/images/costa/hero.jpg') type('image/jpeg')); }
+    }
+/* Destinos strip (balnearios) */
     .dest-section { background: var(--dark); padding: 2rem 0; }
     .dest-section-inner { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
     .dest-section-label { font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); white-space: nowrap; }

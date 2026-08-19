@@ -1,7 +1,8 @@
 {
   "idiomas": [
     "es",
-    "en"
+    "en",
+    "pt"
   ],
   "paginas": {
     "home": {
@@ -9,38 +10,50 @@
       "archivo_en": "index.html",
       "subsitio": "home",
       "mensaje_wa": "Hola%2C%20me%20interesa%20cotizar%20un%20servicio.",
-      "mensaje_wa_en": "Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20transfer."
+      "mensaje_wa_en": "Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20transfer.",
+      "archivo_pt": "index.html",
+      "mensaje_wa_pt": "Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20transfer."
     },
     "aeropuerto": {
       "archivo_es": "servicio-aeropuerto.html",
       "mensaje_wa": "Hola%2C%20quiero%20cotizar%20un%20traslado%20al%20aeropuerto.",
       "subsitio": "aeropuerto",
       "archivo_en": "airport-transfer.html",
-      "mensaje_wa_en": "Hi%2C%20I%27d%20like%20a%20quote%20for%20an%20airport%20transfer."
+      "mensaje_wa_en": "Hi%2C%20I%27d%20like%20a%20quote%20for%20an%20airport%20transfer.",
+      "archivo_pt": "transfer-aeroporto.html",
+      "mensaje_wa_pt": "Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20transfer%20do%20aeroporto."
     },
     "esqui": {
       "archivo_es": "servicio-esqui.html",
       "mensaje_wa": "Hola%2C%20quiero%20cotizar%20traslado%20a%20centro%20de%20esqu%C3%AD.",
       "subsitio": "esqui",
-      "archivo_en": "ski-transfers.html"
+      "archivo_en": "ski-transfers.html",
+      "archivo_pt": "transfer-esqui.html",
+      "mensaje_wa_pt": "Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20transfer%20para%20a%20neve."
     },
     "vinas": {
       "archivo_es": "servicio-vinas.html",
       "mensaje_wa": "Hola%2C%20quiero%20cotizar%20una%20excursi%C3%B3n%20a%20vi%C3%B1as.",
       "subsitio": "vinas",
-      "archivo_en": "wine-tours.html"
+      "archivo_en": "wine-tours.html",
+      "archivo_pt": "rotas-do-vinho.html",
+      "mensaje_wa_pt": "Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20passeio%20de%20vinhos."
     },
     "costa": {
       "archivo_es": "servicio-costa.html",
       "mensaje_wa": "Hola%2C%20quiero%20cotizar%20excursi%C3%B3n%20a%20la%20costa.",
       "subsitio": "costa",
-      "archivo_en": "valparaiso-tours.html"
+      "archivo_en": "valparaiso-tours.html",
+      "archivo_pt": "passeios-valparaiso.html",
+      "mensaje_wa_pt": "Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20passeio%20a%20Valpara%C3%ADso."
     },
     "corporativo": {
       "archivo_es": "servicio-corporativo.html",
       "mensaje_wa": "Hola%2C%20quiero%20cotizar%20transporte%20corporativo.",
       "subsitio": "corporativo",
-      "archivo_en": "corporate-travel.html"
+      "archivo_en": "corporate-travel.html",
+      "archivo_pt": "transporte-corporativo.html",
+      "mensaje_wa_pt": "Ol%C3%A1%2C%20gostaria%20de%20uma%20proposta%20corporativa."
     }
   }
 }

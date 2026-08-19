@@ -13,6 +13,17 @@ El sitio está disponible en inglés. Cada página tiene su equivalente:
 - Valparaíso & Coast Day Trips (turismo costero): https://deckelturismo.cl/en/valparaiso-tours.html
 - Corporate Travel (transporte corporativo): https://deckelturismo.cl/en/corporate-travel.html
 
+## Versão em português
+
+O site está disponível em português. Cada página tem seu equivalente:
+
+- Início: https://deckelturismo.cl/pt/
+- Transfer Aeroporto SCL: https://deckelturismo.cl/pt/transfer-aeroporto.html
+- Transfer Centros de Esqui: https://deckelturismo.cl/pt/transfer-esqui.html
+- Rotas do Vinho (enoturismo): https://deckelturismo.cl/pt/rotas-do-vinho.html
+- Passeios a Valparaíso e Viña del Mar: https://deckelturismo.cl/pt/passeios-valparaiso.html
+- Transporte Corporativo: https://deckelturismo.cl/pt/transporte-corporativo.html
+
 ## Descripción
 
 Deckel Transporte y Turismo es una empresa de transporte privado y turismo basada en Santiago, Chile. Atiende a pasajeros individuales, familias, grupos y empresas. Todos los vehículos son modernos y los conductores están certificados y con experiencia en ruta. El servicio es siempre privado — sin grupos, sin esperas con desconocidos.
