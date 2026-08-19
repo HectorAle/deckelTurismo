@@ -1,0 +1,31 @@
+    /* Hero image */
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
+      url('/images/esqui/ski-hero.jpg'); }
+
+    /* Banda de destinos (centros de esquí) */
+    .dest-strip { background: var(--dark); padding: 2rem 0; }
+    .dest-strip-inner { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .dest-strip-label { font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); white-space: nowrap; }
+    .dest-pills { display: flex; gap: .75rem; flex-wrap: wrap; }
+    .dest-pill { display: inline-flex; align-items: center; gap: .45rem; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.8); font-family: var(--font-h); font-size: .78rem; font-weight: 600; padding: .38rem .9rem; border-radius: 99px; transition: all var(--ease); }
+    .dest-pill:hover { background: rgba(255,255,255,.14); color: var(--white); }
+    .dest-pill i { font-size: .7rem; color: var(--gold-mid); }
+
+    /* Grid 3×2 para 6 tarjetas incluidas */
+    .inc-grid { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+    @media (max-width: 700px) { .inc-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 420px) { .inc-grid { grid-template-columns: 1fr; } }
+
+    /* Precios compactos */
+    .price-amount { font-size: 1.35rem; }
+    @media (max-width: 480px) { .price-amount { font-size: 1.2rem; } }
+
+    /* Galería esquí */
+    .ski-gallery { background: var(--bg); padding: 5rem 0; }
+    .ski-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .ski-img { border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4/3; }
+    .ski-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s var(--ease); }
+    .ski-img:hover img { transform: scale(1.05); }
+    @media (max-width: 640px) { .ski-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 400px) { .ski-grid { grid-template-columns: 1fr; } }

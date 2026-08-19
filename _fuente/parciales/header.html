@@ -1,0 +1,37 @@
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="{{url_home}}" class="nav-brand">
+          <img src="/logo-icon.png" alt="Deckel" />
+          <span class="brand-text">DECKEL<span class="brand-sub">{{tagline}}</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="{{url_home}}#servicios">{{nav_servicios}}</a></li>
+          <li><a href="{{url_home}}#proceso">{{nav_proceso}}</a></li>
+          <li><a href="{{url_home}}#contacto">{{nav_contacto}}</a></li>
+        </ul>
+        <div class="nav-lang" role="group" aria-label="{{etiqueta_idioma}}">
+          <a href="{{URL_ES}}" hreflang="es"{{ACTIVO_ES}}>ES</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="{{URL_EN}}" hreflang="en"{{ACTIVO_EN}}>EN</a>
+        </div>
+        <div class="nav-cta-wrap">
+          <a href="https://wa.me/56932455532?text={{MENSAJE_WA}}" target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'{{SUBSITIO}}',idioma:'{{lang}}',button:'nav'})">
+            <i class="fab fa-whatsapp"></i> {{cta}}
+          </a>
+        </div>
+        <button class="nav-toggle" id="menuBtn" aria-label="{{menu}}"><i class="fas fa-bars"></i></button>
+      </nav>
+    </div>
+    <nav class="nav-mobile" id="navMobile">
+      <a href="{{url_home}}#servicios" onclick="closeMenu()">{{nav_servicios}}</a>
+      <a href="{{url_home}}#proceso" onclick="closeMenu()">{{nav_proceso}}</a>
+      <a href="{{url_home}}#contacto" onclick="closeMenu()">{{nav_contacto}}</a>
+      <a href="https://wa.me/56932455532?text={{MENSAJE_WA}}" target="_blank" rel="noopener" class="btn btn-gold" style="justify-content:center" onclick="gtag('event','whatsapp_click',{subsitio:'{{SUBSITIO}}',idioma:'{{lang}}',button:'nav_mobile'})"><i class="fab fa-whatsapp"></i> {{cta}}</a>
+      <div class="nav-lang" role="group" aria-label="{{etiqueta_idioma}}">
+        <a href="{{URL_ES}}" hreflang="es"{{ACTIVO_ES}}>ES</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="{{URL_EN}}" hreflang="en"{{ACTIVO_EN}}>EN</a>
+      </div>
+    </nav>
+  </header>

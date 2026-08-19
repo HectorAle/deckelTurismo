@@ -1,0 +1,22 @@
+    /* Hero image */
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.88) 0%, rgba(15,35,65,.50) 55%, rgba(15,35,65,.15) 100%),
+      url('/images/costa/hero.jpg'); }
+
+    /* Destinos strip (balnearios) */
+    .dest-section { background: var(--dark); padding: 2rem 0; }
+    .dest-section-inner { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .dest-section-label { font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); white-space: nowrap; }
+    .dest-grid { display: flex; gap: .75rem; flex-wrap: wrap; }
+    .dest-pill { display: inline-flex; align-items: center; gap: .45rem; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.8); font-family: var(--font-h); font-size: .78rem; font-weight: 600; padding: .38rem .9rem; border-radius: 99px; transition: all var(--ease); }
+    .dest-pill:hover { background: rgba(255,255,255,.14); color: var(--white); }
+    .dest-pill i { font-size: .7rem; color: var(--gold-mid); }
+
+    /* Incluido: fondo var(--bg) */
+    .inc-card { background: var(--bg); }
+    .inc-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+    /* CTA con fondo oscuro */
+    .cta-band { background: var(--dark); }
+    .cta-band .cta-text h2 { color: var(--white); }
+    .cta-band .cta-text p { color: rgba(255,255,255,.6); }

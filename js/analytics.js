@@ -11,8 +11,10 @@
   'use strict';
   if (typeof gtag !== 'function') return;
 
-  /* Subsitio deducido del archivo: no hay que tocar cada página. */
-  var SUBSITIOS = {
+  /* El subsitio lo declara la propia página en <html data-subsitio>, para que
+   * coincida con el de los eventos del marcado. Sin él, se deduce del archivo
+   * (páginas que aún no pasan por construir.py). */
+  var RESPALDO = {
     'index': 'home',
     'indexmantencion': 'mantencion',
     'servicio-aeropuerto': 'aeropuerto',
@@ -21,12 +23,15 @@
     'servicio-esqui': 'esqui',
     'servicio-vinas': 'vinas'
   };
+  var raiz = document.documentElement;
   var archivo = (location.pathname.split('/').pop() || 'index.html')
                   .replace(/\.html?$/i, '').toLowerCase();
-  var subsitio = SUBSITIOS[archivo] || archivo || 'home';
+  var subsitio = raiz.getAttribute('data-subsitio') || RESPALDO[archivo] || archivo || 'home';
+  var idioma = (raiz.getAttribute('lang') || 'es').slice(0, 2);
 
   function enviar(evento, datos) {
     datos.subsitio = subsitio;
+    datos.idioma = idioma;
     gtag('event', evento, datos);
   }
 

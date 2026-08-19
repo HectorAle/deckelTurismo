@@ -1,0 +1,9 @@
+    /* Imagen hero específica de esta página */
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
+      url('/images/aeropuerto/hero.jpg');
+    }
+    /* Grid de 3 columnas para 6 tarjetas */
+    .inc-grid { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 700px) { .inc-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 420px) { .inc-grid { grid-template-columns: 1fr; } }

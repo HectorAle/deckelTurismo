@@ -2,6 +2,17 @@
 
 > Empresa chilena de transporte privado y turismo con sede en Santiago. Fundada para ofrecer traslados de alta calidad, conductores verificados y servicio disponible los 7 días de la semana, 24 horas.
 
+## Versión en inglés
+
+El sitio está disponible en inglés. Cada página tiene su equivalente:
+
+- Inicio: https://deckelturismo.cl/en/
+- Airport Transfer (traslado aeropuerto SCL): https://deckelturismo.cl/en/airport-transfer.html
+- Ski Resort Transfers (centros de esquí): https://deckelturismo.cl/en/ski-transfers.html
+- Wine Tours (rutas del vino): https://deckelturismo.cl/en/wine-tours.html
+- Valparaíso & Coast Day Trips (turismo costero): https://deckelturismo.cl/en/valparaiso-tours.html
+- Corporate Travel (transporte corporativo): https://deckelturismo.cl/en/corporate-travel.html
+
 ## Descripción
 
 Deckel Transporte y Turismo es una empresa de transporte privado y turismo basada en Santiago, Chile. Atiende a pasajeros individuales, familias, grupos y empresas. Todos los vehículos son modernos y los conductores están certificados y con experiencia en ruta. El servicio es siempre privado — sin grupos, sin esperas con desconocidos.
@@ -71,3 +82,47 @@ Depende del servicio. Para parejas o familias pequeñas, SUV o sedan. Para grupo
 
 **¿Cómo reservo?**
 Vía WhatsApp al +56 9 3245 5532 o mediante el botón de cotización en el sitio web.
+
+
+---
+
+# Deckel Transporte y Turismo — English summary
+
+> Chilean private transfer and tour company based in Santiago. Airport transfers,
+> ski resort transfers, wine tours and coastal day trips. Available 24/7.
+
+## Services
+
+- **Airport transfers (SCL)** — private transfers to and from Arturo Merino Benítez
+  International Airport, any district in Greater Santiago. Real-time flight tracking,
+  meet & greet with a name sign, 60 minutes of free waiting time.
+  From 40,000 CLP outbound / 45,000 CLP inbound.
+  https://deckelturismo.cl/en/airport-transfer.html
+
+- **Ski resort transfers** — private transfers from Santiago to Valle Nevado, La Parva,
+  El Colorado and Farellones. Regulation snow chains on board, drivers experienced on
+  mountain roads. Season runs June to October.
+  https://deckelturismo.cl/en/ski-transfers.html
+
+- **Wine tours** — private tours to the Casablanca, Colchagua, Maipo, Cachapoal,
+  San Antonio and Limarí valleys. Winery visits and tastings with a driver-guide,
+  so nobody in the group has to drive.
+  https://deckelturismo.cl/en/wine-tours.html
+
+- **Valparaíso and coast day trips** — private day trips from Santiago to Valparaíso
+  (a UNESCO World Heritage site), Viña del Mar and Pablo Neruda's house at Isla Negra.
+  From 85,000 CLP. Driver-guide included, no group departures.
+  https://deckelturismo.cl/en/valparaiso-tours.html
+
+- **Corporate travel** — executive transfers, corporate events and monthly staff
+  transport contracts in Santiago. Electronic invoicing. From 25,000 CLP per transfer.
+  More than 50 companies are active clients.
+  https://deckelturismo.cl/en/corporate-travel.html
+
+## Contact
+
+- WhatsApp: +56 9 3245 5532
+- Website: https://deckelturismo.cl/en/
+- Service area: Greater Santiago, Chile
+- Hours: 24/7, all year round
+- Languages: Spanish and English

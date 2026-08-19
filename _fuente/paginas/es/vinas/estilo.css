@@ -1,0 +1,101 @@
+    /* Hero image */
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.88) 0%, rgba(15,35,65,.50) 55%, rgba(15,35,65,.15) 100%),
+      url('/images/vinas/vina-hero.jpg'); }
+
+    /* Banda de valles vitivinícolas */
+    .valles-strip { background: var(--dark); padding: 2rem 0; }
+    .valles-strip-inner { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .valles-strip-label { font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); white-space: nowrap; }
+    .valles-pills { display: flex; gap: .75rem; flex-wrap: wrap; }
+    .valle-pill { display: inline-flex; align-items: center; gap: .45rem; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.8); font-family: var(--font-h); font-size: .78rem; font-weight: 600; padding: .38rem .9rem; border-radius: 99px; transition: all var(--ease); }
+    .valle-pill:hover { background: rgba(255,255,255,.14); color: var(--white); }
+    .valle-pill i { font-size: .7rem; color: var(--gold-mid); }
+
+    /* Tarjetas de valle */
+    .valles { background: var(--bg); }
+    .valles-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+    .valle-card {
+      position: relative;
+      min-height: 320px;
+      background: var(--dark);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      border: 1.5px solid var(--gray-100);
+      box-shadow: var(--sh-sm);
+      transition: all var(--ease);
+    }
+    .valle-card:hover { box-shadow: var(--sh-md); transform: translateY(-2px); border-color: var(--gray-200); }
+    .valle-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(.95) contrast(1.03);
+      transition: transform .45s var(--ease);
+    }
+    .valle-card:hover img { transform: scale(1.05); }
+    .valle-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(8,15,26,.88), rgba(8,15,26,.18) 55%, rgba(8,15,26,.08));
+    }
+    .valle-card-content {
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 1;
+      color: var(--white);
+    }
+    .valle-tag {
+      display: inline-block;
+      margin-bottom: .55rem;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.8);
+    }
+    .valle-card-content h3 {
+      margin: 0 0 .45rem;
+      font-family: var(--font-h);
+      font-size: 1.22rem;
+      line-height: 1.2;
+      color: var(--white);
+    }
+    .valle-card-content p {
+      margin: 0;
+      font-size: .82rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,.82);
+    }
+
+    /* Íconos temáticos en dorado (override del azul por defecto) */
+    .feat-icon { background: var(--gold-lt); color: var(--gold); }
+    .inc-icon  { background: var(--gold-lt); color: var(--gold); }
+    .pf i      { color: var(--gold); }
+
+    /* Grid 4×2 para 8 tarjetas incluidas */
+    .inc-grid { grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 800px) { .inc-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 420px) { .inc-grid { grid-template-columns: 1fr; } }
+
+    /* Incluido: fondo var(--bg) */
+    .inc-card { background: var(--bg); }
+
+    /* CTA con fondo oscuro */
+    .cta-band { background: var(--dark); }
+    .cta-band .cta-text h2 { color: var(--white); }
+    .cta-band .cta-text p { color: rgba(255,255,255,.6); }
+
+    /* Galería de viñas */
+    .gallery-grid { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 220px 220px; }
+    .gallery-grid .g-img img { filter: saturate(.95) contrast(1.03); }
+    @media (max-width: 640px) {
+      .valles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 180px 180px; }
+      .gallery-grid .g-main { grid-row: auto; grid-column: 1 / 3; }
+    }
+    @media (max-width: 420px) { .valles-grid { grid-template-columns: 1fr; } }

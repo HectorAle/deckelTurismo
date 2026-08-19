@@ -1,0 +1,43 @@
+    /* Hero image */
+    .hero-bg { background-image:
+      linear-gradient(to top, rgba(8,15,26,.92) 0%, rgba(15,35,65,.55) 55%, rgba(15,35,65,.18) 100%),
+      url('/images/corporativo/hero.jpg'); }
+
+    /* Stats bar */
+    .stats-bar { background: var(--navy); padding: 2.5rem 0; }
+    .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+    .stat-cell { text-align: center; padding: 1rem 1.5rem; border-right: 1px solid rgba(255,255,255,.08); }
+    .stat-cell:last-child { border-right: none; }
+    .stat-num { font-family: var(--font-h); font-size: 2rem; font-weight: 900; color: var(--white); line-height: 1; }
+    .stat-num span { color: var(--gold-mid); }
+    .stat-label { font-size: .78rem; color: rgba(255,255,255,.5); margin-top: .3rem; font-family: var(--font-h); font-weight: 600; letter-spacing: .04em; }
+
+    /* Casos de uso */
+    .usecases { background: var(--bg); }
+    .uc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .uc-card { background: var(--white); border-radius: var(--r-lg); padding: 1.8rem 1.5rem; border: 1.5px solid var(--gray-100); transition: all var(--ease); }
+    .uc-card:hover { border-color: var(--blue); box-shadow: var(--sh-md); transform: translateY(-2px); }
+    .uc-icon { width: 48px; height: 48px; border-radius: var(--r-sm); background: var(--blue-lt); display: flex; align-items: center; justify-content: center; color: var(--blue); font-size: 1.1rem; margin-bottom: 1rem; }
+    .uc-card h4 { font-family: var(--font-h); font-size: .92rem; font-weight: 800; color: var(--dark); margin-bottom: .4rem; }
+    .uc-card p { font-size: .82rem; color: var(--gray-600); line-height: 1.6; }
+
+    /* Incluido: fondo var(--bg) en lugar de var(--white) */
+    .inc-card { background: var(--bg); }
+    .inc-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+    /* Precios: variante gold para "Recomendado" */
+    .pricing { background: var(--bg); }
+    .pricing-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); max-width: 100%; }
+    .price-card { padding: 2rem 1.6rem; }
+    .price-card.featured { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(192,124,24,.10); }
+    .price-card:hover { border-color: var(--gold); }
+    .price-badge { background: var(--gold); }
+    .price-card h3 { font-size: 1.05rem; }
+    .price-amount { font-size: 2.2rem; }
+    .price-pax { font-size: .82rem; color: var(--gray-600); margin-bottom: 1.2rem; }
+    .price-note { font-size: .76rem; color: var(--gray-400); margin-top: .45rem; }
+
+    /* Responsive */
+    @media (max-width: 760px) { .uc-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .uc-grid { grid-template-columns: 1fr; } }

@@ -1,38 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://deckelturismo.cl/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/" />
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://deckelturismo.cl/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/" />
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://deckelturismo.cl/servicio-aeropuerto.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-aeropuerto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/airport-transfer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-aeropuerto.html" />
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://deckelturismo.cl/en/airport-transfer.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-aeropuerto.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/airport-transfer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-aeropuerto.html" />
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://deckelturismo.cl/servicio-esqui.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-esqui.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/ski-transfers.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-esqui.html" />
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://deckelturismo.cl/en/ski-transfers.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-esqui.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/ski-transfers.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-esqui.html" />
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://deckelturismo.cl/servicio-vinas.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-vinas.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/wine-tours.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-vinas.html" />
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deckelturismo.cl/en/wine-tours.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-vinas.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/wine-tours.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-vinas.html" />
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://deckelturismo.cl/servicio-costa.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-costa.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/valparaiso-tours.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-costa.html" />
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deckelturismo.cl/en/valparaiso-tours.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-costa.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/valparaiso-tours.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-costa.html" />
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://deckelturismo.cl/servicio-corporativo.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-corporativo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/corporate-travel.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-corporativo.html" />
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deckelturismo.cl/en/corporate-travel.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://deckelturismo.cl/servicio-corporativo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deckelturismo.cl/en/corporate-travel.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deckelturismo.cl/servicio-corporativo.html" />
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
