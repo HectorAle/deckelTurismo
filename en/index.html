@@ -566,12 +566,14 @@
       display: flex; align-items: center; justify-content: space-between;
       gap: 3rem; flex-wrap: wrap;
     }
-    .cta-text h2 {
+    /* La banda del home es oscura: hay que igualar la especificidad de
+       .cta-band .cta-text h2 de servicios.css, que define la variante clara. */
+    .cta-band .cta-text h2 {
       font-family: var(--font-h); font-size: clamp(1.8rem, 3.5vw, 2.5rem);
       font-weight: 800; color: var(--white); letter-spacing: -.025em; line-height: 1.2;
     }
-    .cta-text p {
-      font-size: .95rem; color: rgba(255,255,255,.55);
+    .cta-band .cta-text p {
+      font-size: .95rem; color: rgba(255,255,255,.72);
       margin-top: .6rem; max-width: 420px;
     }
     .cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; flex-shrink: 0; }
