@@ -37,3 +37,9 @@
     .ski-img:hover img { transform: scale(1.05); }
     @media (max-width: 640px) { .ski-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 400px) { .ski-grid { grid-template-columns: 1fr; } }
+
+    /* Nevados de Chillán no es un destino de la cordillera de Santiago: está a
+       480 km. Ocupa la fila completa para que se lea como algo aparte y no
+       quede una tarjeta suelta al final de la grilla. */
+    .price-card-lejano { grid-column: 1 / -1; }
+    .price-card-lejano .price-type { color: var(--gold); }

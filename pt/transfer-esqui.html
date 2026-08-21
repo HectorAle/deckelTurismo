@@ -7,8 +7,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transfer para Centros de Esqui no Chile | Deckel</title>
-  <meta name="description" content="Transfer privado de Santiago para Valle Nevado, La Parva, El Colorado e Farellones. Correntes a bordo e motorista experiente na montanha." />
-  <meta name="keywords" content="transfer esqui Chile, Valle Nevado transfer, La Parva Chile, El Colorado esqui, Farellones neve, transfer neve Santiago, esqui no Chile transporte, passeio neve Santiago" />
+  <meta name="description" content="Transfers privados para Farellones, El Colorado, La Parva, Valle Nevado e Nevados de Chillán. Correntes a bordo e motorista experiente na montanha." />
+  <meta name="keywords" content="transfer esqui Chile, transfer Nevados de Chillan, Valle Nevado transfer, La Parva Chile, El Colorado esqui, Farellones neve, transfer neve Santiago, esqui no Chile transporte, passeio neve Santiago" />
   <meta name="author" content="Deckel Transporte y Turismo" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#0C1A2E" />
@@ -23,7 +23,7 @@
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Deckel Transporte y Turismo" />
   <meta property="og:title" content="Transfer para Centros de Esqui no Chile | Deckel" />
-  <meta property="og:description" content="Transfer privado de Santiago para Valle Nevado, La Parva e El Colorado. Correntes a bordo e motorista experiente." />
+  <meta property="og:description" content="Transfers privados para Farellones, El Colorado, La Parva, Valle Nevado e Nevados de Chillán. Correntes a bordo e motorista experiente na montanha." />
   <meta property="og:url" content="https://deckelturismo.cl/pt/transfer-esqui.html" />
   <meta property="og:image" content="https://deckelturismo.cl/images/esqui/ski-hero.jpg" />
   <meta property="og:image:width" content="1600" />
@@ -33,7 +33,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@deckelturismo" />
   <meta name="twitter:title" content="Transfer para Centros de Esqui no Chile | Deckel" />
-  <meta name="twitter:description" content="Transfer privado de Santiago para os centros de esqui dos Andes." />
+  <meta name="twitter:description" content="Transfers privados para Farellones, El Colorado, La Parva, Valle Nevado e Nevados de Chillán. Correntes a bordo e motorista experiente na montanha." />
   <meta name="twitter:image" content="https://deckelturismo.cl/images/esqui/ski-hero.jpg" />
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -44,7 +44,7 @@
         "@type": "Service",
         "@id": "https://deckelturismo.cl/pt/transfer-esqui.html#service",
         "name": "Transfer Privado para os Centros de Esqui do Chile",
-        "description": "Transfer privado de Santiago para os principais centros de esqui do Chile: Valle Nevado, La Parva, El Colorado e Farellones. Correntes regulamentares a bordo e motorista com experiência em estrada de montanha e neve.",
+        "description": "Transfer privado de Santiago para os principais centros de esqui do Chile: Valle Nevado, La Parva, El Colorado e Farellones, além de Nevados de Chillán na Região de Ñuble. Correntes regulamentares a bordo e motorista com experiência em estrada de montanha e neve.",
         "url": "https://deckelturismo.cl/pt/transfer-esqui.html",
         "inLanguage": "pt",
         "provider": {
@@ -141,6 +141,14 @@
           },
           {
             "@type": "Question",
+            "name": "Como funciona o transfer para Nevados de Chillán?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nevados de Chillán fica na Região de Ñuble, a cerca de 480 km de Santiago: aproximadamente 6 horas pela Ruta 5 Sul. Não é um transfer de ida e volta no mesmo dia como os centros da cordilheira de Santiago, então organizamos como viagem de vários dias ou transfer em um só sentido. Escreva com as suas datas e montamos o programa."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Com quanta antecedência devo reservar na temporada?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -209,6 +217,12 @@
     .ski-img:hover img { transform: scale(1.05); }
     @media (max-width: 640px) { .ski-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 400px) { .ski-grid { grid-template-columns: 1fr; } }
+
+    /* Nevados de Chillán no es un destino de la cordillera de Santiago: está a
+       480 km. Ocupa la fila completa para que se lea como algo aparte y no
+       quede una tarjeta suelta al final de la grilla. */
+    .price-card-lejano { grid-column: 1 / -1; }
+    .price-card-lejano .price-type { color: var(--gold); }
   </style>
 </head>
 <body>
@@ -231,12 +245,26 @@
           <span class="sep" aria-hidden="true">/</span>
           <a href="/pt/transfer-esqui.html" hreflang="pt" aria-current="true">PT</a>
         </div>
+        <!-- Versión compacta para móvil: en escritorio se oculta y manda la de arriba. -->
+        <div class="lang-wrap">
+          <button type="button" class="lang-chip" id="langBtn"
+                  aria-expanded="false" aria-controls="langMenu"
+                  aria-label="Idioma">
+            <i class="fas fa-globe" aria-hidden="true"></i>PT<i class="fas fa-chevron-down chev" aria-hidden="true"></i>
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu" hidden>
+            <p class="lang-menu-tit">Idioma</p>
+            <a href="/servicio-esqui.html" hreflang="es" role="menuitem"><span class="lang-cod">ES</span><span class="lang-nom">Español</span></a>
+            <a href="/en/ski-transfers.html" hreflang="en" role="menuitem"><span class="lang-cod">EN</span><span class="lang-nom">English</span></a>
+            <a href="/pt/transfer-esqui.html" hreflang="pt" role="menuitem" aria-current="true"><span class="lang-cod">PT</span><span class="lang-nom">Português</span><i class="fas fa-check" aria-hidden="true"></i></a>
+          </div>
+        </div>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/56932455532?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20transfer%20para%20a%20neve." target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'esqui',idioma:'pt',button:'nav'})">
             <i class="fab fa-whatsapp"></i> Solicitar orçamento
           </a>
         </div>
-        <button class="nav-toggle" id="menuBtn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        <button class="nav-toggle" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navMobile"><i class="fas fa-bars"></i></button>
       </nav>
     </div>
     <nav class="nav-mobile" id="navMobile">
@@ -263,9 +291,9 @@
         <span>Centros de Esqui</span>
       </div>
       <h1>Transfer para os <em>Centros de Esqui</em><br>na Cordilheira</h1>
-      <p class="hero-lead">Farellones, El Colorado, La Parva e Valle Nevado. Veículo com correntes regulamentares e motorista experiente na estrada da montanha.</p>
+      <p class="hero-lead">Farellones, El Colorado, La Parva e Valle Nevado, além de Nevados de Chillán, na Região de Ñuble. Veículo com correntes regulamentares e motorista experiente na estrada da montanha.</p>
       <div class="hero-badges">
-        <span class="badge"><i class="fas fa-mountain"></i> 4 centros de esqui</span>
+        <span class="badge"><i class="fas fa-mountain"></i> 5 centros de esqui</span>
         <span class="badge"><i class="fas fa-link"></i> Correntes a bordo</span>
         <span class="badge"><i class="fas fa-snowflake"></i> Temporada jun–out</span>
         <span class="badge"><i class="fas fa-user-tie"></i> Motorista de montanha</span>
@@ -286,6 +314,7 @@
           <span class="dest-pill"><i class="fas fa-map-marker-alt"></i> El Colorado — 2.430 m</span>
           <span class="dest-pill"><i class="fas fa-map-marker-alt"></i> La Parva — 2.662 m</span>
           <span class="dest-pill"><i class="fas fa-map-marker-alt"></i> Valle Nevado — 3.025 m</span>
+          <span class="dest-pill"><i class="fas fa-map-marker-alt"></i> Nevados de Chillán — 1.650 m</span>
         </div>
       </div>
     </div>
@@ -370,6 +399,12 @@
           <p class="price-pax"><i class="fas fa-road"></i> 60 km de Santiago</p>
           <div class="price-amount">Consulte disponibilidade e tarifas</div>
         </div>
+        <div class="price-card price-card-lejano reveal">
+          <p class="price-type">Região de Ñuble · 1.650 m</p>
+          <h3>Nevados de Chillán</h3>
+          <p class="price-pax"><i class="fas fa-road"></i> 480 km de Santiago · cerca de 6 h</p>
+          <div class="price-amount">Consulte disponibilidade e tarifas</div>
+        </div>
       </div>
     </div>
   </section>
@@ -410,7 +445,7 @@
         </div>
         <div class="step-item reveal reveal-d2">
           <div class="step-bubble">03</div>
-          <h3>A la montaña y de vuelta</h3>
+          <h3>Para a montanha e de volta</h3>
           <p>Buscamos você no hotel ou endereço. Subida tranquila, dia na neve e descida sem preocupação.</p>
         </div>
       </div>
@@ -427,6 +462,7 @@
         <div class="faq-item"><button class="faq-q">O veículo leva correntes? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Sim. O veículo leva correntes regulamentares, instaladas quando as condições da estrada exigem ou quando a fiscalização de acesso pede. Nem sempre sobem já colocadas: o motorista avalia a estrada e cumpre a norma vigente em cada centro.</div></div>
         <div class="faq-item"><button class="faq-q">Tem espaço para o equipamento de esqui? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Sim. Há espaço de sobra para esquis, pranchas, bastões e botas. Se o grupo levar muito equipamento, avise ao reservar para designarmos o veículo adequado.</div></div>
         <div class="faq-item"><button class="faq-q">E se a estrada fechar por mau tempo? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Acompanhamos o boletim de neve e as condições de acesso em tempo real. Se a estrada para algum centro fechar, avisamos na hora e remarcamos sem custo.</div></div>
+        <div class="faq-item"><button class="faq-q">Como funciona o transfer para Nevados de Chillán? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Nevados de Chillán fica na Região de Ñuble, a cerca de 480 km de Santiago: aproximadamente 6 horas pela Ruta 5 Sul. Não é um transfer de ida e volta no mesmo dia como os centros da cordilheira de Santiago, então organizamos como viagem de vários dias ou transfer em um só sentido. Escreva com as suas datas e montamos o programa.</div></div>
         <div class="faq-item"><button class="faq-q">Com quanta antecedência devo reservar na temporada? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Na alta temporada (julho e agosto) recomendamos reservar com pelo menos 48 horas de antecedência, porque a procura é alta. Fora desses meses, 24 horas costuma bastar.</div></div>
       </div>
     </div>
@@ -450,9 +486,12 @@
   <footer class="footer">
       <div class="container">
         <div class="footer-grid">
-          <div>
+          <div class="f-brand">
             <div class="f-brand-row"><picture><source srcset="/logo-icon-104.webp" type="image/webp" /><img src="/logo-icon-104.png" alt="Deckel" width="104" height="104" loading="lazy" /></picture></div>
             <p class="f-brand-desc">Empresa de transporte privado e turismo com sede em Santiago, no Chile. Comprometidos com a pontualidade, a segurança e o conforto de cada passageiro.</p>
+          </div>
+          <div class="f-social-bloque">
+            <h5>Siga-nos</h5>
             <div class="f-social">
               <a href="https://www.instagram.com/deckelturismo?igsh=MXFwYnJvcmYyaWVuaA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
               <a href="https://www.facebook.com/share/1CdwUKDwTH/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -483,6 +522,14 @@
             <li><a href="tel:+56932455532">+56 9 3245 5532</a></li>
             <li><a href="mailto:contacto@deckelturismo.cl">contacto@deckelturismo.cl</a></li>
           </ul></div>
+        <div class="pagos-pie">
+          <span class="pagos-pie-tit">Formas de pagamento</span>
+          <ul class="pagos-pie-items">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>Dinheiro</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 9h13l-3-3M20 15H7l3 3"/></svg>Transferência</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>Cartão de crédito</li>
+          </ul>
+        </div>
         </div>
         <div class="footer-bottom">
           <p>© 2026 Deckel Transporte y Turismo. Todos os direitos reservados.</p>

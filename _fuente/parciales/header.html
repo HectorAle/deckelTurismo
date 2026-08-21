@@ -13,12 +13,16 @@
         <div class="nav-lang" role="group" aria-label="{{etiqueta_idioma}}">
           {{SELECTOR_IDIOMAS}}
         </div>
+        <!-- Versión compacta para móvil: en escritorio se oculta y manda la de arriba. -->
+        <div class="lang-wrap">
+          {{SELECTOR_CHIP}}
+        </div>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/56932455532?text={{MENSAJE_WA}}" target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'{{SUBSITIO}}',idioma:'{{lang}}',button:'nav'})">
             <i class="fab fa-whatsapp"></i> {{cta}}
           </a>
         </div>
-        <button class="nav-toggle" id="menuBtn" aria-label="{{menu}}"><i class="fas fa-bars"></i></button>
+        <button class="nav-toggle" id="menuBtn" aria-label="{{menu}}" aria-expanded="false" aria-controls="navMobile"><i class="fas fa-bars"></i></button>
       </nav>
     </div>
     <nav class="nav-mobile" id="navMobile">

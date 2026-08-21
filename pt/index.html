@@ -641,14 +641,11 @@
       .cta-actions .btn { flex: 1; justify-content: center; }
       .contact-options { padding: 0 .5rem; }
     }
-    @media (max-width: 900px) {
-      .footer-grid > div:first-child { grid-column: 1 / -1; }
-    }
+    /* El pie lo gobierna shared.css; aquí sólo queda lo propio del home.
+       Estas reglas estaban duplicadas y, al cargarse después, anulaban las
+       de shared.css. */
     @media (max-width: 480px) {
       .container { padding: 0 1.2rem; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      .footer-grid > div:first-child { grid-column: 1 / -1; }
-      .footer-bottom { flex-direction: column; gap: .3rem; text-align: center; }
     }
   </style>
 </head>
@@ -672,12 +669,26 @@
           <span class="sep" aria-hidden="true">/</span>
           <a href="/pt/" hreflang="pt" aria-current="true">PT</a>
         </div>
+        <!-- Versión compacta para móvil: en escritorio se oculta y manda la de arriba. -->
+        <div class="lang-wrap">
+          <button type="button" class="lang-chip" id="langBtn"
+                  aria-expanded="false" aria-controls="langMenu"
+                  aria-label="Idioma">
+            <i class="fas fa-globe" aria-hidden="true"></i>PT<i class="fas fa-chevron-down chev" aria-hidden="true"></i>
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu" hidden>
+            <p class="lang-menu-tit">Idioma</p>
+            <a href="/" hreflang="es" role="menuitem"><span class="lang-cod">ES</span><span class="lang-nom">Español</span></a>
+            <a href="/en/" hreflang="en" role="menuitem"><span class="lang-cod">EN</span><span class="lang-nom">English</span></a>
+            <a href="/pt/" hreflang="pt" role="menuitem" aria-current="true"><span class="lang-cod">PT</span><span class="lang-nom">Português</span><i class="fas fa-check" aria-hidden="true"></i></a>
+          </div>
+        </div>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/56932455532?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20transfer." target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'home',idioma:'pt',button:'nav'})">
             <i class="fab fa-whatsapp"></i> Solicitar orçamento
           </a>
         </div>
-        <button class="nav-toggle" id="menuBtn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        <button class="nav-toggle" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navMobile"><i class="fas fa-bars"></i></button>
       </nav>
     </div>
     <nav class="nav-mobile" id="navMobile">
@@ -791,7 +802,7 @@
           <div class="service-card-body">
             <p class="service-num">02 — Montanha</p>
             <h3>Centros de Esqui</h3>
-            <p>Transfers diários para Valle Nevado, La Parva, El Colorado e Portillo. Saídas de Santiago com horário flexível.</p>
+            <p>Transfers diários para Valle Nevado, La Parva, El Colorado e Portillo, e viagens programadas a Nevados de Chillán. Saídas de Santiago com horário flexível.</p>
             <span class="service-link">Ver mais <i class="fas fa-arrow-right"></i></span>
           </div>
         </a>
@@ -924,6 +935,15 @@
         </a>
 
       </div>
+
+        <div class="pagos reveal">
+          <span class="pagos-tit">Formas de pagamento</span>
+          <ul class="pagos-items">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></svg>Dinheiro</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 9h13l-3-3M20 15H7l3 3"/></svg>Transferência</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>Cartão de crédito</li>
+          </ul>
+        </div>
     </div>
   </section>
 
@@ -934,9 +954,12 @@
   <footer class="footer">
       <div class="container">
         <div class="footer-grid">
-          <div>
+          <div class="f-brand">
             <div class="f-brand-row"><picture><source srcset="/logo-icon-104.webp" type="image/webp" /><img src="/logo-icon-104.png" alt="Deckel" width="104" height="104" loading="lazy" /></picture></div>
             <p class="f-brand-desc">Empresa de transporte privado e turismo com sede em Santiago, no Chile. Comprometidos com a pontualidade, a segurança e o conforto de cada passageiro.</p>
+          </div>
+          <div class="f-social-bloque">
+            <h5>Siga-nos</h5>
             <div class="f-social">
               <a href="https://www.instagram.com/deckelturismo?igsh=MXFwYnJvcmYyaWVuaA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
               <a href="https://www.facebook.com/share/1CdwUKDwTH/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -967,6 +990,14 @@
             <li><a href="tel:+56932455532">+56 9 3245 5532</a></li>
             <li><a href="mailto:contacto@deckelturismo.cl">contacto@deckelturismo.cl</a></li>
           </ul></div>
+        <div class="pagos-pie">
+          <span class="pagos-pie-tit">Formas de pagamento</span>
+          <ul class="pagos-pie-items">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>Dinheiro</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 9h13l-3-3M20 15H7l3 3"/></svg>Transferência</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>Cartão de crédito</li>
+          </ul>
+        </div>
         </div>
         <div class="footer-bottom">
           <p>© 2026 Deckel Transporte y Turismo. Todos os direitos reservados.</p>

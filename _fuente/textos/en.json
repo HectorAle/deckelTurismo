@@ -28,5 +28,10 @@
   "url_esqui": "/en/ski-transfers.html",
   "url_costa": "/en/valparaiso-tours.html",
   "url_vinas": "/en/wine-tours.html",
-  "url_corporativo": "/en/corporate-travel.html"
+  "url_corporativo": "/en/corporate-travel.html",
+  "f_pagos": "Payment methods",
+  "pago_efectivo": "Cash",
+  "pago_transferencia": "Bank transfer",
+  "pago_tarjeta": "Credit card",
+  "f_siguenos": "Follow us"
 }

@@ -120,6 +120,7 @@ def armar(idioma, slug, datos):
         "SUBSITIO": datos["subsitio"],
         "MENSAJE_WA": datos.get(f"mensaje_wa_{idioma}", datos["mensaje_wa"]),
         "SELECTOR_IDIOMAS": selector_idiomas(slug, idioma),
+        "SELECTOR_CHIP": selector_chip(slug, idioma),
     })
 
     estilo = (d / "estilo.css").read_text().rstrip("\n")
@@ -152,6 +153,43 @@ def armar(idioma, slug, datos):
         "",
     ]
     return "\n".join(partes)
+
+
+NOMBRES_IDIOMA = {"es": "Español", "en": "English", "pt": "Português"}
+
+
+def selector_chip(slug, actual):
+    """Selector compacto para móvil: un botón con el idioma en curso que abre
+    la lista completa.
+
+    Cada fila lleva el código ISO y el nombre del idioma escrito en su propio
+    idioma (Español, English, Português), que es lo que reconoce quien no lee
+    el de la página. Si se agrega uno nuevo y no está en NOMBRES_IDIOMA, cae
+    al código en mayúsculas.
+    """
+    u = urls_idioma(slug)
+    filas = []
+    for idi in CFG["idiomas"]:
+        nombre = NOMBRES_IDIOMA.get(idi, idi.upper())
+        actualiza = ' aria-current="true"' if idi == actual else ""
+        marca = '<i class="fas fa-check" aria-hidden="true"></i>' if idi == actual else ""
+        filas.append(
+            f'<a href="{u[idi]}" hreflang="{idi}" role="menuitem"{actualiza}>'
+            f'<span class="lang-cod">{idi.upper()}</span>'
+            f'<span class="lang-nom">{nombre}</span>{marca}</a>')
+    items = "\n            ".join(filas)
+    etiqueta = TEXTOS[actual]["etiqueta_idioma"]
+    return (
+        f'<button type="button" class="lang-chip" id="langBtn"\n'
+        f'                  aria-expanded="false" aria-controls="langMenu"\n'
+        f'                  aria-label="{etiqueta}">\n'
+        f'            <i class="fas fa-globe" aria-hidden="true"></i>{actual.upper()}'
+        f'<i class="fas fa-chevron-down chev" aria-hidden="true"></i>\n'
+        f'          </button>\n'
+        f'          <div class="lang-menu" id="langMenu" role="menu" hidden>\n'
+        f'            <p class="lang-menu-tit">{etiqueta}</p>\n'
+        f'            {items}\n'
+        f'          </div>')
 
 
 def destino(idioma, slug, datos):

@@ -221,12 +221,26 @@
           <span class="sep" aria-hidden="true">/</span>
           <a href="/pt/transporte-corporativo.html" hreflang="pt" aria-current="true">PT</a>
         </div>
+        <!-- Versión compacta para móvil: en escritorio se oculta y manda la de arriba. -->
+        <div class="lang-wrap">
+          <button type="button" class="lang-chip" id="langBtn"
+                  aria-expanded="false" aria-controls="langMenu"
+                  aria-label="Idioma">
+            <i class="fas fa-globe" aria-hidden="true"></i>PT<i class="fas fa-chevron-down chev" aria-hidden="true"></i>
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu" hidden>
+            <p class="lang-menu-tit">Idioma</p>
+            <a href="/servicio-corporativo.html" hreflang="es" role="menuitem"><span class="lang-cod">ES</span><span class="lang-nom">Español</span></a>
+            <a href="/en/corporate-travel.html" hreflang="en" role="menuitem"><span class="lang-cod">EN</span><span class="lang-nom">English</span></a>
+            <a href="/pt/transporte-corporativo.html" hreflang="pt" role="menuitem" aria-current="true"><span class="lang-cod">PT</span><span class="lang-nom">Português</span><i class="fas fa-check" aria-hidden="true"></i></a>
+          </div>
+        </div>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/56932455532?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20proposta%20corporativa." target="_blank" rel="noopener" class="btn btn-gold" onclick="gtag('event','whatsapp_click',{subsitio:'corporativo',idioma:'pt',button:'nav'})">
             <i class="fab fa-whatsapp"></i> Solicitar orçamento
           </a>
         </div>
-        <button class="nav-toggle" id="menuBtn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        <button class="nav-toggle" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navMobile"><i class="fas fa-bars"></i></button>
       </nav>
     </div>
     <nav class="nav-mobile" id="navMobile">
@@ -506,9 +520,12 @@
   <footer class="footer">
       <div class="container">
         <div class="footer-grid">
-          <div>
+          <div class="f-brand">
             <div class="f-brand-row"><picture><source srcset="/logo-icon-104.webp" type="image/webp" /><img src="/logo-icon-104.png" alt="Deckel" width="104" height="104" loading="lazy" /></picture></div>
             <p class="f-brand-desc">Empresa de transporte privado e turismo com sede em Santiago, no Chile. Comprometidos com a pontualidade, a segurança e o conforto de cada passageiro.</p>
+          </div>
+          <div class="f-social-bloque">
+            <h5>Siga-nos</h5>
             <div class="f-social">
               <a href="https://www.instagram.com/deckelturismo?igsh=MXFwYnJvcmYyaWVuaA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
               <a href="https://www.facebook.com/share/1CdwUKDwTH/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -539,6 +556,14 @@
             <li><a href="tel:+56932455532">+56 9 3245 5532</a></li>
             <li><a href="mailto:contacto@deckelturismo.cl">contacto@deckelturismo.cl</a></li>
           </ul></div>
+        <div class="pagos-pie">
+          <span class="pagos-pie-tit">Formas de pagamento</span>
+          <ul class="pagos-pie-items">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>Dinheiro</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 9h13l-3-3M20 15H7l3 3"/></svg>Transferência</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>Cartão de crédito</li>
+          </ul>
+        </div>
         </div>
         <div class="footer-bottom">
           <p>© 2026 Deckel Transporte y Turismo. Todos os direitos reservados.</p>

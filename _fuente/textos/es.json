@@ -28,5 +28,10 @@
   "url_esqui": "/servicio-esqui.html",
   "url_costa": "/servicio-costa.html",
   "url_vinas": "/servicio-vinas.html",
-  "url_corporativo": "/servicio-corporativo.html"
+  "url_corporativo": "/servicio-corporativo.html",
+  "f_pagos": "Medios de pago",
+  "pago_efectivo": "Efectivo",
+  "pago_transferencia": "Transferencia",
+  "pago_tarjeta": "Tarjeta de crédito",
+  "f_siguenos": "Síguenos"
 }

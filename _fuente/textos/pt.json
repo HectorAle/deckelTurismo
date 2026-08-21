@@ -28,5 +28,10 @@
   "url_esqui": "/pt/transfer-esqui.html",
   "url_costa": "/pt/passeios-valparaiso.html",
   "url_vinas": "/pt/rotas-do-vinho.html",
-  "url_corporativo": "/pt/transporte-corporativo.html"
+  "url_corporativo": "/pt/transporte-corporativo.html",
+  "f_pagos": "Formas de pagamento",
+  "pago_efectivo": "Dinheiro",
+  "pago_transferencia": "Transferência",
+  "pago_tarjeta": "Cartão de crédito",
+  "f_siguenos": "Siga-nos"
 }

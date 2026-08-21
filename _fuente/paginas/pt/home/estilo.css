@@ -469,12 +469,9 @@
       .cta-actions .btn { flex: 1; justify-content: center; }
       .contact-options { padding: 0 .5rem; }
     }
-    @media (max-width: 900px) {
-      .footer-grid > div:first-child { grid-column: 1 / -1; }
-    }
+    /* El pie lo gobierna shared.css; aquí sólo queda lo propio del home.
+       Estas reglas estaban duplicadas y, al cargarse después, anulaban las
+       de shared.css. */
     @media (max-width: 480px) {
       .container { padding: 0 1.2rem; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      .footer-grid > div:first-child { grid-column: 1 / -1; }
-      .footer-bottom { flex-direction: column; gap: .3rem; text-align: center; }
     }
