@@ -197,6 +197,57 @@ def destino(idioma, slug, datos):
     return RAIZ / idioma / datos.get(f"archivo_{idioma}", f"{slug}.html")
 
 
+PRIORIDAD = {"home": "1.0", "aeropuerto": "0.9", "esqui": "0.9",
+             "vinas": "0.8", "costa": "0.8", "corporativo": "0.8"}
+
+
+def ultima_edicion(slug):
+    """Fecha del último cambio real de la página, según git.
+
+    Se toma de las fuentes propias de la página en los tres idiomas. Los
+    parciales quedan fuera a propósito: un retoque de cabecera o pie no cambia
+    el contenido, y si contara, las 18 fechas saltarían a la vez y el sitemap
+    dejaría de ser una señal creíble.
+
+    Escribir la fecha a mano hacía que quedara vieja en cuanto se tocaba el
+    contenido y nadie se acordara de actualizarla.
+    """
+    import subprocess
+    rutas = [f"_fuente/paginas/{i}/{slug}" for i in CFG["idiomas"]]
+    fechas = []
+    for r in rutas:
+        try:
+            s = subprocess.run(["git", "log", "-1", "--format=%ad", "--date=short", "--", r],
+                               cwd=RAIZ, capture_output=True, text=True, timeout=10).stdout.strip()
+            if s:
+                fechas.append(s)
+        except Exception:
+            pass
+    from datetime import date
+    return max(fechas) if fechas else date.today().isoformat()
+
+
+def escribir_sitemap():
+    """Regenera sitemap.xml junto con las páginas, para que no se desincronicen."""
+    filas = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+             '        xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+    for slug in CFG["paginas"]:
+        u = urls_idioma(slug)
+        alt = "\n".join(
+            [f'    <xhtml:link rel="alternate" hreflang="{i}" href="{BASE}{u[i]}" />' for i in CFG["idiomas"]]
+            + [f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}{u[CFG["idiomas"][0]]}" />'])
+        fecha = ultima_edicion(slug)
+        for i in CFG["idiomas"]:
+            filas += ["  <url>", f"    <loc>{BASE}{u[i]}</loc>", alt,
+                      f"    <lastmod>{fecha}</lastmod>",
+                      "    <changefreq>monthly</changefreq>",
+                      f"    <priority>{PRIORIDAD.get(slug, '0.7')}</priority>", "  </url>"]
+    filas.append("</urlset>")
+    (RAIZ / "sitemap.xml").write_text("\n".join(filas) + "\n")
+    return sum(1 for f in filas if f == "  <url>")
+
+
 def main():
     solo_check = "--check" in sys.argv
     generadas = desfasadas = 0
@@ -222,7 +273,8 @@ def main():
     if solo_check:
         print(f"\n{generadas} al día · {desfasadas} desfasadas")
         sys.exit(1 if desfasadas else 0)
-    print(f"\n{generadas + desfasadas} páginas generadas")
+    n = escribir_sitemap()
+    print(f"\n{generadas + desfasadas} páginas generadas · sitemap con {n} URLs")
 
 
 if __name__ == "__main__":
