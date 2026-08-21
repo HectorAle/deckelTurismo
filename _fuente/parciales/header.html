@@ -10,9 +10,6 @@
           <li><a href="{{url_home}}#proceso">{{nav_proceso}}</a></li>
           <li><a href="{{url_home}}#contacto">{{nav_contacto}}</a></li>
         </ul>
-        <div class="nav-lang" role="group" aria-label="{{etiqueta_idioma}}">
-          {{SELECTOR_IDIOMAS}}
-        </div>
         <!-- Versión compacta para móvil: en escritorio se oculta y manda la de arriba. -->
         <div class="lang-wrap">
           {{SELECTOR_CHIP}}
@@ -30,8 +27,5 @@
       <a href="{{url_home}}#proceso" onclick="closeMenu()">{{nav_proceso}}</a>
       <a href="{{url_home}}#contacto" onclick="closeMenu()">{{nav_contacto}}</a>
       <a href="https://wa.me/56932455532?text={{MENSAJE_WA}}" target="_blank" rel="noopener" class="btn btn-gold" style="justify-content:center" onclick="gtag('event','whatsapp_click',{subsitio:'{{SUBSITIO}}',idioma:'{{lang}}',button:'nav_mobile'})"><i class="fab fa-whatsapp"></i> {{cta}}</a>
-      <div class="nav-lang" role="group" aria-label="{{etiqueta_idioma}}">
-        {{SELECTOR_IDIOMAS}}
-      </div>
     </nav>
   </header>

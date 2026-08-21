@@ -193,8 +193,9 @@
 .cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; flex-shrink: 0; }
 
 /* ─── Responsive (páginas de servicio) ────────────────────────────── */
-@media (max-width: 820px) {
-  .hero { padding-top: 96px; }
+@media (max-width: 880px) {
+  /* El relleno del hero sigue al alto del header, que ahora deriva del logo. */
+  .hero { padding-top: var(--alto-header); }
 }
 @media (max-width: 720px) {
   section { padding: 4rem 0; }

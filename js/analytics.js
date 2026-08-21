@@ -50,13 +50,10 @@
     return 'otro';
   }
 
-  /* Cuál de los selectores de idioma se usó. */
-  function selectorIdioma(el) {
-    if (el.closest('.lang-menu')) return 'chip_movil';
-    if (el.closest('.nav-mobile')) return 'menu_movil';
-    if (el.closest('.footer')) return 'footer';
-    if (el.closest('.header')) return 'barra_escritorio';
-    return 'otro';
+  /* Desde qué ancho se usó el selector: es el mismo control en toda la
+   * gama, así que lo que distingue es el formato de pantalla. */
+  function selectorIdioma() {
+    return window.matchMedia('(max-width: 880px)').matches ? 'movil' : 'escritorio';
   }
 
   function texto(el) {
@@ -79,14 +76,14 @@
     /* Cambio de idioma: interesa el par desde/hacia y cuál de los tres
      * selectores se usó, porque conviven el chip de móvil y la tira de
      * escritorio. */
-    if (a.closest('.nav-lang, .lang-menu')) {
+    if (a.closest('.lang-menu')) {
       enviar('idioma_click', {
         desde: idioma,
         destino: a.getAttribute('hreflang') || '',
         /* Sólo el nombre; si se usara textContent saldría «ESEspañol»
          * porque el código y el nombre son dos <span> contiguos. */
         etiqueta: texto(a.querySelector('.lang-nom') || a),
-        ubicacion: selectorIdioma(a),
+        ubicacion: selectorIdioma(),
         destino_url: a.getAttribute('href') || ''
       });
       return;

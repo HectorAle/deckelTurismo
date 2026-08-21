@@ -93,22 +93,6 @@ def faq_desde_contenido(contenido, seo, idioma):
     return seo[:m.start(2)] + "\n" + nuevo + "\n  " + seo[m.end(2):]
 
 
-def selector_idiomas(slug, actual):
-    """Construye el selector con todos los idiomas configurados, en orden.
-
-    Se genera aquí y no en el parcial para que añadir un idioma sea solo
-    editar sitio.json: el marcado se ajusta solo.
-    """
-    u = urls_idioma(slug)
-    piezas = []
-    for i, idi in enumerate(CFG["idiomas"]):
-        if i:
-            piezas.append('<span class="sep" aria-hidden="true">/</span>')
-        activo = ' aria-current="true"' if idi == actual else ""
-        piezas.append(f'<a href="{u[idi]}" hreflang="{idi}"{activo}>{idi.upper()}</a>')
-    return "\n          ".join(piezas)
-
-
 def armar(idioma, slug, datos):
     d = SRC / "paginas" / idioma / slug
     if not d.is_dir():
@@ -119,7 +103,6 @@ def armar(idioma, slug, datos):
     ctx.update({
         "SUBSITIO": datos["subsitio"],
         "MENSAJE_WA": datos.get(f"mensaje_wa_{idioma}", datos["mensaje_wa"]),
-        "SELECTOR_IDIOMAS": selector_idiomas(slug, idioma),
         "SELECTOR_CHIP": selector_chip(slug, idioma),
     })
 

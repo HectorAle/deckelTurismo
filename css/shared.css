@@ -20,7 +20,10 @@
   --r-sm: 8px;
   --r: 14px;
   --r-lg: 20px;
-  --alto-header: 121px;
+  --logo-header: 108px;
+  /* El alto del header lo fija el logo más el relleno vertical del nav (.8rem).
+     Derivarlo evita que la variable y el alto real se separen al cambiar el logo. */
+  --alto-header: calc(var(--logo-header) + .8rem);
   --ease: 0.28s cubic-bezier(.4, 0, .2, 1);
   --ease-t: cubic-bezier(.32, .72, 0, 1);
   --sh-sm: 0 2px 12px rgba(12,26,46,.08);
@@ -90,14 +93,20 @@ button:focus-visible,
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 1px 0 rgba(12,26,46,.08), var(--sh-sm);
 }
-.nav { display: flex; align-items: center; justify-content: space-between; min-height: 112px; padding: .4rem 0; }
+/* flex-start con márgenes automáticos en lugar de space-between: con este
+   último los tres huecos salían idénticos y el selector de idioma se leía como
+   un elemento de igual rango que la marca o el menú. Ahora se agrupa con el
+   botón, que es donde pertenece. */
+.nav { display: flex; align-items: center; justify-content: flex-start; min-height: 112px; padding: .4rem 0; }
+.nav-links { margin-left: auto; }
+.lang-wrap { margin-left: auto; margin-right: 1.5rem; }
 .nav-brand {
   display: flex; align-items: center; gap: .6rem;
   font-family: var(--font-h); font-weight: 800; font-size: 1.58rem;
   letter-spacing: .04em; color: var(--white); transition: color var(--ease);
 }
 .header.scrolled .nav-brand { color: var(--dark); }
-.nav-brand img { width: 108px; height: 108px; object-fit: contain; }
+.nav-brand img { width: var(--logo-header); height: var(--logo-header); object-fit: contain; }
 .brand-text { display: flex; flex-direction: column; }
 .brand-sub { color: var(--gold-mid); font-size: .62em; font-weight: 600; letter-spacing: .06em; display: block; line-height: 1; }
 .nav-links { display: flex; align-items: center; gap: 2rem; }
@@ -136,46 +145,26 @@ button:focus-visible,
 .nav-mobile a:focus-visible { outline: 2px solid var(--gold-mid); outline-offset: -2px; }
 .nav-mobile .btn { margin: .6rem .25rem .15rem; justify-content: center; }
 
-/* ─── Selector de idioma ───────────────────────────────────────────── */
-.nav-lang {
-  display: flex; align-items: center; gap: .15rem;
-  font-family: var(--font-h); font-size: .78rem; font-weight: 700; letter-spacing: .05em;
-}
-.nav-lang a {
-  color: rgba(255,255,255,.55); padding: .3rem .42rem; border-radius: 6px;
-  transition: color var(--ease), background var(--ease);
-}
-.nav-lang a[aria-current] { color: var(--white); background: rgba(255,255,255,.12); }
-.nav-lang a:hover { color: var(--gold-mid); }
-.nav-lang .sep { color: rgba(255,255,255,.28); font-weight: 400; }
-.header.scrolled .nav-lang a { color: var(--gray-400); }
-.header.scrolled .nav-lang a[aria-current] { color: var(--dark); background: var(--gray-100); }
-.header.scrolled .nav-lang .sep { color: var(--gray-200); }
-.nav-mobile .nav-lang {
-  justify-content: center; gap: .3rem;
-  margin-top: 1.2rem; padding-top: 1.2rem;
-  border-top: 1px solid rgba(255,255,255,.07);
-}
-.nav-mobile .nav-lang a { font-size: .95rem; padding: .45rem .9rem; }
-
 /* ─── Selector compacto (chip) ─────────────────────────────────────── */
 /* En escritorio manda la tira ES / EN / PT; el chip aparece sólo en móvil,
    donde tres códigos y dos separadores competían con la marca. */
-.lang-wrap { display: none; position: relative; flex-shrink: 0; }
-/* Sin caja rellena: el selector es secundario frente a la marca. Conserva los
-   44px de alto táctil, pero como zona de toque, no como bloque visible. */
+.lang-wrap { display: block; position: relative; flex-shrink: 0; }
+/* Sin caja rellena: el selector es secundario frente a la marca y frente al
+   botón de cotizar. En escritorio toma la tipografía del menú —.82rem, peso
+   600— para leerse como un elemento más de esa fila. */
 .lang-chip {
-  display: inline-flex; align-items: center; gap: .3rem;
-  font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .06em;
-  color: rgba(255,255,255,.62); background: none;
+  display: inline-flex; align-items: center; gap: .34rem;
+  font-family: var(--font-h); font-size: .82rem; font-weight: 600; letter-spacing: .05em;
+  color: rgba(255,255,255,.8); background: none;
   border: 0; border-radius: 8px;
-  padding: 0 .45rem; min-height: 44px; cursor: pointer;
+  padding: 0 .6rem; min-height: 40px; cursor: pointer;
   transition: color var(--ease), background var(--ease);
 }
 .lang-chip .fa-globe { font-size: .95em; opacity: .75; }
 .lang-chip .chev { font-size: .55em; opacity: .55; transition: transform var(--ease); }
 .lang-chip[aria-expanded="true"] .chev { transform: rotate(180deg); }
-.lang-chip:hover, .lang-chip[aria-expanded="true"] { color: var(--white); background: rgba(255,255,255,.1); }
+.lang-chip:hover, .lang-chip[aria-expanded="true"] { color: var(--gold-mid); background: rgba(255,255,255,.08); }
+.header.scrolled .lang-chip:hover, .header.scrolled .lang-chip[aria-expanded="true"] { color: var(--blue); background: var(--gray-50); }
 .header.scrolled .lang-chip {
   color: var(--gray-600);
 }
@@ -223,23 +212,39 @@ button:focus-visible,
 
 /* En móvil el selector se queda en la barra, no dentro del menú: quien llega
    en el idioma equivocado debe poder cambiarlo sin abrir nada. */
-@media (max-width: 820px) {
+/* Entre 821 y 1024px caben todos los elementos, pero al ancho justo: la marca
+   y el menú quedaban a 3px. Se reduce la marca para recuperar el aire sin
+   pasar todavía a la hamburguesa. */
+@media (min-width: 881px) and (max-width: 1024px) {
+  :root { --logo-header: 86px; }
+  .nav-brand { font-size: 1.3rem; }
+  .nav-links { gap: 1.6rem; }
+  .lang-wrap { margin-right: 1rem; }
+  .nav { min-height: 0; }
+}
+
+@media (max-width: 880px) {
   .nav-links, .nav-cta-wrap { display: none; }
-  .nav > .nav-lang { display: none; }
-  .lang-wrap { display: block; margin-left: auto; margin-right: .45rem; }
-  .nav-mobile .nav-lang { display: none; }
+  .lang-wrap { margin-left: auto; margin-right: .45rem; }
+  /* En móvil compite con la marca: más discreto y con 44px de alto táctil. */
+  .lang-chip { font-size: .72rem; font-weight: 700; color: rgba(255,255,255,.62);
+               padding: 0 .45rem; min-height: 44px; gap: .3rem; }
   .nav-toggle { display: block; }
+  :root { --logo-header: 100px; }
   .nav-brand { font-size: 1.34rem; gap: .5rem; }
-  .nav-brand img { width: 100px; height: 100px; }
-  .nav { min-height: 96px; }
-  /* el header baja a 96px: el desplazamiento debe seguirlo */
-  :root { --alto-header: 96px; }
+  .nav { min-height: 0; }
 }
 
 /* Pantallas muy estrechas: la bajada de marca se monta con el selector. */
 @media (max-width: 400px) {
+  :root { --logo-header: 84px; }
   .nav-brand { font-size: 1.18rem; }
-  .nav-brand img { width: 84px; height: 84px; }
+}
+
+/* A 340px la marca llega a tocar el selector: se recorta la bajada. */
+@media (max-width: 340px) {
+  .nav-brand .brand-sub { display: none; }
+  .nav-brand { font-size: 1.1rem; }
 }
 
 /* ─── Medios de pago ───────────────────────────────────────────────── */
