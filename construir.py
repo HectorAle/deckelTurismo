@@ -132,7 +132,9 @@ def armar(idioma, slug, datos):
         faq_desde_contenido((d / "contenido.html").read_text(),
                             (d / "seo.html").read_text().rstrip("\n"), idioma),
         alternativas(slug, idioma),
-        parcial("head-comun"),
+        re.sub(r'href="(/css/[a-z-]+\.css)"',
+               lambda m: f'href="{version(m.group(1))}"',
+               parcial("head-comun")),
         "  <style>",
         estilo,
         "  </style>",
@@ -146,8 +148,8 @@ def armar(idioma, slug, datos):
         "",
         rellenar(parcial("wa-float"), ctx),
         "",
-        '  <script src="/js/main.js"></script>',
-        '  <script src="/js/analytics.js" defer></script>',
+        f'  <script src="{version("/js/main.js")}"></script>',
+        f'  <script src="{version("/js/analytics.js")}" defer></script>',
         "</body>",
         "</html>",
         "",
@@ -156,6 +158,19 @@ def armar(idioma, slug, datos):
 
 
 NOMBRES_IDIOMA = {"es": "Español", "en": "English", "pt": "Português"}
+
+
+def version(ruta):
+    """Sufijo de versión con el hash del archivo.
+
+    Los CSS y JS se sirven con caché de un año e `immutable`. Sin un sufijo que
+    cambie con el contenido, quien ya visitó el sitio se queda con la versión
+    vieja: HTML nuevo + CSS viejo rompe la maqueta. Con el hash, cambiar el
+    archivo cambia la URL y el navegador la vuelve a pedir.
+    """
+    import hashlib
+    f = RAIZ / ruta.lstrip("/")
+    return f"{ruta}?v={hashlib.md5(f.read_bytes()).hexdigest()[:8]}"
 
 
 def selector_chip(slug, actual):
