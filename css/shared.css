@@ -162,20 +162,22 @@ button:focus-visible,
 /* En escritorio manda la tira ES / EN / PT; el chip aparece sólo en móvil,
    donde tres códigos y dos separadores competían con la marca. */
 .lang-wrap { display: none; position: relative; flex-shrink: 0; }
+/* Sin caja rellena: el selector es secundario frente a la marca. Conserva los
+   44px de alto táctil, pero como zona de toque, no como bloque visible. */
 .lang-chip {
-  display: inline-flex; align-items: center; gap: .34rem;
-  font-family: var(--font-h); font-size: .78rem; font-weight: 700; letter-spacing: .05em;
-  color: var(--white); background: rgba(255,255,255,.13);
-  border: 1px solid rgba(255,255,255,.18); border-radius: 8px;
-  padding: 0 .6rem; min-height: 44px; cursor: pointer;
-  transition: background var(--ease), color var(--ease), border-color var(--ease);
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-family: var(--font-h); font-size: .72rem; font-weight: 700; letter-spacing: .06em;
+  color: rgba(255,255,255,.62); background: none;
+  border: 0; border-radius: 8px;
+  padding: 0 .45rem; min-height: 44px; cursor: pointer;
+  transition: color var(--ease), background var(--ease);
 }
-.lang-chip .fa-globe { font-size: .88em; opacity: .85; }
-.lang-chip .chev { font-size: .62em; opacity: .7; transition: transform var(--ease); }
+.lang-chip .fa-globe { font-size: .95em; opacity: .75; }
+.lang-chip .chev { font-size: .55em; opacity: .55; transition: transform var(--ease); }
 .lang-chip[aria-expanded="true"] .chev { transform: rotate(180deg); }
-.lang-chip:hover { background: rgba(255,255,255,.2); }
+.lang-chip:hover, .lang-chip[aria-expanded="true"] { color: var(--white); background: rgba(255,255,255,.1); }
 .header.scrolled .lang-chip {
-  color: var(--dark); background: var(--gray-50); border-color: var(--gray-200);
+  color: var(--gray-600);
 }
 
 /* El menú toma el mismo tono que el menú hamburguesa: azul profundo de la
@@ -227,8 +229,8 @@ button:focus-visible,
   .lang-wrap { display: block; margin-left: auto; margin-right: .45rem; }
   .nav-mobile .nav-lang { display: none; }
   .nav-toggle { display: block; }
-  .nav-brand { font-size: 1.15rem; }
-  .nav-brand img { width: 84px; height: 84px; }
+  .nav-brand { font-size: 1.34rem; gap: .5rem; }
+  .nav-brand img { width: 100px; height: 100px; }
   .nav { min-height: 96px; }
   /* el header baja a 96px: el desplazamiento debe seguirlo */
   :root { --alto-header: 96px; }
@@ -236,9 +238,8 @@ button:focus-visible,
 
 /* Pantallas muy estrechas: la bajada de marca se monta con el selector. */
 @media (max-width: 400px) {
-  .nav-brand .brand-sub { display: none; }
-  .nav-brand { font-size: 1.05rem; }
-  .nav-brand img { width: 70px; height: 70px; }
+  .nav-brand { font-size: 1.18rem; }
+  .nav-brand img { width: 84px; height: 84px; }
 }
 
 /* ─── Medios de pago ───────────────────────────────────────────────── */
